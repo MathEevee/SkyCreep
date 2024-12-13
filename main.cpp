@@ -14,8 +14,6 @@
 #include <stdio.h>
 #include <algorithm>
 
-std::string create_link_item(std::string rank, std::string class_item, std::string dir);
-
 std::string ft_replace(std::string str, char old_c, char new_c)
 {
 	std::string res;
@@ -51,7 +49,7 @@ std::vector<std::string>	parsing_items(std::string line)
 			else
 				quote = true;
 		}
-		if (((quote == false && line[i] == ',') || (quote == true && j != i && line[i] == '"')) && line[i] != '\n')
+		if (((quote == false && line[i] == ',') || (quote == true && j != i && line[i] == '"')) || line[i] == '\n')
 		{
 			data = line.substr(j, i - j);
 			if (data[0] == '"')
@@ -91,7 +89,7 @@ void	print_all(std::vector<rank>& all_rank)
 		{
 			std::cout << "**************************************************************" << std::endl;
 			std::cout << "Class item :" << (*it_class).getName() << "\n" << std::endl;
-			for (std::vector<Item>::iterator it_item = (*it_class).getItemType().begin(); it_item != (*it_class).getItemType().end(); it_item++)
+			/*for (std::vector<Item>::iterator it_item = (*it_class).getItemType().begin(); it_item != (*it_class).getItemType().end(); it_item++)
 			{
 				std::cout << "-item :	" << (*it_item).getName() << std::endl;
 				for (std::vector<price>::iterator it_price = (*it_item).getType().begin(); it_price != (*it_item).getType().end(); it_price++)
@@ -99,55 +97,88 @@ void	print_all(std::vector<rank>& all_rank)
 					std::cout << (*it_price).getUnit() << " = " << (*it_price).getPrice() << std::endl;
 				}
 				std::cout << std::endl;
-			}
+			}*/
 			std::cout << "**************************************************************" << std::endl;
 		}
 		std::cout << "\n\n--------------------------------------------------------\n\n" << std::endl;
 	}
 }
 
-void	create_type_item(std::vector<rank> &all_rank, std::vector<std::string> price_item)
+void	create_item(std::vector<rank> &all_rank, std::vector<std::string> item_price)
 {
-	std::vector<std::string> tmp = price_item;
-	tmp.erase(tmp.begin());
-	tmp.erase(tmp.begin());
-	std::string quantity = tmp.begin()->substr(1);
-	tmp.erase(tmp.begin());
+	Item new_item(item_price[0].substr());
+	item_price.erase(item_price.begin());
 
-	std::vector<std::string>::iterator it_price_item = tmp.begin();
-	it_price_item++;
-
+	std::vector<std::string>::iterator price = item_price.begin();
 	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
 	{
-		if ((*it_price_item).size() > 1)
+		if ((*price).size() > 1)
 		{
-			(*it_rank).addClassItem(price_item[0]);
-			(*it_rank).addItem(price_item[0], price_item[1]);
-			(*it_rank).addPrice(price_item[0], price_item[1], *it_price_item, quantity);
-			it_price_item++;
+			new_item.addPrice();
 		}
-		if ((*it_price_item).size() == 1)
-		{
-			it_price_item++;
-			continue;
-		}
+	}
+	/*std::cout << "---------------------------------------" << std::endl;
+	for (std::vector<std::string>::iterator it = price_item.begin(); it != price_item.end(); it++)
+	{
+		std::cout << *it << std::endl;
+	}
+	std::cout << "---------------------------------------" << std::endl;*/
+}
+
+void	create_class_item(std::vector<rank> &all_rank, std::vector<std::string> &data)
+{
+	while (data.begin()->size() < 1)
+		data.erase(data.begin());
+	for (std::vector<std::string>::iterator it = data.begin(); it != data.end(); it++)
+	{
 	}
 }
 
-void	create_item(std::vector<rank> &all_rank, std::vector<std::string> price_item)
+
+std::vector<std::string>	create_rank(std::vector<rank> &all_rank, std::vector<std::string>& data)
 {
-	std::vector<std::string> tmp = price_item;
-	if (tmp.begin()->size() <= 1)
-		tmp.erase(tmp.begin());
-	std::string name_item = tmp.begin()->substr(1);
-	tmp.erase(tmp.begin());
-	std::string name_quantity = tmp.begin()->substr(1);
-	tmp.erase(tmp.begin());
+	size_t i = 0;
 
-	std::vector<std::string>::iterator it_price_item = tmp.begin();
-	it_price_item++;
-	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
+	for (std::vector<std::string>::iterator it = data.begin(); it != data.end();)
 	{
-
+		if ((*it).size() > 2)
+		{
+			rank tmp((*it).substr(1));
+			all_rank.push_back(tmp);
+		}
+		it = data.erase(data.begin());
+		if ((*it).find("Multiplicteur general") != std::string::npos)
+		{
+			data.erase(data.begin());
+			break;
+		}
 	}
+	return (data);
+}
+
+
+void	parsing_file(std::vector<rank> &all_rank, std::vector<std::string> &all_data)
+{
+	create_class_item(all_rank, all_data);
+}
+
+
+
+int main(int ac, char **av)
+{
+	if (ac != 2)
+	{
+		std::cerr << "Bad Argument" << std::endl;
+		return (0);
+	}
+	std::ifstream input;
+	input.open(av[1]);
+	std::string tmp;
+	getline(input, tmp, '\0');
+
+	std::vector<rank> all_rank;
+	std::vector<std::string> all_data = parsing_items(tmp);
+	all_data = create_rank(all_rank, all_data);
+
+	parsing_file(all_rank, all_data);
 }

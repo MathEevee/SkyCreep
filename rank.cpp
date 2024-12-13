@@ -1,4 +1,5 @@
 # include "rank.hpp"
+# include "define.hpp"
 
 rank::rank()
 {}
@@ -119,9 +120,43 @@ void	rank::addItem(std::string name_class, std::string name_item)
 	}
 }
 
+std::string	pars_rank(std::string name_rank)
+{
+	if (name_rank == "DÉBUTANT")
+		name_rank == DEB;
+	else if (name_rank == "EXTRÊME")
+		name_rank = EXT;
+	else if (name_rank == "INTER")
+		name_rank = INTERM;
+	else if (name_rank == "SKYMASTER")
+		name_rank = MASTER;
+	else if (name_rank == "SKYGOD")
+		name_rank = GOD;
+	else
+	{
+		std::string tmp;
+		std::string::iterator it = name_rank.begin();
+		tmp = *it;
+		it++;
+		for (; it != name_rank.end(); it++)
+		{
+			if ((*it) == ' ')
+				it++;
+			if ((*it) >= 'A' && (*it) <= 'Z')
+				(*it) += 32;
+			tmp += (*it);
+		}
+		name_rank = tmp;
+		if (name_rank != "Difficile" && name_rank.find("Prestige") == std::string::npos)
+			name_rank = SKY + name_rank;
+	}
+	return (name_rank);
+}
+
 void	rank::setName(std::string name_rank)
 {
-	this->_name_rank = name_rank;
+
+	this->_name_rank = pars_rank(name_rank);
 }
 
 
