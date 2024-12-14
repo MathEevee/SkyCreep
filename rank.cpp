@@ -151,7 +151,9 @@ std::string	pars_rank(std::string name_rank)
 			tmp += (*it);
 		}
 		name_rank = tmp;
-		if (name_rank != "Difficile" && name_rank.find("Prestige") == std::string::npos)
+		if (name_rank != "Difficile" && name_rank != "Facile"
+			&& name_rank != "Novice" && name_rank != "Moyen"
+			&& name_rank.find("Prestige") == std::string::npos)
 			name_rank = SKY + name_rank;
 	}
 	return (name_rank);
