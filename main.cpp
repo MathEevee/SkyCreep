@@ -98,21 +98,21 @@ void	print_all(std::vector<rank>& all_rank)
 	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
 	{
 		std::cout << "--------------------------------------------------------" << std::endl;
-		std::cout << (*it_rank).getName() << std::endl;
+		// std::cout << (*it_rank).getName() << std::endl;
 		for (std::vector<ItemType>::iterator it_class = (*it_rank).getType().begin(); it_class != (*it_rank).getType().end(); it_class++)
 		{
-			std::cout << "**************************************************************" << std::endl;
-			std::cout << "Class item :" << (*it_class).getName() << "\n" << std::endl;
+			// std::cout << "**************************************************************" << std::endl;
+			// std::cout << "Class item :" << (*it_class).getName() << "\n" << std::endl;
 			for (std::vector<Item>::iterator it_item = (*it_class).getItemType().begin(); it_item != (*it_class).getItemType().end(); it_item++)
 			{
 				std::cout << "-item :" << (*it_item).getName() << std::endl;
-				for (std::vector<price>::iterator it_price = (*it_item).getType().begin(); it_price != (*it_item).getType().end(); it_price++)
-				{
-					std::cout << (*it_price).getUnit() << " = " << (*it_price).getPrice() << std::endl;
-				}
-				std::cout << std::endl;
+				// for (std::vector<price>::iterator it_price = (*it_item).getType().begin(); it_price != (*it_item).getType().end(); it_price++)
+				// {
+					// std::cout << (*it_price).getUnit() << " = " << (*it_price).getPrice() << std::endl;
+				// }
+				// std::cout << std::endl;
 			}
-			std::cout << "**************************************************************" << std::endl;
+			// std::cout << "**************************************************************" << std::endl;
 		}
 		std::cout << "\n\n--------------------------------------------------------\n\n" << std::endl;
 	}
@@ -374,21 +374,29 @@ void	overwrite(File file, std::string link)
 	{
 		output << *it;
 	}
+	output.close();
+}
+
+std::string change_item_name(std::string old_name_item)
+{
+
 }
 
 void	file_overwrite(File tmp, std::vector<Item> all_item, std::string link)
 {
-	bool change_data = true;
+	bool change_data = false;
 
 	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end() ;it_item++)
 	{
 		int nbr = 0;
+		std::string item = "  " + change_item_name((*all_item.begin()).getName());
 		for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
 		{
+			if ((*it).find(item) != std::string::npos)
+				change_data = true;
 			if (change_data == true)
 			{
-				std::string item = "  " + (*it_item).getName();
-				if ((*it).find(item) != std::string::npos || (*it).find("Reward:") != std::string::npos
+				if (change_data == true && (*it).find("Reward:") != std::string::npos
 					|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos)
 				{
 					std::string nl = change_line((*it_item), *it, nbr);
@@ -398,36 +406,33 @@ void	file_overwrite(File tmp, std::vector<Item> all_item, std::string link)
 				if (nbr == 3)
 				{
 					nbr = 0;
+					change_data = false;
 					break;
 				}
 			}
-			overwrite(tmp, link);
 		}
 	}
+	overwrite(tmp, link);
 }
 
 void	file_laine(File tmp, std::vector<Item> all_item, std::string link)
 {
 	int nbr = 0;
-	bool change_data = true;
 
 	for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
 	{
-		if (change_data == true)
+		std::string item = "  " + (*all_item.begin()).getName();
+		if (((*it).find("Reward:") != std::string::npos || (*it).find("Reward_middle:") != std::string::npos 
+			|| (*it).find("- 'lore:&") != std::string::npos))
 		{
-			std::string item = "  " + (*all_item.begin()).getName();
-			if ((*it).find(item) != std::string::npos || (*it).find("Reward:") != std::string::npos
-				|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos)
-			{
-				std::string nl = change_line((*all_item.begin()), *it, nbr);
-				if (nl != (*it))
-					*it = nl;
-			}
-			if (nbr == 3)
-				nbr = 0;
+			std::string nl = change_line((*all_item.begin()), *it, nbr);
+			if (nl != (*it))
+				*it = nl;
 		}
-		overwrite(tmp, link);
+		if (nbr == 3)
+			nbr = 0;
 	}
+	overwrite(tmp, link);
 }
 
 void	change_file(std::vector<Item> all_item, std::string link)
@@ -519,5 +524,6 @@ int main(int ac, char **av)
 	std::vector<std::string> all_data = parsing_items(tmp);
 	all_data = create_rank(all_rank, all_data);
 	parsing_file(all_rank, all_data);
-	apply_new_data(all_rank);
+	print_all(all_rank);
+	// apply_new_data(all_rank);
 }
