@@ -141,16 +141,8 @@ void	create_price(std::vector<rank> &all_rank, std::vector<std::string> all_data
 {
 	all_data.erase(all_data.begin());
 	all_data.erase(all_data.begin());
-	int i = 0;
-	std::cout << "---------------------------------" << std::endl;
-	for (std::vector<std::string>::iterator it = all_data.begin(); it != all_data.end(); it++)
-	{
-		i = (*it)[0];
-		std::cout << (*it) << std::endl;
-		std::cout << i << std::endl;
-	}
-	std::cout << "******" << std::endl;
 	std::string unit = all_data[0].substr(1);
+	all_data.erase(all_data.begin());
 	std::vector<std::string>::iterator price_unit = all_data.begin();
 	price_unit++;
 	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
@@ -162,25 +154,12 @@ void	create_price(std::vector<rank> &all_rank, std::vector<std::string> all_data
 		}
 		price_unit++;
 	}
-	// otherPrice(all_rank, tmp);
-	// for (std::vector<std::string>::iterator it = all_data.begin(); it != all_data.end(); it++)
-	// {
-	// 	std::cout << (*it) << std::endl;
-	// }
 }
 
 void	create_item(std::vector<rank> &all_rank, std::vector<std::string> all_data)
 {
 	all_data.erase(all_data.begin());
 
-	// std::cout << "0" << std::endl;
-	// std::cout << all_data[0] << std::endl;
-	// std::cout << "1" << std::endl;
-	// std::cout << all_data[1] << std::endl;
-	// std::cout << "2" << std::endl;
-	// std::cout << all_data[2] << std::endl;
-
-	// std::cout << "---------------------------------" << std::endl;
 	std::string new_item = all_data[0];
 	std::string unit = all_data[1];
 	all_data.erase(all_data.begin());
@@ -210,7 +189,6 @@ void	create_item_type(std::vector<rank> &all_rank, std::vector<std::string> &all
 	tmp.erase(tmp.begin());
 	std::vector<std::string>::iterator it = tmp.begin();
 	it++;
-	// std::cout << (*it) << std::endl;
 	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
 	{
 		if (((*it).size()) > 1)
@@ -263,21 +241,13 @@ void	parsing_file(std::vector<rank> &all_rank, std::vector<std::string> &all_dat
 			}
 			else
 			{
-				// std::cout << "***item***" << std::endl;
-				// std::cout << "0" << std::endl;
-				// std::cout << tmp[0] << std::endl;
-				// std::cout << "1" << std::endl;
-				// std::cout << tmp[1] << std::endl;
-				// std::cout << "2" << std::endl;
-				// std::cout << tmp[2] << std::endl;
-
-				// std::cout << "----------item_end-----------------" << std::endl;
 				create_price(all_rank, tmp);
 			}
 			tmp.clear();
 		}
 		tmp.push_back(*it);
 	}
+	create_price(all_rank, tmp);
 	print_all(all_rank);
 }
 
