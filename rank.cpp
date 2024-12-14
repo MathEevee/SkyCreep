@@ -126,8 +126,8 @@ void	rank::addItem(std::string name_class, std::string name_item)
 
 std::string	pars_rank(std::string name_rank)
 {
-	if (name_rank == "DÉBUTANT")
-		name_rank == DEB;
+	if (name_rank[0] == 'D' && name_rank != "DIFFICILE" && name_rank != "DROP")
+		return (DEBU);
 	else if (name_rank == "EXTRÊME")
 		name_rank = EXT;
 	else if (name_rank == "INTER")

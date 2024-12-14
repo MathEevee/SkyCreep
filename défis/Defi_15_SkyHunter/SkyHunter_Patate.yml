@@ -1,0 +1,300 @@
+ShopName: SkyHunter_Patate
+DisplayName: '&8» Patates du SkyHunter'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Patatex3:
+    MenuItem:
+    - type:POTATO_ITEM
+    - name:&7Défi &8- &aPomme de terre
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme de terre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m7,2&a 21,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 74 649,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:POTATO_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 7.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme de terre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:POTATO_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 7.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes de terre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:POTATO_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 7.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes de terre)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Patatex2:
+    MenuItem:
+    - type:POTATO_ITEM
+    - name:&7Défi &8- &aPomme de terre
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme de terre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m7,2&a 14,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 49 766,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:POTATO_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 7.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme de terre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:POTATO_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 7.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes de terre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:POTATO_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 7.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes de terre)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Patate:
+    MenuItem:
+    - type:POTATO_ITEM
+    - name:&7Défi &8- &aPomme de terre 
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme de terre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a7,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 24 883,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:POTATO_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 7.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme de terre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:POTATO_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 7.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes de terre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:POTATO_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 7.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes de terre)'
+    InventoryLocation: 1
+  PatateEmpoisoneex3:
+    MenuItem:
+    - type:POISONOUS_POTATO
+    - name:&7Défi &8- &aPomme de terre empoisonnée
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme de terre empoisonnée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m617,3&a 1 851,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 6 400 166,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:POISONOUS_POTATO
+      - amount:1
+    RewardType: MONEY
+    Reward: 617.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme de terre empoisonnée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:POISONOUS_POTATO
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 617.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes de terre empoisonnées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:POISONOUS_POTATO
+    RewardType_middle: MONEY
+    Reward_middle: 617.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes de terre empoisonnées)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  PatateEmpoisoneex2:
+    MenuItem:
+    - type:POISONOUS_POTATO
+    - name:&7Défi &8- &aPomme de terre empoisonnée
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme de terre empoisonnée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m617,3&a 1 234,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 266 777,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:POISONOUS_POTATO
+      - amount:1
+    RewardType: MONEY
+    Reward: 617.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme de terre empoisonnée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:POISONOUS_POTATO
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 617.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes de terre empoisonnées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:POISONOUS_POTATO
+    RewardType_middle: MONEY
+    Reward_middle: 617.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes de terre empoisonnées)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  PatateEmpoisonee:
+    MenuItem:
+    - type:POISONOUS_POTATO
+    - name:&7Défi &8- &aPomme de terre empoisonnée
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme de terre empoisonnée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a617,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 133 388,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:POISONOUS_POTATO
+      - amount:1
+    RewardType: MONEY
+    Reward: 617.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme de terre empoisonnée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:POISONOUS_POTATO
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 617.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes de terre empoisonnées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:POISONOUS_POTATO
+    RewardType_middle: MONEY
+    Reward_middle: 617.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes de terre empoisonnées)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyHunter
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18

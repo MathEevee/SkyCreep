@@ -1,0 +1,220 @@
+ShopName: SkyHunter_Endstone
+DisplayName: '&8» Endstone du SkyHunter'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Endstonex2:
+    MenuItem:
+    - type:ENDER_STONE
+    - name:&7Défi &8- &aPierre de l'end
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPierre de l''end'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m37,2&a 74,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 257 126,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:ENDER_STONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 37.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pierre de l''end)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:ENDER_STONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 37.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pierres de l''end)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:ENDER_STONE
+    RewardType_middle: MONEY
+    Reward_middle: 37.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pierres de l''end)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Endstone:
+    MenuItem:
+    - type:ENDER_STONE
+    - name:&7Défi &8- &aPierre de l'end
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPierre de l''end'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a37,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 128 563,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:ENDER_STONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 37.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pierre de l''end)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:ENDER_STONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 37.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pierres de l''end)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:ENDER_STONE
+    RewardType_middle: MONEY
+    Reward_middle: 37.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pierres de l''end)'
+    InventoryLocation: 1
+  EndstoneBrickx2:
+    MenuItem:
+    - type:END_BRICKS
+    - name:&7Défi &8- &aBrique de l'end
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique de l''end'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m45,3&a 90,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 313 113,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:END_BRICKS
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique de l''end)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:END_BRICKS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques de l''end)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:END_BRICKS
+    RewardType_middle: MONEY
+    Reward_middle: 43.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques de l''end)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  EndstoneBrick:
+    MenuItem:
+    - type:END_BRICKS
+    - name:&7Défi &8- &aBrique de l'end
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique de l''end'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a45,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 156 556,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:END_BRICKS
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique de l''end)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:END_BRICKS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques de l''end)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:END_BRICKS
+    RewardType_middle: MONEY
+    Reward_middle: 43.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques de l''end)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyHunter
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18

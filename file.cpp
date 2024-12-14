@@ -18,18 +18,13 @@ std::vector<std::string>&	File::getAllLine(void)
 
 void	File::setAllLine(std::string file)
 {
-	std::string message;
-	
-	message = file;
-	while (message.find("\n") != std::string::npos)
+	std::string line;
+	while (file.find('\n') != std::string::npos)
 	{
-		std::string line = message.substr(0, message.find("\n"));
-		message = message.substr(message.find('\n') + 1);
-		this->getAllLine().push_back(message);
+		line = file.substr(0, file.find('\n'));
+		file = file.substr(file.find('\n') + 1);
+		this->getAllLine().push_back(line);
 	}
-}
-
-void	setNewLine(std::string old_line)
-{
-
+	line = file.substr(0, file.find("\n"));
+	file = file.substr(file.find('\n') + 1);
 }

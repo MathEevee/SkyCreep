@@ -10,23 +10,25 @@
 #include <cstring>
 #include <cstdlib>
 #include <fstream>
+#include <ostream>
 #include <stdlib.h>
 #include <stdio.h>
 #include <algorithm>
 
-std::string ft_replace(std::string str, char old_c, char new_c)
+std::string ft_replace(std::string str)
 {
 	std::string res;
 	int i = 0;
 
 	for (std::string::iterator it = str.begin(); it != str.end();)
 	{
-		if (((*it) >= '0' && (*it) <= '9') || (*it) == ',')
+		if ((*it) >= '0' && (*it) <= '9' || ',')
 			res = res + (*it);
-		if ((*it) == old_c)
-			res[i] = new_c;
+		if ((*it) == ',')
+			res[i] = '.';
+		if ((*it) >= '0' && (*it) <= '9' || '.')
+			i++;
 		it++;
-		i++;
 	}
 	return (res);
 }
@@ -232,24 +234,243 @@ void	parsing_file(std::vector<rank> &all_rank, std::vector<std::string> &all_dat
 		if (!((*it)[0] >= 44 && (*it)[0] <= 57) && tmp.size() > 2)
 		{
 			if (is_type_item(tmp) == true)
-			{
 				create_item_type(all_rank, tmp);
-			}
 			else if (is_item(tmp) == true)
-			{
 				create_item(all_rank, tmp);
-			}
 			else
-			{
 				create_price(all_rank, tmp);
-			}
 			tmp.clear();
 		}
 		tmp.push_back(*it);
 	}
 	create_price(all_rank, tmp);
-	print_all(all_rank);
 }
+
+std::string change_class_name(std::string class_name)
+{
+	if (class_name == "Champi")
+		return (CHAMPI);
+	if (class_name == "Blé")
+		return (BLE);
+	if (class_name == "Papier")
+		return (PAPIER);
+	if (class_name == "Verrue nether")
+		return (NW);
+	if (class_name == "Blocs Nether")
+		return (NETHER);
+	return (class_name);
+}
+
+void reverse(char s[])
+{
+    int i, j;
+    char c;
+    for (i = 0, j = strlen(s)-1; i<j; i++, j--) {
+        c = s[i];
+        s[i] = s[j];
+        s[j] = c;
+    }
+}
+
+void itoa(int n, char s[])
+{
+    int i, sign;
+    if ((sign = n) < 0)  /* record sign */
+        n = -n;          /* make n positive */
+    i = 0;
+    do {       /* generate digits in reverse order */
+        s[i++] = n % 10 + '0';   /* get next digit */
+    } while ((n /= 10) > 0);     /* delete it */
+    if (sign < 0)
+        s[i++] = '-';
+    s[i] = '\0';
+    reverse(s);
+} 
+
+std::string	select_defis_link(std::string name_rank)
+{
+	if (name_rank == "Debutant" || name_rank == "Débutant")
+		return (DEBUTANT);
+	if (name_rank == "Novice")
+		return (NOVICE);
+	if (name_rank == "Facile")
+		return (FACILE);
+	if (name_rank == "Moyen")
+		return (MOYEN);
+	if (name_rank == "Intermediaire")
+		return (INTER);
+	if (name_rank == "Difficile")
+		return (DIFFICILE);
+	if (name_rank == "Extreme")
+		return (EXTREME);
+	if (name_rank == "SkyMaster")
+		return (SKYMASTER);
+	if (name_rank == "SkyGod")
+		return (SKYGOD);
+	if (name_rank == "SkyPearl")
+		return (SKYPEARL);
+	if (name_rank == "SkyWing")
+		return (SKYWING);
+	if (name_rank == "SkyDrop")
+		return (SKYDROP);
+	if (name_rank == "SkyMonster")
+		return (SKYMONSTER);
+	if (name_rank == "SkyBuster")
+		return (SKYBUSTER);
+	if (name_rank == "SkyHunter")
+		return (SKYHUNTER);
+	if (name_rank == "SkyGuardian")
+		return (SKYGUARDIAN);
+	if (name_rank == "SkyLander")
+		return (SKYLANDER);
+	if (name_rank == "SkyCreeper")
+		return (SKYCREEPER);
+	if (name_rank == "SkyHeroes")
+		return (SKYHEROES);
+	if (name_rank == "SkyLord")
+		return (SKYLORD);
+	if (name_rank == "SkyLegend")
+		return (SKYLEGEND);
+	int i = 0;
+	std::string nbr;
+	while (name_rank[i] != '\0')
+	{
+		if (name_rank[i] >= '0' && name_rank[i] <= '9')
+			nbr = nbr + name_rank[i];
+		i++;
+	}
+	int nbr_defis = atoi(nbr.c_str()) + 21;
+	char tmp[33];
+	itoa(nbr_defis, tmp);
+	std::string nbrd = tmp;
+	return (PRESTIGE(nbrd, nbr));
+}
+
+std::string change_line(Item item, std::string line, int &nbr)
+{
+	price select_price = item.getType()[3 - nbr];
+	std::string price_unit_no_virg = ft_replace(item.getType()[0].getPrice());
+	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos)
+		line = LORE(select_price.getUnit(), select_price.getPrice());
+	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
+		line = LOREDC(item.getType()[nbr + 3].getPrice());
+	else if (line.find("Reward:") != std::string::npos)
+		line = REWARD(price_unit_no_virg);
+	else if (line.find("Reward_middle") != std::string::npos)
+	{
+		line = REWARDMIDDLE(price_unit_no_virg);
+		nbr++;
+	}
+	return (line);
+}
+
+void	overwrite(File file, std::string link)
+{
+	std::ofstream	output;
+
+	output.open(link.c_str(), std::fstream::out);
+
+	for (std::vector<std::string>::iterator it = file.getAllLine().begin(); it != file.getAllLine().end(); it++)
+	{
+		output << *it;
+	}
+}
+
+void	change_file(std::vector<Item> all_item, std::string link)
+{
+	std::ifstream input;
+	std::string content_file;
+	
+	input.open(link);
+	if (input.is_open() == false)
+	{
+		std::cout << "this file doesn't exist : " << link << std::endl;
+		return;
+	}
+	getline(input, content_file, '\0');
+	input.close();
+	File tmp(content_file);
+	int nbr = 0;
+	bool change_data = true;
+	std::vector<Item>::iterator it_item = all_item.begin();
+	for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
+	{
+		if (change_data == true)
+		{
+			std::string item = "  " + (*it_item).getName();
+			if ((*it).find(item) != std::string::npos || (*it).find("Reward:") != std::string::npos
+				|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos)
+			{
+				std::string nl = change_line((*it_item), *it, nbr);
+				if (nl.size() > 2)
+					*it = nl;
+			}
+			if (nbr == 3)
+			{
+				nbr = 0;
+				it_item++;
+				if (it_item == all_item.end())
+				{
+					overwrite(tmp, link);
+					change_data = false;
+				}
+			}
+		}
+	}
+}
+
+
+void	parse_link_file(std::vector<Item> all_item, std::string class_name, std::string rank_name)
+{
+	std::string new_class_name = change_class_name(class_name);
+	std::string link = select_defis_link(rank_name) + LINK(rank_name, new_class_name);
+
+	std::ifstream infile;
+	infile.open(link.c_str());
+
+	if (rank_name == "Debutant")
+	{
+		if (infile.is_open() == false)
+		{
+			std::string tmp = DEB;
+			link = select_defis_link(tmp) +  LINK(tmp, new_class_name);
+			infile.open(link.c_str());
+			if (infile.is_open() == false)
+			{
+				link = select_defis_link(rank_name) + LINK_BIS(tmp);
+				infile.open(link.c_str());
+			}
+		}
+	}
+	else
+	{
+		if (infile.is_open() == false)
+			link = select_defis_link(rank_name) + LINK_BIS(rank_name);
+	}
+	infile.close();
+	change_file(all_item, link);
+}
+
+void	create_all_link(std::vector<ItemType> all_class, std::string rank_name)
+{
+	// for (std::vector<ItemType>::iterator it_class = all_class.begin(); it_class != all_class.end(); it_class++)
+	// {
+	// 	parse_link_file((*it_class).getItemType(), (*it_class).getName(), rank_name);
+		parse_link_file((all_class.begin())->getItemType(), ((all_class.begin()))->getName(), rank_name);
+	// }
+}
+
+
+
+void	apply_new_data(std::vector<rank> &all_rank)
+{
+	// for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
+	// {
+		// create_all_link((*it_rank).getType(), (*it_rank).getName());
+		create_all_link(all_rank.begin()->getType(), (all_rank.begin())->getName());
+	// }
+}
+
 
 int main(int ac, char **av)
 {
@@ -267,4 +488,5 @@ int main(int ac, char **av)
 	std::vector<std::string> all_data = parsing_items(tmp);
 	all_data = create_rank(all_rank, all_data);
 	parsing_file(all_rank, all_data);
+	apply_new_data(all_rank);
 }

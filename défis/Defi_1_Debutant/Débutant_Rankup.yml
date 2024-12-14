@@ -1,0 +1,57 @@
+ShopName: DebutantRankup
+DisplayName: '&7Défi &8- &aAccès au rang supérieur'
+FillerItem:
+- type:STAINED_GLASS_PANE
+- durability:7
+- name:&7
+shop:
+  Valider Rankup Débutant Novice:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:5
+    - 'name:&7Défi &8- &aAccès au rang supérieur &7(&8Novice&7)'
+    - 'lore:'
+    - 'lore:&eDescription :'
+    - 'lore:&7 Passez au rang supérieur et débloquez'
+    - 'lore:&7 de nouveaux défis et une rentabilité plus'
+    - 'lore:&7 intéressante &8(&a2%&8) &7ainsi que quelques'
+    - 'lore:&7 récompenses pour vous aider.'
+    - 'lore:'
+    - 'lore:&eCoût du rang : &b&l&n100 SKYPOINTS'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &ax32 blocs de terre'
+    - 'lore:&e ▪ &ax16 steaks'
+    - 'lore:&e ▪ &ax8 pousses de chêne'
+    - 'lore:&e ▪ &ax8 graines de blé'
+    - 'lore:&e ▪ &ax1 houe en fer &8(U.1)'
+    - 'lore:&e ▪ &ax1 hache en fer'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour passer au rang supérieur.'
+    RewardType: COMMAND
+    Reward:
+    - lp user %player% promote skycreep skycreep
+    - bc &6%player% &adébloque le niveau &f&l[&8Novice&f&l] &a!
+    - bs open novice %player%
+    - cmi kit novice %player%
+    PriceType: MONEY
+    Price: 100
+    InventoryLocation: 12
+  Annuler Rankup Débutant Novice:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:14
+    - 'name:&7Défi &8- &cAnnuler le passage de grade'
+    - 'lore:'
+    - 'lore:&eDescription:'
+    - 'lore:&7  Annulez le passage au grade suivant.'
+    - 'lore:'
+    - 'lore:&7&oCliquez ici pour annuler le passage de grade.'
+    RewardType: close
+    InventoryLocation: 16
+  Vitre_27:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&7
+    InventoryLocation: 27

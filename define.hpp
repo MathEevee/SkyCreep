@@ -57,4 +57,11 @@
 # define LINK(rank, item) rank + "_" + item + YML
 # define LINK_BIS(rank) rank + YML
 
+/*in yml*/
+
+# define LORE(unitaire, res) "    - 'lore:&e ▪ &8&m" + unitaire + " &a " + res + " SkyPoints &8| &7x1'"
+# define LOREDC(res) "    - 'lore:&7&o  (DC : " + res + " SP)'"
+# define REWARD(res) "    Reward: " + res
+# define REWARDMIDDLE(res) "    Reward_middle: " + res
+
 #endif

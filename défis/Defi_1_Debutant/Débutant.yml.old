@@ -1,0 +1,415 @@
+ShopName: Debutant
+DisplayName: '&8» Défis du Débutant &eMaj 2.10'
+Command: debutant:débutant
+shop:
+
+###############
+#    DEFIS    #
+###############
+
+  Carottex3 Débutant:
+    MenuItem:
+    - type:CARROT_ITEM
+    - name:&7Défi &8- &aCarotte
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m6,7&a 20,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 69 465,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CARROT_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 6.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CARROT_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 6.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - type:CARROT_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 6.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  Carottex2 Débutant:
+    MenuItem:
+    - type:CARROT_ITEM
+    - name:&7Défi &8- &aCarotte
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m6,7&a 13,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 46 310,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CARROT_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 6.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CARROT_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 6.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - type:CARROT_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 6.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  Carotte Débutant:
+    MenuItem:
+    - type:CARROT_ITEM
+    - name:&7Défi &8- &aCarotte
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a6,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 23 155,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CARROT_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 6.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CARROT_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 6.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - type:CARROT_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 6.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes)'
+    InventoryLocation: 3
+  Lapin Débutant:
+    MenuItem:
+    - type:COOKED_RABBIT
+    - name:&7Défi &8- &aLapin
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapin cru'
+    - 'lore:&e ▪ &aLapin cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &aSkyPoints variables'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour accéder aux défis.'
+    RewardType: shop
+    Reward: Debutant_Lapin
+    InventoryLocation: 4
+  Poisson Débutant:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:2
+    - name:&7Défi &8- &aPoissons
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMorue &7(+ cuit)'
+    - 'lore:&e ▪ &aSaumon &7(+ cuit)'
+    - 'lore:&e ▪ &aPoisson globe'
+    - 'lore:&e ▪ &aPoisson tropical'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &aSkyPoints variables'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour accéder aux défis.'
+    RewardType: SHOP
+    Reward: Debutant_Poisson
+    InventoryLocation: 5
+  Plumex3 Débutant:
+    MenuItem:
+    - type:FEATHER
+    - name:&7Défi &8- &aPlume
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPlume'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m14,4&a 43,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 149 299,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:FEATHER
+      - amount:1
+    RewardType: MONEY
+    Reward: 14.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 plume)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:FEATHER
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 14.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 plumes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - type:FEATHER
+    RewardType_middle: MONEY
+    Reward_middle: 14.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% plumes)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 6
+  Plumex2 Débutant:
+    MenuItem:
+    - type:FEATHER
+    - name:&7Défi &8- &aPlume
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPlume'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m14,4&a 28,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 99 532,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:FEATHER
+      - amount:1
+    RewardType: MONEY
+    Reward: 14.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 plume)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:FEATHER
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 14.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 plumes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - type:FEATHER
+    RewardType_middle: MONEY
+    Reward_middle: 14.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% plumes)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 6
+  Plume Débutant:
+    MenuItem:
+    - type:FEATHER
+    - name:&7Défi &8- &aPlume
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPlume'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a14,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 49 766,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:FEATHER
+      - amount:1
+    RewardType: MONEY
+    Reward: 14.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 plume)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:FEATHER
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 14.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 plumes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - type:FEATHER
+    RewardType_middle: MONEY
+    Reward_middle: 14.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% plumes)'
+    InventoryLocation: 6
+  Buches Débutant:
+    MenuItem:
+    - type:LOG
+    - name:&7Défi &8- &aBûches
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBouleau &7(+ feuillage)'
+    - 'lore:&e ▪ &aChêne &7(+ feuillage)'
+    - 'lore:&e ▪ &aSapin &7(+ feuillage)'
+    - 'lore:&e ▪ &aAcajou &7(+ feuillage)'
+    - 'lore:&e ▪ &aChêne noir &7(+ feuillage)'
+    - 'lore:&e ▪ &aAcacia &7(+ feuillage)'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &aSkyPoints variables'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour accéder aux défis.'
+    RewardType: shop
+    Reward: Debutant_Bois
+    InventoryLocation: 7
+    
+################
+#    AUTRES    #
+################
+
+  GrandDestockage Débutant:
+    MenuItem:
+    - type:HOPPER
+    - 'name:&7Défi &8- &aGrand déstockage'
+    - 'lore:'
+    - 'lore:&eDescription :'
+    - 'lore:&7 Vendez en &a1 clic &7toutes les'
+    - 'lore:&7 ressources de votre &ainventaire'
+    - 'lore:&7 en fonction du prix de vos &aDéfis&7.'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour tout vendre.'
+    - enchantment:knockback#5
+    - hideflags:all
+    RewardType: OPCOMMAND
+    Reward:
+    - sellall debutant
+    InventoryLocation: 10
+  Vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  Vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  Vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  RankupNon:
+    MenuItem:
+    - type:EXP_BOTTLE
+    - 'name:&7Défi &8- &aAccès au rang supérieur &7(&8Novice&7)'
+    - 'lore:'
+    - 'lore:&eDescription :'
+    - 'lore:&7 Passez au rang supérieur et débloquez'
+    - 'lore:&7 de nouveaux défis et une rentabilité plus'
+    - 'lore:&7 intéressante &8(&a2%&8) &7ainsi que quelques'
+    - 'lore:&7 récompenses pour vous aider.'
+    - 'lore:'
+    - 'lore:&eCoût du rang : &b&l&n100 SKYPOINTS'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &ax32 blocs de terre'
+    - 'lore:&e ▪ &ax16 steaks'
+    - 'lore:&e ▪ &ax8 pousses de chêne'
+    - 'lore:&e ▪ &ax8 graines de blé'
+    - 'lore:&e ▪ &ax1 houe en fer &8(U.1)'
+    - 'lore:&e ▪ &ax1 hache en fer'
+    - 'lore:'
+    - 'lore:&4✘ &c&oVous ne possédez pas assez de SkyPoints. &4✘'
+    Condition:
+    - type:placeholdernumber
+    - '%vault_eco_balance_fixed%:under:100'
+    InventoryLocation: 14
+  Rankup Débutant Novice:
+    MenuItem:
+    - type:EXP_BOTTLE
+    - 'name:&7Défi &8- &aAccès au rang supérieur &7(&8Novice&7)'
+    - 'lore:'
+    - 'lore:&eDescription :'
+    - 'lore:&7 Passez au rang supérieur et débloquez'
+    - 'lore:&7 de nouveaux défis et une rentabilité plus'
+    - 'lore:&7 intéressante &8(&a2%&8) &7ainsi que quelques'
+    - 'lore:&7 récompenses pour vous aider.'
+    - 'lore:'
+    - 'lore:&eCoût du rang : &b&l&n100 SKYPOINTS'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &ax32 blocs de terre'
+    - 'lore:&e ▪ &ax16 steaks'
+    - 'lore:&e ▪ &ax8 pousses de chêne'
+    - 'lore:&e ▪ &ax8 graines de blé'
+    - 'lore:&e ▪ &ax1 houe en fer &8(U.1)'
+    - 'lore:&e ▪ &ax1 hache en fer'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour passer au rang supérieur.'
+    Condition:
+    - type:placeholdernumber
+    - '%vault_eco_balance_fixed%:over:99'
+    RewardType: shop
+    Reward: DebutantRankup
+    InventoryLocation: 14
+  Vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  Vitre9:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  Vitre10:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: shop
+    Reward: Menu_Defis
+    InventoryLocation: 18

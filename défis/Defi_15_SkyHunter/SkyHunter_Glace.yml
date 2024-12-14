@@ -1,0 +1,228 @@
+ShopName: SkyHunter_Glace
+DisplayName: '&8» Glace du SkyHunter'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Icex2:
+    MenuItem:
+    - type:ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m25,9&a 51,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 179 020,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 25.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 25.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:ICE
+    RewardType_middle: MONEY
+    Reward_middle: 25.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Ice:
+    MenuItem:
+    - type:ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a25,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 89 510,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 25.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 25.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:ICE
+    RewardType_middle: MONEY
+    Reward_middle: 25.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace)'
+    InventoryLocation: 1
+  PackedIcex2:
+    MenuItem:
+    - type:PACKED_ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace compactée 
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace Compactée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m42,2&a 84,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 291 686,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PACKED_ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 42.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace compactée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PACKED_ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 42.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace compactée)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PACKED_ICE
+    RewardType_middle: MONEY
+    Reward_middle: 42.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace compactée)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  PackedIce:
+    MenuItem:
+    - type:PACKED_ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace compactée
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace compactée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a42,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 145 843,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PACKED_ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 42.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace compactée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PACKED_ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 42.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace compactée)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PACKED_ICE
+    RewardType_middle: MONEY
+    Reward_middle: 42.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace compactée)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyHunter
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18
