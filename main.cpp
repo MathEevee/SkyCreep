@@ -376,6 +376,65 @@ void	overwrite(File file, std::string link)
 	}
 }
 
+void	file_overwrite(File tmp, std::vector<Item> all_item, std::string link)
+{
+	bool change_data = true;
+
+	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end() ;it_item++)
+	{
+		int nbr = 0;
+		for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
+		{
+			if (change_data == true)
+			{
+				std::string item = "  " + (*it_item).getName();
+				if ((*it).find(item) != std::string::npos || (*it).find("Reward:") != std::string::npos
+					|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos)
+				{
+					std::string nl = change_line((*it_item), *it, nbr);
+					if (nl.size() > 2)
+						*it = nl;
+				}
+				if (nbr == 3)
+				{
+					nbr = 0;
+					break;
+				}
+			}
+			overwrite(tmp, link);
+		}
+	}
+}
+
+void	file_laine(File tmp, std::vector<Item> all_item, std::string link)
+{
+	int nbr = 0;
+	bool change_data = true;
+
+	for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
+	{
+		if (change_data == true)
+		{
+			std::string item = "  " + (*all_item.begin()).getName();
+			if ((*it).find(item) != std::string::npos || (*it).find("Reward:") != std::string::npos
+				|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos)
+			{
+				std::string nl = change_line((*all_item.begin()), *it, nbr);
+				if (nl != (*it))
+					*it = nl;
+			}
+			else
+			{
+				std::cerr << "Bad format item = " << item << std::endl;
+				break;
+			}
+			if (nbr == 3)
+				nbr = 0;
+		}
+		overwrite(tmp, link);
+	}
+}
+
 void	change_file(std::vector<Item> all_item, std::string link)
 {
 	std::ifstream input;
@@ -390,33 +449,10 @@ void	change_file(std::vector<Item> all_item, std::string link)
 	getline(input, content_file, '\0');
 	input.close();
 	File tmp(content_file);
-	int nbr = 0;
-	bool change_data = true;
-	std::vector<Item>::iterator it_item = all_item.begin();
-	for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
-	{
-		if (change_data == true)
-		{
-			std::string item = "  " + (*it_item).getName();
-			if ((*it).find(item) != std::string::npos || (*it).find("Reward:") != std::string::npos
-				|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos)
-			{
-				std::string nl = change_line((*it_item), *it, nbr);
-				if (nl.size() > 2)
-					*it = nl;
-			}
-			if (nbr == 3)
-			{
-				nbr = 0;
-				it_item++;
-				if (it_item == all_item.end())
-				{
-					overwrite(tmp, link);
-					change_data = false;
-				}
-			}
-		}
-	}
+	if (all_item.begin()->getName() != "Laine")
+		file_overwrite(tmp, all_item, link);
+	else
+		file_laine(tmp, all_item, link);
 }
 
 
@@ -453,22 +489,22 @@ void	parse_link_file(std::vector<Item> all_item, std::string class_name, std::st
 
 void	create_all_link(std::vector<ItemType> all_class, std::string rank_name)
 {
-	// for (std::vector<ItemType>::iterator it_class = all_class.begin(); it_class != all_class.end(); it_class++)
-	// {
-	// 	parse_link_file((*it_class).getItemType(), (*it_class).getName(), rank_name);
-		parse_link_file((all_class.begin())->getItemType(), ((all_class.begin()))->getName(), rank_name);
-	// }
+	for (std::vector<ItemType>::iterator it_class = all_class.begin(); it_class != all_class.end(); it_class++)
+	{
+		parse_link_file((*it_class).getItemType(), (*it_class).getName(), rank_name);
+		// parse_link_file((all_class.begin())->getItemType(), ((all_class.begin()))->getName(), rank_name);
+	}
 }
 
 
 
 void	apply_new_data(std::vector<rank> &all_rank)
 {
-	// for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
-	// {
-		// create_all_link((*it_rank).getType(), (*it_rank).getName());
-		create_all_link(all_rank.begin()->getType(), (all_rank.begin())->getName());
-	// }
+	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
+	{
+		create_all_link((*it_rank).getType(), (*it_rank).getName());
+		// create_all_link(all_rank.begin()->getType(), (all_rank.begin())->getName());
+	}
 }
 
 
