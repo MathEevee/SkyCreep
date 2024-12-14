@@ -423,11 +423,6 @@ void	file_laine(File tmp, std::vector<Item> all_item, std::string link)
 				if (nl != (*it))
 					*it = nl;
 			}
-			else
-			{
-				std::cerr << "Bad format item = " << item << std::endl;
-				break;
-			}
 			if (nbr == 3)
 				nbr = 0;
 		}
