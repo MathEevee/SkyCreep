@@ -11,21 +11,13 @@ price::price(std::string unit)
 	this->_unit = unit;
 }
 
-void	price::addPrice(std::string  prix)
-{
-	setPrice(prix);
-}
-
+price::price()
+{}
 
 price::~price()
 {}
 
-void	price::setPrice(std::string  prix)
-{
-	this->_prix = prix;
-}
-
-std::string 	price::getPrice(void)
+std::string	price::getPrice(void)
 {
 	return (this->_prix);
 }

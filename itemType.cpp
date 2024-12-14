@@ -1,5 +1,8 @@
 #include "itemType.hpp"
 
+ItemType::ItemType()
+{}
+
 ItemType::ItemType(std::string name)
 {
 	this->_name_type = name;

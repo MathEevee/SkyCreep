@@ -14,6 +14,10 @@ rank::~rank()
 
 void	rank::addClassItem(std::string name_class)
 {
+	if (name_class[0] == 13 || name_class[0] == 10)
+		name_class = name_class.substr(1);
+	if (name_class[0] == 13 || name_class[0] == 10)
+		name_class = name_class.substr(1);
 	for (std::vector<ItemType>::iterator it = this->getType().begin(); it != this->getType().end(); it++)
 	{
 		if ((*it).getName() == name_class)
@@ -34,8 +38,7 @@ void	rank::addPrice(std::string name_class, std::string name_item, std::string p
 			{
 				if ((*it_type).getName() == name_item)
 				{
-					price new_price(unit, prix);
-					(*it_type).getType().push_back(new_price);
+					(*it_type).addPrice(unit, prix);
 					return;
 				}
 			}
@@ -46,7 +49,7 @@ void	rank::addPrice(std::string name_class, std::string name_item, std::string p
 void	rank::addOtherUnit(std::string prix, std::string unit)
 {
 	std::vector<ItemType>::iterator type_item;
-	if (this->getType().size() > 1)
+	if (this->getType().size())
 	{
 		type_item = this->getType().end();
 		type_item--;
@@ -54,15 +57,16 @@ void	rank::addOtherUnit(std::string prix, std::string unit)
 	else
 		type_item = this->getType().begin();
 	std::vector<Item>::iterator last_item;
-	if (type_item->getItemType().size() > 1)
+	if (type_item->getItemType().size())
 	{
 		last_item = type_item->getItemType().end();
 		last_item--;
 	}
 	else
 		last_item = type_item->getItemType().begin();
-	price new_price(unit, prix);
-	last_item->getType().push_back(new_price);
+	if (unit[0] == ',')
+		unit = unit.substr(1);
+	(*last_item).addPrice(unit, prix);
 }
 
 
@@ -94,7 +98,7 @@ void	rank::addOtherItem(std::string name_item)
 {
 	std::vector<ItemType>::iterator type_item = this->getType().end();
 	type_item--;
-	Item newItem(name_item);
+	Item newItem(name_item.substr(1));
 	type_item->getItemType().push_back(newItem);
 }
 
@@ -155,7 +159,6 @@ std::string	pars_rank(std::string name_rank)
 
 void	rank::setName(std::string name_rank)
 {
-
 	this->_name_rank = pars_rank(name_rank);
 }
 

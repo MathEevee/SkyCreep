@@ -16,12 +16,11 @@ class ItemType
 		std::string			_name_type;
 		std::vector<Item>	_item;
 	public :
+		ItemType();
 		ItemType(std::string name_type);
 		~ItemType();
 
 		void	setName(std::string item_type);
-
-		// void	addItem(price new_price, Item new_item);
 
 		std::string			getName(void);
 		std::vector<Item>&	getItemType(void);

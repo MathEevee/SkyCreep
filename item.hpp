@@ -20,13 +20,18 @@ class Item
 		std::vector<price>	_price;
 	public :
 		Item(std::string name);
+		Item();
 		~Item();
 
-		void	addPrice(price unit_price_item);
+		void	addPrice(std::string unit, std::string prix);
+		void	addPrice(price new_price);
+
 
 
 		std::vector<price>&	getType(void);
 		std::string	getName(void);
+
+		const std::vector<price>& getType() const;
 
 };
 
