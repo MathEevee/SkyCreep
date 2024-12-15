@@ -22,11 +22,11 @@ std::string ft_replace(std::string str)
 
 	for (std::string::iterator it = str.begin(); it != str.end();)
 	{
-		if ((*it) >= '0' && (*it) <= '9' || ',')
+		if ((*it) >= '0' && (*it) <= '9')
 			res = res + (*it);
 		if ((*it) == ',')
-			res[i] = '.';
-		if ((*it) >= '0' && (*it) <= '9' || '.')
+			res = res + '.';
+		if ((*it) >= '0' && (*it) <= '9' || (*it) ==  '.')
 			i++;
 		it++;
 	}
@@ -101,18 +101,18 @@ void	print_all(std::vector<rank>& all_rank)
 		std::cout << (*it_rank).getName() << std::endl;
 		for (std::vector<ItemType>::iterator it_class = (*it_rank).getType().begin(); it_class != (*it_rank).getType().end(); it_class++)
 		{
-			// std::cout << "**************************************************************" << std::endl;
-			// std::cout << "Class item :" << (*it_class).getName() << "\n" << std::endl;
+			std::cout << "**************************************************************" << std::endl;
+			std::cout << "Class item :" << (*it_class).getName() << "\n" << std::endl;
 			for (std::vector<Item>::iterator it_item = (*it_class).getItemType().begin(); it_item != (*it_class).getItemType().end(); it_item++)
 			{
 				std::cout << "-item :" << (*it_item).getName() << std::endl;
-				// for (std::vector<price>::iterator it_price = (*it_item).getType().begin(); it_price != (*it_item).getType().end(); it_price++)
-				// {
-					// std::cout << (*it_price).getUnit() << " = " << (*it_price).getPrice() << std::endl;
-				// }
-				// std::cout << std::endl;
+				for (std::vector<price>::iterator it_price = (*it_item).getType().begin(); it_price != (*it_item).getType().end(); it_price++)
+				{
+					std::cout << (*it_price).getUnit() << " = " << (*it_price).getPrice() << std::endl;
+				}
+				std::cout << std::endl;
 			}
-			// std::cout << "**************************************************************" << std::endl;
+			std::cout << "**************************************************************" << std::endl;
 		}
 		std::cout << "\n\n--------------------------------------------------------\n\n" << std::endl;
 	}
@@ -350,19 +350,39 @@ std::string change_line(Item item, std::string line, int &nbr)
 {
 	price select_price = item.getType()[2 - nbr];
 
+	std::cout << "---------------------------" << std::endl;
+	std::cout << "item = " << item.getName() << std::endl;
+	std::cout << "price[0]u = " << item.getType()[0].getUnit() << std::endl;
+	std::cout << "price[0]p = "  << item.getType()[0].getPrice() << std::endl;
+	std::cout << "price[1]u = "  << item.getType()[1].getUnit() << std::endl;
+	std::cout << "price[1]p = "  << item.getType()[1].getPrice() << std::endl;
+	std::cout << "price[2]u = "  << item.getType()[2].getUnit() << std::endl;
+	std::cout << "price[2]p = "  << item.getType()[2].getPrice() << std::endl;
+	std::cout << "price[3]u = "  << item.getType()[3].getUnit() << std::endl;
+	std::cout << "price[3]p = "  << item.getType()[3].getPrice() << std::endl;
+	std::cout << "price[4]u = "  << item.getType()[4].getUnit() << std::endl;
+	std::cout << "price[4]p = "  << item.getType()[4].getPrice() << std::endl;
+	std::cout << "price[5]u = "  << item.getType()[5].getUnit() << std::endl;
+	std::cout << "price[5]p = "  << item.getType()[5].getPrice() << std::endl;
+	std::cout << "---------------------------" << std::endl;
+
 	std::string price_unit_no_virg = ft_replace(item.getType()[0].getPrice());
+
 	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr != 2)
 		line = LORE(item.getType()[0].getPrice(), select_price.getPrice());
-	else if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr == 2)
+
+	else if (line.find("- 'lore:&e ▪ &a") != std::string::npos && nbr == 2)
 		line = LOREUN(item.getType()[0].getPrice());
+
 	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
 		line = LOREDC(item.getType()[5 - nbr].getPrice());
+
 	else if (line.find("Reward:") != std::string::npos)
 		line = REWARD(price_unit_no_virg);
-	else if (line.find("Reward_middle") != std::string::npos)
+
+	else if (line.find("    Reward_middle:") != std::string::npos)
 	{
 		line = REWARDMIDDLE(price_unit_no_virg);
-		nbr++;
 	}
 	return (line);
 }
@@ -382,47 +402,44 @@ void	overwrite(File file, std::string link)
 
 void	file_overwrite(File tmp, std::vector<Item> all_item, std::string link, File temoin)
 {
+
 	bool change_data = false;
 
-	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end();it_item++)
+	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end(); it_item++)
 	{
 		int nbr = 0;
 		change_data = false;
-		std::string item = "  " + (*all_item.begin()).getName();
+		std::string item = "  " + (*it_item).getName();
+		std::cout << "item|" << item<<"|" << std::endl;
 		std::vector<std::string>::iterator it_bis = temoin.getAllLine().begin();
 		for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
 		{
-			if ((*it).find(item) != std::string::npos && *it == *it_bis && nbr == 0)
+			if ((*it).find(item) != std::string::npos && (*it) == (*it_bis))
+			{
+				std::cout << "*it = " << *it << std::endl;
+				std::cout << "*it_bis = " << *it_bis << std::endl;
 				change_data = true;
-			if (*it != *it_bis && nbr == 0 && change_data == true)
-			{
-				change_data = false;
-				it_bis++;
-				continue;
 			}
-			if (change_data == true)
+			if (change_data == true && ((*it).find("Reward:") != std::string::npos
+				|| (*it).find("    Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos))
 			{
-				if (change_data == true && ((*it).find("Reward:") != std::string::npos
-					|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos))
+				std::string nl = change_line((*it_item), *it, nbr);
+				if (nl != *it)
+					*it = nl;
+			}
+			if ((*it).find("    InventoryLocation: ") != std::string::npos && change_data == true)
+			{
+				nbr++;
+				if (nbr == 3)
 				{
-					std::string nl = change_line((*it_item), *it, nbr);
-					if (nl.size() > 2)
-					{
-						if (*it_bis == *it)
-							*it = nl;
-					}
-				}
-				if (nbr == 2 && (*it).find("Reward_middle:") != std::string::npos)
-				{
-					nbr = 0;
-					change_data = false;
-					overwrite(tmp, link);
+					nbr == 0;
 					break;
 				}
 			}
 			it_bis++;
 		}
 	}
+	overwrite(tmp, link);
 }
 
 void	file_laine(File tmp, std::vector<Item> all_item, std::string link)
@@ -439,7 +456,7 @@ void	file_laine(File tmp, std::vector<Item> all_item, std::string link)
 			if (nl != (*it))
 				*it = nl;
 		}
-		if (nbr == 3)
+		if (nbr == 2 && (*it).find("Reward_middle:") != std::string::npos)
 			nbr = 0;
 	}
 	overwrite(tmp, link);
@@ -453,7 +470,7 @@ void	change_file(std::vector<Item> all_item, std::string link)
 	input.open(link);
 	if (input.is_open() == false)
 	{
-		std::cout << "this file doesn't exist : " << link << std::endl;
+		// std::cout << "this file doesn't exist : " << link << std::endl;
 		return;
 	}
 	getline(input, content_file, '\0');

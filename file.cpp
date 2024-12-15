@@ -5,6 +5,18 @@ File::File(std::string all_file)
 	setAllLine(all_file);
 }
 
+File::File(File const &obj)
+{
+	if (this != &obj)
+		*this = obj;
+}
+
+File& File::operator=(const File& obj)
+{
+	this->_all_line = obj._all_line;
+	return (*this);
+}
+
 File::~File()
 {}
 

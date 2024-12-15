@@ -5,7 +5,7 @@ std::string select_pars_item(std::string old_name)
 	if (old_name == "Pomme dorée")
 		return ("PommeOr");
 	if (old_name == "Canne à sucre")
-		return ("Canne");
+		return ("CanneASucre");
 	if (old_name == "Carotte dorée")
 		return ("CarotteOr");
 	if (old_name == "Chêne Noir")
@@ -42,17 +42,29 @@ std::string select_pars_item(std::string old_name)
 		return ("ChampignonRouge");
 	if (old_name == "Brun")
 		return ("ChampignonBrun");
-	
+	if (old_name == "Poisson Clown")
+		return ("PoissonTropical");
+	if (old_name == "Compactée")
+		return ("PackedIce");
+	if (old_name == "Compactée")
+		return ("PackedIce");
+	if (old_name == "CobbleStone")
+		return ("Cobble");
+	if (old_name == "Poisson globe")
+		return ("Pufferfish");
 	return (old_name);
 }
 
 std::string change_name(std::string old_name)
 {
 	std::string new_name = old_name;
-
+	// std::cout << "before = " << old_name << std::endl;
 	new_name = select_pars_item(old_name);
 	if (new_name != old_name)
+	{
+		// std::cout << "after = " << new_name << std::endl;
 		return (new_name);
+	}
 
 	if (old_name.find(' ') == std::string::npos)
 		return (old_name);
@@ -70,6 +82,7 @@ std::string change_name(std::string old_name)
 		}
 		new_name = new_name + old_name;
 	}
+	// std::cout << "after = " << new_name << std::endl;
 	return (new_name);
 }
 
