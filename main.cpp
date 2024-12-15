@@ -98,7 +98,7 @@ void	print_all(std::vector<rank>& all_rank)
 	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
 	{
 		std::cout << "--------------------------------------------------------" << std::endl;
-		// std::cout << (*it_rank).getName() << std::endl;
+		std::cout << (*it_rank).getName() << std::endl;
 		for (std::vector<ItemType>::iterator it_class = (*it_rank).getType().begin(); it_class != (*it_rank).getType().end(); it_class++)
 		{
 			// std::cout << "**************************************************************" << std::endl;
@@ -348,12 +348,15 @@ std::string	select_defis_link(std::string name_rank)
 
 std::string change_line(Item item, std::string line, int &nbr)
 {
-	price select_price = item.getType()[3 - nbr];
+	price select_price = item.getType()[2 - nbr];
+
 	std::string price_unit_no_virg = ft_replace(item.getType()[0].getPrice());
-	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos)
-		line = LORE(select_price.getUnit(), select_price.getPrice());
+	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr != 2)
+		line = LORE(item.getType()[0].getPrice(), select_price.getPrice());
+	else if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr == 2)
+		line = LOREUN(item.getType()[0].getPrice());
 	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
-		line = LOREDC(item.getType()[nbr + 3].getPrice());
+		line = LOREDC(item.getType()[5 - nbr].getPrice());
 	else if (line.find("Reward:") != std::string::npos)
 		line = REWARD(price_unit_no_virg);
 	else if (line.find("Reward_middle") != std::string::npos)
@@ -372,47 +375,54 @@ void	overwrite(File file, std::string link)
 
 	for (std::vector<std::string>::iterator it = file.getAllLine().begin(); it != file.getAllLine().end(); it++)
 	{
-		output << *it;
+		output << *it << "\n";
 	}
 	output.close();
 }
 
-std::string change_item_name(std::string old_name_item)
-{
-
-}
-
-void	file_overwrite(File tmp, std::vector<Item> all_item, std::string link)
+void	file_overwrite(File tmp, std::vector<Item> all_item, std::string link, File temoin)
 {
 	bool change_data = false;
 
-	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end() ;it_item++)
+	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end();it_item++)
 	{
 		int nbr = 0;
-		std::string item = "  " + change_item_name((*all_item.begin()).getName());
+		change_data = false;
+		std::string item = "  " + (*all_item.begin()).getName();
+		std::vector<std::string>::iterator it_bis = temoin.getAllLine().begin();
 		for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
 		{
-			if ((*it).find(item) != std::string::npos)
+			if ((*it).find(item) != std::string::npos && *it == *it_bis && nbr == 0)
 				change_data = true;
+			if (*it != *it_bis && nbr == 0 && change_data == true)
+			{
+				change_data = false;
+				it_bis++;
+				continue;
+			}
 			if (change_data == true)
 			{
-				if (change_data == true && (*it).find("Reward:") != std::string::npos
-					|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos)
+				if (change_data == true && ((*it).find("Reward:") != std::string::npos
+					|| (*it).find("Reward_middle:") != std::string::npos || (*it).find("- 'lore:&") != std::string::npos))
 				{
 					std::string nl = change_line((*it_item), *it, nbr);
 					if (nl.size() > 2)
-						*it = nl;
+					{
+						if (*it_bis == *it)
+							*it = nl;
+					}
 				}
-				if (nbr == 3)
+				if (nbr == 2 && (*it).find("Reward_middle:") != std::string::npos)
 				{
 					nbr = 0;
 					change_data = false;
+					overwrite(tmp, link);
 					break;
 				}
 			}
+			it_bis++;
 		}
 	}
-	overwrite(tmp, link);
 }
 
 void	file_laine(File tmp, std::vector<Item> all_item, std::string link)
@@ -449,8 +459,9 @@ void	change_file(std::vector<Item> all_item, std::string link)
 	getline(input, content_file, '\0');
 	input.close();
 	File tmp(content_file);
+	File temoin(content_file);
 	if (all_item.begin()->getName() != "Laine")
-		file_overwrite(tmp, all_item, link);
+		file_overwrite(tmp, all_item, link, temoin);
 	else
 		file_laine(tmp, all_item, link);
 }
@@ -524,6 +535,6 @@ int main(int ac, char **av)
 	std::vector<std::string> all_data = parsing_items(tmp);
 	all_data = create_rank(all_rank, all_data);
 	parsing_file(all_rank, all_data);
-	print_all(all_rank);
-	// apply_new_data(all_rank);
+	// print_all(all_rank);
+	apply_new_data(all_rank);
 }

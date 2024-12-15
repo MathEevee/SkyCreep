@@ -98,6 +98,8 @@ void	rank::addOtherItem(std::string name_item)
 {
 	std::vector<ItemType>::iterator type_item = this->getType().end();
 	type_item--;
+	if (type_item->getName() == "Betterave")
+		name_item = ",GrainesBetterave";
 	Item newItem(name_item.substr(1));
 	type_item->getItemType().push_back(newItem);
 }

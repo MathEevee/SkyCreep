@@ -59,7 +59,10 @@
 
 /*in yml*/
 
-# define LORE(unitaire, res) "    - 'lore:&e ▪ &8&m" + unitaire + " &a " + res + " SkyPoints &8| &7x1'"
+# define LORE(unitaire, res) "    - 'lore:&e ▪ &8&m" + unitaire + "&a" + res + " SkyPoints &8| &7x1'"
+    // - 'lore:&e ▪ &a16,3 SkyPoints &8| &7x1'
+
+# define LOREUN(res) "    - 'lore:&e ▪ &a" + res + " SkyPoints &8| &7x1'"
 # define LOREDC(res) "    - 'lore:&7&o  (DC : " + res + " SP)'"
 # define REWARD(res) "    Reward: " + res
 # define REWARDMIDDLE(res) "    Reward_middle: " + res
