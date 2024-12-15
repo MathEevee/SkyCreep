@@ -6,7 +6,7 @@ shop:
 #    ITEMS    #
 ###############
 
-  Pommex3 SkyLegend:
+  Pommex3:
     MenuItem:
     - type:APPLE
     - name:&7Défi &8- &aPomme
@@ -17,7 +17,7 @@ shop:
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m47,0&a 141,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 487 296,0 SP)'
+    - 'lore:&7&o  (DC : 487 296,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -34,7 +34,7 @@ shop:
     - - type:APPLE
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 34.0*64
+    Reward_right: 9.4*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -46,7 +46,7 @@ shop:
     - type:PERMISSION
     - match:vente.triple.skypoints
     InventoryLocation: 1
-  Pommex2 SkyLegend:
+  Pommex2:
     MenuItem:
     - type:APPLE
     - name:&7Défi &8- &aPomme
@@ -57,7 +57,7 @@ shop:
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m47,0&a 94,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 324 864,0 SP)'
+    - 'lore:&7&o  (DC : 324 864,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -74,7 +74,7 @@ shop:
     - - type:APPLE
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 34.0*64
+    Reward_right: 9.4*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -86,17 +86,17 @@ shop:
     - type:PERMISSION
     - match:BossShop.RewardMultiplier.Money
     InventoryLocation: 1
-  Pomme SkyLegend:
+  Pomme:
     MenuItem:
     - type:APPLE
     - name:&7Défi &8- &aPomme
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a47,0 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aPomme'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a47,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 162 432,0 SP)'
+    - 'lore:&e ▪ &a9,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 32 486,4 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -106,23 +106,23 @@ shop:
     - - type:APPLE
       - amount:1
     RewardType: MONEY
-    Reward: 47.0
+    Reward: 9.4
     Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme)'
     PriceType_right: ITEM
     Price_right:
     - - type:APPLE
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 34.0*64
+    Reward_right: 9.4*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes)'
     PriceType_middle: ITEMALL
     Price_middle:
     - - type:APPLE
     RewardType_middle: MONEY
-    Reward_middle: 47.0
+    Reward_middle: 9.4
     Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes)'
     InventoryLocation: 1
-  PommeOrx3 SkyLegend:
+  PommeOrx3:
     MenuItem:
     - type:GOLDEN_APPLE
     - name:&7Défi &8- &aPomme dorée
@@ -132,8 +132,8 @@ shop:
     - 'lore:&e ▪ &aPomme dorée'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m5 012,5&a 15 037,5 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 51 969 600,0 SP)'
+    - 'lore:&e ▪ &8&m5 012,5&a 15 037,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 51 969 600,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -150,7 +150,7 @@ shop:
     - - type:GOLDEN_APPLE
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 3628.0*64
+    Reward_right: 1002.5*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes dorées)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -162,7 +162,7 @@ shop:
     - type:PERMISSION
     - match:vente.triple.skypoints
     InventoryLocation: 2
-  PommeOrx2 SkyLegend:
+  PommeOrx2:
     MenuItem:
     - type:GOLDEN_APPLE
     - name:&7Défi &8- &aPomme dorée
@@ -172,8 +172,8 @@ shop:
     - 'lore:&e ▪ &aPomme dorée'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m5 012,5&a 10 025,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 34 646 400,0 SP)'
+    - 'lore:&e ▪ &8&m5 012,5&a 10 025,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 34 646 400,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -190,7 +190,7 @@ shop:
     - - type:GOLDEN_APPLE
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 3628.0*64
+    Reward_right: 1002.5*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes dorées)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -202,18 +202,17 @@ shop:
     - type:PERMISSION
     - match:BossShop.RewardMultiplier.Money
     InventoryLocation: 2
-  PommeOr SkyLegend:
+  PommeOr:
     MenuItem:
     - type:GOLDEN_APPLE
-    - durability:0
     - name:&7Défi &8- &aPomme dorée
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a5 012,5 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aPomme dorée'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a5 012,5 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 17 323 200,0 SP)'
+    - 'lore:&e ▪ &a1 002,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 464 640,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -223,20 +222,20 @@ shop:
     - - type:GOLDEN_APPLE
       - amount:1
     RewardType: MONEY
-    Reward: 5012.5
+    Reward: 1002.5
     Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme dorée)'
     PriceType_right: ITEM
     Price_right:
     - - type:GOLDEN_APPLE
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 3628.0*64
+    Reward_right: 1002.5*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes dorées)'
     PriceType_middle: ITEMALL
     Price_middle:
     - - type:GOLDEN_APPLE
     RewardType_middle: MONEY
-    Reward_middle: 5012.5
+    Reward_middle: 1002.5
     Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes dorées)'
     InventoryLocation: 2
     

@@ -6,48 +6,6 @@ shop:
 #    ITEMS    #
 ###############
 
-  Citrouillex3 SkyLegend:
-    MenuItem:
-    - type:PUMPKIN
-    - enchantment:DAMAGE_ALL#1
-    - itemflag:HIDE_ENCHANTS
-    - name:&7Défi &8- &aCitrouille
-    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
-    - 'lore:'
-    - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &aCitrouille'
-    - 'lore:'
-    - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m249,2&a 747,6 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 2 583 705,6 SP)'
-    - 'lore:'
-    - 'lore:&a » Clic gauche &8| &7x1'
-    - 'lore:&e » Clic droit &8| &7x64'
-    - 'lore:&7 » Clic molette &8| &7tout'
-    PriceType: ITEM
-    Price:
-    - - type:PUMPKIN
-      - amount:1
-    RewardType: MONEY
-    Reward: 249.2
-    Message: '&a&l +%reward% SkyPoints &7&o(x1 citrouille)'
-    PriceType_right: ITEM
-    Price_right:
-    - - type:PUMPKIN
-      - amount:64
-    RewardType_right: MONEY
-    Reward_right: 30.2*64
-    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 citrouilles)'
-    PriceType_middle: ITEMALL
-    Price_middle:
-    - - type:PUMPKIN
-    RewardType_middle: MONEY
-    Reward_middle: 249.2
-    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
-    Condition:
-    - type:PERMISSION
-    - match:vente.triple.skypoints
-    InventoryLocation: 1
   Citrouillex2 SkyLegend:
     MenuItem:
     - type:PUMPKIN
@@ -60,8 +18,8 @@ shop:
     - 'lore:&e ▪ &aCitrouille'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m249,2&a 498,4 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 722 470,4 SP)'
+    - 'lore:&e ▪ &8&m249,2&a 747,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 583 705,6 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -98,11 +56,11 @@ shop:
     - name:&7Défi &8- &aCitrouille
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a249,2 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aCitrouille'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a249,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 861 235,2 SP)'
+    - 'lore:&e ▪ &a30,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 722 470,4 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -128,48 +86,6 @@ shop:
     Reward_middle: 249.2
     Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
     InventoryLocation: 1
-  TarteCitrouillex3 SkyLegend:
-    MenuItem:
-    - type:PUMPKIN_PIE
-    - enchantment:DAMAGE_ALL#1
-    - itemflag:HIDE_ENCHANTS
-    - name:&7Défi &8- &aTarte à la citrouille
-    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
-    - 'lore:'
-    - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &aTarte à la citrouille'
-    - 'lore:'
-    - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m1 354,5&a 4 063,5 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 14 043 456,0 SP)'
-    - 'lore:'
-    - 'lore:&a » Clic gauche &8| &7x1'
-    - 'lore:&e » Clic droit &8| &7x64'
-    - 'lore:&7 » Clic molette &8| &7tout'
-    PriceType: ITEM
-    Price:
-    - - type:PUMPKIN_PIE
-      - amount:1
-    RewardType: MONEY
-    Reward: 1354.5
-    Message: '&a&l +%reward% SkyPoints &7&o(x1 tarte à la citrouille)'
-    PriceType_right: ITEM
-    Price_right:
-    - - type:PUMPKIN_PIE
-      - amount:64
-    RewardType_right: MONEY
-    Reward_right: 52.6*64
-    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 tartes à la citrouille)'
-    PriceType_middle: ITEMALL
-    Price_middle:
-    - - type:PUMPKIN_PIE
-    RewardType_middle: MONEY
-    Reward_middle: 1354.5
-    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% tartes à la citrouille)'
-    Condition:
-    - type:PERMISSION
-    - match:vente.triple.skypoints
-    InventoryLocation: 2
   TarteCitrouillex2 SkyLegend:
     MenuItem:
     - type:PUMPKIN_PIE
@@ -182,8 +98,8 @@ shop:
     - 'lore:&e ▪ &aTarte à la citrouille'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m1 354,5&a 2 709,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 9 362 304,0 SP)'
+    - 'lore:&e ▪ &8&m1 354,5&a 4 063,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 14 043 456,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -220,11 +136,11 @@ shop:
     - name:&7Défi &8- &aTarte à la citrouille
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a1 354,5 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aTarte à la citrouille'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a1 354,5 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 4 681 152,0 SP)'
+    - 'lore:&e ▪ &a52,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 9 362 304,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'

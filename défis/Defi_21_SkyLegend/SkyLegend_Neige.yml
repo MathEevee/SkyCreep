@@ -6,7 +6,7 @@ shop:
 #    ITEMS    #
 ###############
 
-  Boulex2 SkyLegend:
+  Boulex3 SkyLegend:
     MenuItem:
     - type:SNOW_BALL
     - name:&7Défi &8- &aBoule de neige

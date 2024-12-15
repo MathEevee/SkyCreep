@@ -1,9 +1,26 @@
 #include "price.hpp"
 
-price::price(std::string unit, std::string  prix)
+std::string pars_price(std::string prix)
+{
+	std::string new_str;
+	for (std::string::iterator it = prix.begin(); it != prix.end(); it++)
+	{
+		if (*it != ',' && (((*it) < '0' || (*it) > '9')))
+		{
+			new_str = new_str + ' ';
+			it++;
+			it++;
+			continue;
+		}
+		new_str = new_str + *it;
+	}
+	return (new_str);
+}
+
+price::price(std::string unit, std::string prix)
 {
 	this->_unit = unit;
-	this->_prix = prix;
+	this->_prix = pars_price(prix);
 }
 
 price::price(std::string unit)

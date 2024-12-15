@@ -6,47 +6,7 @@ shop:
 #    ITEMS    #
 ###############
 
-  Cannex3 SkyLegend:
-    MenuItem:
-    - type:SUGAR_CANE
-    - name:&7Défi &8- &aCanne à sucre
-    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
-    - 'lore:'
-    - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &aCanne à sucre'
-    - 'lore:'
-    - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m2,3&a 4,6 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 15 897,6 SP)'
-    - 'lore:'
-    - 'lore:&a » Clic gauche &8| &7x1'
-    - 'lore:&e » Clic droit &8| &7x64'
-    - 'lore:&7 » Clic molette &8| &7tout'
-    PriceType: ITEM
-    Price:
-    - - type:SUGAR_CANE
-      - amount:1
-    RewardType: MONEY
-    Reward: 2.3
-    Message: '&a&l +%reward% SkyPoints &7&o(x1 canne à sucre)'
-    PriceType_right: ITEM
-    Price_right:
-    - - type:SUGAR_CANE
-      - amount:64
-    RewardType_right: MONEY
-    Reward_right: 2.3*64
-    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 cannes à sucre)'
-    PriceType_middle: ITEMALL
-    Price_middle:
-    - - type:SUGAR_CANE
-    RewardType_middle: MONEY
-    Reward_middle: 2.3
-    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% cannes à sucre)'
-    Condition:
-    - type:PERMISSION
-    - match:vente.triple.skypoints
-    InventoryLocation: 1
-  Cannex2 SkyLegend:
+  Cannex2:
     MenuItem:
     - type:SUGAR_CANE
     - name:&7Défi &8- &aCanne à sucre
@@ -86,7 +46,7 @@ shop:
     - type:PERMISSION
     - match:BossShop.RewardMultiplier.Money
     InventoryLocation: 1
-  Canne SkyLegend:
+  Canne:
     MenuItem:
     - type:SUGAR_CANE
     - name:&7Défi &8- &aCanne à sucre
@@ -122,47 +82,7 @@ shop:
     Reward_middle: 2.3
     Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% cannes à sucre)'
     InventoryLocation: 1
-  Livrex3 SkyLegend:
-    MenuItem:
-    - type:BOOK
-    - name:&7Défi &8- &aLivre
-    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
-    - 'lore:'
-    - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &aLivre'
-    - 'lore:'
-    - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m465,0&a 1 395,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 4 821 120,0 SP)'
-    - 'lore:'
-    - 'lore:&a » Clic gauche &8| &7x1'
-    - 'lore:&e » Clic droit &8| &7x64'
-    - 'lore:&7 » Clic molette &8| &7tout'
-    PriceType: ITEM
-    Price:
-    - - type:BOOK
-      - amount:1
-    RewardType: MONEY
-    Reward: 465.0
-    Message: '&a&l +%reward% SkyPoints &7&o(x1 livre)'
-    PriceType_right: ITEM
-    Price_right:
-    - - type:BOOK
-      - amount:64
-    RewardType_right: MONEY
-    Reward_right: 37.2*64
-    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 livres)'
-    PriceType_middle: ITEMALL
-    Price_middle:
-    - - type:BOOK
-    RewardType_middle: MONEY
-    Reward_middle: 465.0
-    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% livres)'
-    Condition:
-    - type:PERMISSION
-    - match:vente.triple.skypoints
-    InventoryLocation: 2
-  Livrex2 SkyLegend:
+  Livrex2:
     MenuItem:
     - type:BOOK
     - name:&7Défi &8- &aLivre
@@ -172,8 +92,8 @@ shop:
     - 'lore:&e ▪ &aLivre'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m465,0&a 930,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 3 214 080,0 SP)'
+    - 'lore:&e ▪ &8&m37,2&a 74,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 257 126,4 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -183,7 +103,7 @@ shop:
     - - type:BOOK
       - amount:1
     RewardType: MONEY
-    Reward: 465.0
+    Reward: 37.2
     Message: '&a&l +%reward% SkyPoints &7&o(x1 livre)'
     PriceType_right: ITEM
     Price_right:
@@ -196,23 +116,23 @@ shop:
     Price_middle:
     - - type:BOOK
     RewardType_middle: MONEY
-    Reward_middle: 465.0
+    Reward_middle: 37.2
     Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% livres)'
     Condition:
     - type:PERMISSION
     - match:BossShop.RewardMultiplier.Money
     InventoryLocation: 2
-  Livre SkyLegend:
+  Livre:
     MenuItem:
     - type:BOOK
     - name:&7Défi &8- &aLivre
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a465,0 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aLivre'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a465,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 607 040,0 SP)'
+    - 'lore:&e ▪ &a37,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 128 563,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -222,7 +142,7 @@ shop:
     - - type:BOOK
       - amount:1
     RewardType: MONEY
-    Reward: 465.0
+    Reward: 37.2
     Message: '&a&l +%reward% SkyPoints &7&o(x1 livre)'
     PriceType_right: ITEM
     Price_right:
@@ -235,7 +155,7 @@ shop:
     Price_middle:
     - - type:BOOK
     RewardType_middle: MONEY
-    Reward_middle: 465.0
+    Reward_middle: 37.2
     Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% livres)'
     InventoryLocation: 2
     
@@ -298,3 +218,4 @@ shop:
     - type:STAINED_GLASS_PANE
     - durability:7
     - name:&8
+    InventoryLocation: 18

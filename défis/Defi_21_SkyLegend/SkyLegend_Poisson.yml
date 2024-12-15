@@ -10,6 +10,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aMorue
     - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
     - 'lore:'
@@ -18,7 +20,7 @@ shop:
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m175,2&a 525,6 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 816 473,6 SP)'
+    - 'lore:&7&o  (DC : 1 816 473,6 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -37,7 +39,7 @@ shop:
       - durability:0
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 126.8*64
+    Reward_right: 43.8*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -54,6 +56,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aMorue
     - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
@@ -62,7 +66,7 @@ shop:
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m175,2&a 350,4 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 210 982,4 SP)'
+    - 'lore:&7&o  (DC : 1 210 982,4 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -81,7 +85,7 @@ shop:
       - durability:0
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 126.8*64
+    Reward_right: 43.8*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -98,14 +102,16 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aMorue
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a175,2 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aMorue'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a175,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 605 491,2 SP)'
+    - 'lore:&e ▪ &a43,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 816 473,6 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -124,7 +130,7 @@ shop:
       - durability:0
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 126.8*64
+    Reward_right: 43.8*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -138,6 +144,8 @@ shop:
     MenuItem:
     - type:COOKED_FISH
     - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aMorue cuite
     - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
     - 'lore:'
@@ -146,7 +154,7 @@ shop:
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m219,2&a 657,6 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 2 272 665,6 SP)'
+    - 'lore:&7&o  (DC : 2 272 665,6 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -165,7 +173,7 @@ shop:
       - durability:0
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 158.7*64
+    Reward_right: 54.8*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues cuites)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -182,6 +190,8 @@ shop:
     MenuItem:
     - type:COOKED_FISH
     - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aMorue cuite
     - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
@@ -190,7 +200,7 @@ shop:
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m219,2&a 438,4 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 515 110,4 SP)'
+    - 'lore:&7&o  (DC : 1 515 110,4 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -209,7 +219,7 @@ shop:
       - durability:0
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 158.7*64
+    Reward_right: 54.8*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues cuites)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -226,14 +236,16 @@ shop:
     MenuItem:
     - type:COOKED_FISH
     - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aMorue cuite
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a219,2 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aMorue cuite'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a219,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 757 555,2 SP)'
+    - 'lore:&e ▪ &a54,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 272 665,6 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -252,7 +264,7 @@ shop:
       - durability:0
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 158.7*64
+    Reward_right: 54.8*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues cuites)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -266,6 +278,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aSaumon
     - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
     - 'lore:'
@@ -273,8 +287,8 @@ shop:
     - 'lore:&e ▪ &aSaumon'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m646,4&a 1 939,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 6 701 875,2 SP)'
+    - 'lore:&e ▪ &8&m646,4&a 1 939,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 6 701 875,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -293,7 +307,7 @@ shop:
       - durability:1
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 467.9*64
+    Reward_right: 161.6*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -310,6 +324,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aSaumon
     - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
@@ -317,8 +333,8 @@ shop:
     - 'lore:&e ▪ &aSaumon'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m646,4&a 1 292,8 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 4 467 916,8 SP)'
+    - 'lore:&e ▪ &8&m646,4&a 1 292,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 467 916,8 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -337,7 +353,7 @@ shop:
       - durability:1
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 467.9*64
+    Reward_right: 161.6*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -354,14 +370,16 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aSaumon
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a646,4 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aSaumon'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a646,4 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 2 233 958,4 SP)'
+    - 'lore:&e ▪ &a161,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 6 701 875,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -380,7 +398,7 @@ shop:
       - durability:1
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 467.9*64
+    Reward_right: 161.6*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -394,6 +412,8 @@ shop:
     MenuItem:
     - type:COOKED_FISH
     - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aSaumon cuit
     - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
     - 'lore:'
@@ -401,8 +421,8 @@ shop:
     - 'lore:&e ▪ &aSaumon cuit'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m808,0&a 2 424,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 8 377 344,0 SP)'
+    - 'lore:&e ▪ &8&m808,0&a 2 424,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 8 377 344,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -421,7 +441,7 @@ shop:
       - durability:1
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 584.8*64
+    Reward_right: 202.0*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons cuits)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -438,6 +458,8 @@ shop:
     MenuItem:
     - type:COOKED_FISH
     - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aSaumon cuit
     - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
@@ -445,8 +467,8 @@ shop:
     - 'lore:&e ▪ &aSaumon cuit'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m808,0&a 1 616,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 5 584 896,0 SP)'
+    - 'lore:&e ▪ &8&m808,0&a 1 616,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 584 896,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -465,7 +487,7 @@ shop:
       - durability:1
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 584.8*64
+    Reward_right: 202.0*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons cuits)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -482,14 +504,16 @@ shop:
     MenuItem:
     - type:COOKED_FISH
     - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aSaumon cuit
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a808,0 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aSaumon cuit'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a808,0 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 2 792 448,0 SP)'
+    - 'lore:&e ▪ &a202,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 8 377 344,0 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -508,7 +532,7 @@ shop:
       - durability:1
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 584.8*64
+    Reward_right: 202.0*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons cuits)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -522,6 +546,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:3
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aPoisson globe
     - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
     - 'lore:'
@@ -529,8 +555,8 @@ shop:
     - 'lore:&e ▪ &aPoisson globe'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m2 078,4&a 6 235,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 21 548 851,2 SP)'
+    - 'lore:&e ▪ &8&m2 078,4&a 6 235,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 21 548 851,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -549,7 +575,7 @@ shop:
       - durability:3
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 1504.3*64
+    Reward_right: 519.6*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons globe)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -566,6 +592,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:3
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aPoisson globe
     - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
@@ -573,8 +601,8 @@ shop:
     - 'lore:&e ▪ &aPoisson globe'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m2 078,4&a 4 156,8 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 14 365 900,8 SP)'
+    - 'lore:&e ▪ &8&m2 078,4&a 4 156,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 14 365 900,8 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -593,7 +621,7 @@ shop:
       - durability:3
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 1504.3*64
+    Reward_right: 519.6*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons globe)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -610,14 +638,16 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:3
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aPoisson globe
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a2 078,4 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aPoisson globe'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a2 078,4 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 7 182 950,4 SP)'
+    - 'lore:&e ▪ &a519,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 21 548 851,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -636,7 +666,7 @@ shop:
       - durability:3
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 1504.3*64
+    Reward_right: 519.6*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons globe)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -650,6 +680,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aPoisson tropical
     - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
     - 'lore:'
@@ -657,8 +689,8 @@ shop:
     - 'lore:&e ▪ &aPoisson tropical'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m9 848,4&a 29 545,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 102 108 211,2 SP)'
+    - 'lore:&e ▪ &8&m9 848,4&a 29 545,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 102 108 211,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -677,7 +709,7 @@ shop:
       - durability:2
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 7128.2*64
+    Reward_right: 2462.1*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons tropicaux)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -694,6 +726,8 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aPoisson tropical
     - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
@@ -701,8 +735,8 @@ shop:
     - 'lore:&e ▪ &aPoisson tropical'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m9 848,4&a 19 696,8 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 68 072 140,8 SP)'
+    - 'lore:&e ▪ &8&m9 848,4&a 19 696,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 68 072 140,8 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -721,7 +755,7 @@ shop:
       - durability:2
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 7128.2*64
+    Reward_right: 2462.1*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons tropicaux)'
     PriceType_middle: ITEMALL
     Price_middle:
@@ -738,14 +772,16 @@ shop:
     MenuItem:
     - type:RAW_FISH
     - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
     - name:&7Défi &8- &aPoisson tropical
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a9 848,4 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aPoisson tropical'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a9 848,4 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 34 036 070,4 SP)'
+    - 'lore:&e ▪ &a2 462,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 102 108 211,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -764,7 +800,7 @@ shop:
       - durability:2
       - amount:64
     RewardType_right: MONEY
-    Reward_right: 7128.2*64
+    Reward_right: 2462.1*64
     Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons tropicaux)'
     PriceType_middle: ITEMALL
     Price_middle:

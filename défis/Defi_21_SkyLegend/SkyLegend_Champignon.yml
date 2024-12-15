@@ -6,58 +6,18 @@ shop:
 #    ITEMS    #
 ###############
 
-  ChampignonRougex3 SkyLegend:
+  ChampignonRougex2:
     MenuItem:
     - type:HUGE_MUSHROOM_2
     - name:&7Défi &8- &aChampignon rouge
-    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
     - 'lore:&eRessource requise :'
     - 'lore:&e ▪ &aChampignon rouge'
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m309,6&a 928,8 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 3 209 932,8 SP)'
-    - 'lore:'
-    - 'lore:&a » Clic gauche &8| &7x1'
-    - 'lore:&e » Clic droit &8| &7x64'
-    - 'lore:&7 » Clic molette &8| &7tout'
-    PriceType: ITEM
-    Price:
-    - - type:HUGE_MUSHROOM_2
-      - amount:1
-    RewardType: MONEY
-    Reward: 309.6
-    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de champignon rouge)'
-    PriceType_right: ITEM
-    Price_right:
-    - - type:HUGE_MUSHROOM_2
-      - amount:64
-    RewardType_right: MONEY
-    Reward_right: 51.6*64
-    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de champignon rouges)'
-    PriceType_middle: ITEMALL
-    Price_middle:
-    - - type:HUGE_MUSHROOM_2
-    RewardType_middle: MONEY
-    Reward_middle: 309.6
-    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de champignon rouges)'
-    Condition:
-    - type:PERMISSION
-    - match:vente.triple.skypoints
-    InventoryLocation: 1
-  ChampignonRougex2 SkyLegend:
-    MenuItem:
-    - type:HUGE_MUSHROOM_2
-    - name:&7Défi &8- &aChampignon rouge
-    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
-    - 'lore:'
-    - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &aChampignon rouge'
-    - 'lore:'
-    - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m309,6&a 619,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 2 139 955,2 SP)'
+    - 'lore:&7&o  (DC : 3 209 932,8 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -86,17 +46,17 @@ shop:
     - type:PERMISSION
     - match:BossShop.RewardMultiplier.Money
     InventoryLocation: 1
-  ChampignonRouge SkyLegend:
+  ChampignonRouge:
     MenuItem:
     - type:HUGE_MUSHROOM_2
     - name:&7Défi &8- &aChampignon rouge
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a309,6 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aChampignon rouge'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a309,6 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 069 977,6 SP)'
+    - 'lore:&e ▪ &a51,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 139 955,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -122,58 +82,18 @@ shop:
     Reward_middle: 309.6
     Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de champignon rouges)'
     InventoryLocation: 1
-  ChampignonBrunx3 SkyLegend:
+  ChampignonBrunx2:
     MenuItem:
     - type:HUGE_MUSHROOM_1
     - name:&7Défi &8- &aChampignon brun
-    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
     - 'lore:'
     - 'lore:&eRessource requise :'
     - 'lore:&e ▪ &aChampignon brun'
     - 'lore:'
     - 'lore:&eRécompenses :'
     - 'lore:&e ▪ &8&m159,6&a 478,8 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 654 732,8 SP)'
-    - 'lore:'
-    - 'lore:&a » Clic gauche &8| &7x1'
-    - 'lore:&e » Clic droit &8| &7x64'
-    - 'lore:&7 » Clic molette &8| &7tout'
-    PriceType: ITEM
-    Price:
-    - - type:HUGE_MUSHROOM_1
-      - amount:1
-    RewardType: MONEY
-    Reward: 159.6
-    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de champignon brun)'
-    PriceType_right: ITEM
-    Price_right:
-    - - type:HUGE_MUSHROOM_1
-      - amount:64
-    RewardType_right: MONEY
-    Reward_right: 26.6*64
-    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de champignon bruns)'
-    PriceType_middle: ITEMALL
-    Price_middle:
-    - - type:HUGE_MUSHROOM_1
-    RewardType_middle: MONEY
-    Reward_middle: 159.6
-    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de champignon bruns)'
-    Condition:
-    - type:PERMISSION
-    - match:vente.triple.skypoints
-    InventoryLocation: 2
-  ChampignonBrunx2 SkyLegend:
-    MenuItem:
-    - type:HUGE_MUSHROOM_1
-    - name:&7Défi &8- &aChampignon brun
-    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
-    - 'lore:'
-    - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &aChampignon brun'
-    - 'lore:'
-    - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &8&m159,6&a 319,2 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 1 103 155,2 SP)'
+    - 'lore:&7&o  (DC : 1 654 732,8 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
@@ -202,17 +122,17 @@ shop:
     - type:PERMISSION
     - match:BossShop.RewardMultiplier.Money
     InventoryLocation: 2
-  ChampignonBrun SkyLegend:
+  ChampignonBrun:
     MenuItem:
     - type:HUGE_MUSHROOM_1
     - name:&7Défi &8- &aChampignon brun
     - 'lore:'
     - 'lore:&eRessource requise :'
-    - 'lore:&e ▪ &a159,6 SkyPoints &8| &7x1'
+    - 'lore:&e ▪ &aChampignon brun'
     - 'lore:'
     - 'lore:&eRécompenses :'
-    - 'lore:&e ▪ &a159,6 SkyPoints &8| &7x1'
-    - 'lore:&7&o  (DC : 551 577,6 SP)'
+    - 'lore:&e ▪ &a26,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 103 155,2 SP)'
     - 'lore:'
     - 'lore:&a » Clic gauche &8| &7x1'
     - 'lore:&e » Clic droit &8| &7x64'
