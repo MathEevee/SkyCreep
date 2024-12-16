@@ -479,11 +479,43 @@ bool	parsing_line_for_item(std::string line, Item curr_item, int &nbr, bool chan
 	return (false);
 }
 
-std::string new_line(std::string line, int nbr, Item item)
+std::string new_line(std::string line, int &nbr, Item item)
 {
 	price select_price = item.getType()[2 - nbr];
 
 	std::string price_unit_no_virg = ft_replace(item.getType()[0].getPrice());
+
+
+	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr != 2)
+		line = LORE(item.getType()[0].getPrice(), select_price.getPrice());
+
+	else if (line.find("- 'lore:&e ▪ &a") != std::string::npos && nbr == 2)
+		line = LOREUN(item.getType()[0].getPrice());
+
+	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
+		line = LOREDC(item.getType()[5 - nbr].getPrice());
+
+	else if (line.find("Reward:") != std::string::npos)
+		line = REWARD(price_unit_no_virg);
+
+	else if (line.find("    Reward_right: ") != std::string::npos)
+		line = REWARD_RIGHT(price_unit_no_virg);
+
+	else if (line.find("    Reward_middle:") != std::string::npos)
+	{
+		line = REWARDMIDDLE(price_unit_no_virg);
+	}
+	std::cout << nbr << std::endl;
+	std::cout << line << std::endl;
+	return (line);
+}
+
+std::string new_line_laine(std::string line, int &nbr, Item item)
+{
+	price select_price = item.getType()[2 - nbr];
+
+	std::string price_unit_no_virg = ft_replace(item.getType()[0].getPrice());
+
 
 	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr != 2)
 		line = LORE(item.getType()[0].getPrice(), select_price.getPrice());
@@ -498,8 +530,12 @@ std::string new_line(std::string line, int nbr, Item item)
 		line = REWARD(price_unit_no_virg);
 
 	else if (line.find("    Reward_middle:") != std::string::npos)
+	{
 		line = REWARDMIDDLE(price_unit_no_virg);
-
+		nbr++;
+	}
+	std::cout << nbr << std::endl;
+	std::cout << line << std::endl;
 	return (line);
 }
 
@@ -512,24 +548,21 @@ void	file_laine(std::vector<Item> all_item, std::string link)
 	infile.close();
 	File tmp(content_file);
 	int nbr = 0;
+	Item laine(*(all_item).begin());
 	for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
 	{
-		if ((*it).find("    InventoryLocation: ") != std::string::npos)
-		{
-			nbr++;
-			if (nbr == 2)
-				nbr = 0;
-		}
-		*it = new_line(*it, nbr, (*all_item.begin()));
+		*it = new_line_laine(*it, nbr, laine);
+		if (nbr == 3)
+			nbr = 0;
 	}
 	overwrite(tmp, link);
-	//check with menu item and save x3 ou x2 ou rien
 }
 
 void	file_overwrite(std::vector<Item> all_item, std::string link)
 {
 	bool change_line = false;
 
+	std::cout << link << std::endl;
 	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end(); it_item++)
 	{
 		std::string content_file;
@@ -544,15 +577,18 @@ void	file_overwrite(std::vector<Item> all_item, std::string link)
 			change_line = parsing_line_for_item(*it, *it_item, nbr, change_line);
 			if (change_line == true)
 			{
-				if ((*it).find("    InventoryLocation: ") != std::string::npos)
-				{
-					nbr++;
-					if (nbr == 2)
-						nbr = -1;
-
-				}
 				if (nbr != -1)
+				{
 					*it = new_line(*it, nbr, *it_item);
+					std::cout << *it << std::endl;
+				}
+				if ((*it).find("    InventoryLocation: ") != std::string::npos && nbr != -1)
+					nbr++;
+				if (nbr == 3)
+				{
+					change_line = false;
+					nbr = -1;
+				}
 			}
 		}
 		overwrite(tmp, link);

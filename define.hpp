@@ -66,4 +66,6 @@
 # define REWARD(res) "    Reward: " + res
 # define REWARDMIDDLE(res) "    Reward_middle: " + res
 
+# define REWARD_RIGHT(res) "    Reward_right: " + res + "*64"
+
 #endif
