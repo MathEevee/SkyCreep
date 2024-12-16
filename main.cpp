@@ -489,7 +489,7 @@ std::string new_line(std::string line, int &nbr, Item item)
 	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr != 2)
 		line = LORE(item.getType()[0].getPrice(), select_price.getPrice());
 
-	else if (line.find("- 'lore:&e ▪ &a") != std::string::npos && nbr == 2)
+	else if (line.find("- 'lore:&e ▪ &a") != std::string::npos && nbr == 2 && line.find(" SkyPoints &8| &7x1'") != std::string::npos)
 		line = LOREUN(item.getType()[0].getPrice());
 
 	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
@@ -520,7 +520,7 @@ std::string new_line_laine(std::string line, int &nbr, Item item)
 	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr != 2)
 		line = LORE(item.getType()[0].getPrice(), select_price.getPrice());
 
-	else if (line.find("- 'lore:&e ▪ &a") != std::string::npos && nbr == 2)
+	else if (line.find("- 'lore:&e ▪ &a") != std::string::npos && nbr == 2 && line.find(" SkyPoints &8| &7x1'") != std::string::npos)
 		line = LOREUN(item.getType()[0].getPrice());
 
 	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
@@ -529,13 +529,14 @@ std::string new_line_laine(std::string line, int &nbr, Item item)
 	else if (line.find("Reward:") != std::string::npos)
 		line = REWARD(price_unit_no_virg);
 
+	else if (line.find("    Reward_right: ") != std::string::npos)
+		line = REWARD_RIGHT(price_unit_no_virg);
+
 	else if (line.find("    Reward_middle:") != std::string::npos)
 	{
 		line = REWARDMIDDLE(price_unit_no_virg);
 		nbr++;
 	}
-	std::cout << nbr << std::endl;
-	std::cout << line << std::endl;
 	return (line);
 }
 
@@ -562,7 +563,6 @@ void	file_overwrite(std::vector<Item> all_item, std::string link)
 {
 	bool change_line = false;
 
-	std::cout << link << std::endl;
 	for (std::vector<Item>::iterator it_item = all_item.begin(); it_item != all_item.end(); it_item++)
 	{
 		std::string content_file;
