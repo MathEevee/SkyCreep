@@ -171,7 +171,6 @@ void	create_item(std::vector<rank> &all_rank, std::vector<std::string> all_data)
 	{
 		if (((*it).size()) > 1)
 		{
-			std::cout << new_item << std::endl;
 			(*it_rank).addOtherItem(new_item);
 			(*it_rank).addOtherUnit(*it, unit);
 			it++;
@@ -465,14 +464,13 @@ void	overwrite(File file, std::string link)
 	output.close();
 }
 
-bool	parsing_line_for_item(std::string line, Item curr_item, std::vector<Item> all_item, int &nbr, bool change_line)
+bool	parsing_line_for_item(std::string line, Item curr_item, int &nbr, bool change_line)
 {
 	std::string item_name1 = "  " + curr_item.getName() + ' ';
 	std::string item_name2 = "  " + curr_item.getName() + 'x';
 
 	if ((line.find(item_name1) != std::string::npos || line.find(item_name2) != std::string::npos) && nbr == -1)
 	{
-		std::cout << line << std::endl;
 		nbr = 0;
 		return (true);
 	}
@@ -484,27 +482,24 @@ bool	parsing_line_for_item(std::string line, Item curr_item, std::vector<Item> a
 std::string new_line(std::string line, int nbr, Item item)
 {
 	price select_price = item.getType()[2 - nbr];
-	std::string tmp = line;
 
 	std::string price_unit_no_virg = ft_replace(item.getType()[0].getPrice());
 
 	if (line.find("- 'lore:&e ▪ &8&m") != std::string::npos && nbr != 2)
-		tmp = LORE(item.getType()[0].getPrice(), select_price.getPrice());
+		line = LORE(item.getType()[0].getPrice(), select_price.getPrice());
 
 	else if (line.find("- 'lore:&e ▪ &a") != std::string::npos && nbr == 2)
-		tmp = LOREUN(item.getType()[0].getPrice());
+		line = LOREUN(item.getType()[0].getPrice());
 
 	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
-		tmp = LOREDC(item.getType()[5 - nbr].getPrice());
+		line = LOREDC(item.getType()[5 - nbr].getPrice());
 
 	else if (line.find("Reward:") != std::string::npos)
-		tmp = REWARD(price_unit_no_virg);
+		line = REWARD(price_unit_no_virg);
 
 	else if (line.find("    Reward_middle:") != std::string::npos)
-		tmp = REWARDMIDDLE(price_unit_no_virg);
+		line = REWARDMIDDLE(price_unit_no_virg);
 
-	if (tmp != line)
-		std::cout << tmp << std::endl;
 	return (line);
 }
 
@@ -544,15 +539,13 @@ void	file_overwrite(std::vector<Item> all_item, std::string link)
 		infile.close();
 		File tmp(content_file);
 		int nbr = -1;
-		std::cout << link << std::endl;
 		for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
 		{
-			change_line = parsing_line_for_item(*it, *it_item, all_item, nbr, change_line);
+			change_line = parsing_line_for_item(*it, *it_item, nbr, change_line);
 			if (change_line == true)
 			{
 				if ((*it).find("    InventoryLocation: ") != std::string::npos)
 				{
-					std::cout << nbr << std::endl;
 					nbr++;
 					if (nbr == 2)
 						nbr = -1;
