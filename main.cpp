@@ -401,7 +401,7 @@ std::string new_line(std::string line, int &nbr, Item item)
 	return (line);
 }
 
-std::string new_line_laine(std::string line, int &nbr, Item item)
+std::string new_line_laine(std::string line, int &nbr, Item item, int &nbr_rewards)
 {
 	price select_price = item.getType()[2 - nbr];
 
@@ -417,8 +417,11 @@ std::string new_line_laine(std::string line, int &nbr, Item item)
 	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
 		line = LOREDC(item.getType()[5 - nbr].getPrice());
 
-	else if (line.find("Reward:") != std::string::npos)
+	else if (line.find("Reward:") != std::string::npos && nbr_rewards != 48)
+	{
 		line = REWARD(price_unit_no_virg);
+		nbr_rewards++;
+	}
 
 	else if (line.find("    Reward_right: ") != std::string::npos)
 		line = REWARD_RIGHT(price_unit_no_virg);
@@ -440,10 +443,11 @@ void	file_laine(std::vector<Item> all_item, std::string link)
 	infile.close();
 	File tmp(content_file);
 	int nbr = 0;
+	int nbr_rewards = 0;
 	Item laine(*(all_item).begin());
 	for (std::vector<std::string>::iterator it = tmp.getAllLine().begin(); it != tmp.getAllLine().end(); it++)
 	{
-		*it = new_line_laine(*it, nbr, laine);
+		*it = new_line_laine(*it, nbr, laine, nbr_rewards);
 		if (nbr == 3)
 			nbr = 0;
 	}
