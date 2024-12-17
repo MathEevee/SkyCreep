@@ -98,8 +98,18 @@ std::string select_pars_item(std::string old_name)
 		return ("EnderPearl");
 	if (old_name == "Block Verrue Nether")
 		return ("BlocVerrues");
-	if (old_name == "Monolithe de Verrues")
-		return ("MonolitheVerrues");
+	if (old_name == "Monolithe de carotte")
+		return ("MonolitheCarotte");
+	if (old_name == "Monolithe de blé")
+		return ("MonolitheBle");
+	if (old_name == "Monolithe de Patate")
+		return ("MonolithePatate");
+	if (old_name == "Monolithe de Pastèque")
+		return ("MonolitheMelon");
+	if (old_name == "Monolithe de Betterave")
+		return ("MonolitheBetterave");
+	if (old_name == "Monolithe de Citrouille")
+		return ("MonolitheCitrouille");
 	return (old_name);
 }
 
