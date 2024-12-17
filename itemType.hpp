@@ -26,6 +26,4 @@ class ItemType
 		std::vector<Item>&	getItemType(void);
 };
 
-// std::ostream	&operator<<(std::ostream& os, std::vector<Item>& obj);
-
 #endif

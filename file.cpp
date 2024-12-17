@@ -20,9 +20,6 @@ File& File::operator=(const File& obj)
 File::~File()
 {}
 
-std::string	File::getLine(void)
-{}
-
 std::vector<std::string>&	File::getAllLine(void)
 {
 	return (this->_all_line);

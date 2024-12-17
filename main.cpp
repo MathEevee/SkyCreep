@@ -274,12 +274,13 @@ void reverse(char s[])
 void itoa(int n, char s[])
 {
     int i, sign;
-    if ((sign = n) < 0)  /* record sign */
-        n = -n;          /* make n positive */
+    if ((sign = n) < 0)
+        n = -n;
     i = 0;
-    do {       /* generate digits in reverse order */
-        s[i++] = n % 10 + '0';   /* get next digit */
-    } while ((n /= 10) > 0);     /* delete it */
+    do
+	{
+        s[i++] = n % 10 + '0';
+    } while ((n /= 10) > 0);
     if (sign < 0)
         s[i++] = '-';
     s[i] = '\0';
@@ -527,7 +528,6 @@ void	create_all_link(std::vector<ItemType> all_class, std::string rank_name)
 	for (std::vector<ItemType>::iterator it_class = all_class.begin(); it_class != all_class.end(); it_class++)
 	{
 		parse_link_file((*it_class).getItemType(), (*it_class).getName(), rank_name);
-		// parse_link_file((all_class.begin())->getItemType(), ((all_class.begin()))->getName(), rank_name);
 	}
 }
 
@@ -538,7 +538,6 @@ void	apply_new_data(std::vector<rank> &all_rank)
 	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
 	{
 		create_all_link((*it_rank).getType(), (*it_rank).getName());
-		// create_all_link(all_rank.begin()->getType(), (all_rank.begin())->getName());
 	}
 }
 

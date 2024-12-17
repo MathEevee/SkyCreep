@@ -40,7 +40,4 @@ class rank
 		std::vector<ItemType>&	getType(void);
 };
 
-
-// std::ostream	&operator<<(std::ostream& os, std::vector<rank>& obj);
-
 #endif

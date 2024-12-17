@@ -180,12 +180,3 @@ std::vector<price>&	Item::getType(void)
 const std::vector<price>& Item::getType() const {
     return this->_price;
 }
-
-// std::ostream	&operator<<(std::ostream& os, std::vector<price>& obj)
-// {
-// 	for (std::vector<price>::iterator it = obj.begin(); it != obj.end(); it++)
-// 	{
-// 		os << (*it).getType() << std::endl;
-// 	}
-// 	return (os);
-// }

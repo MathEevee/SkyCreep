@@ -16,7 +16,6 @@ class File
 
 		File& operator=(const File& obj);
 
-		std::string					getLine(void);
 		std::vector<std::string>&	getAllLine(void);
 
 		void	setAllLine(std::string file);

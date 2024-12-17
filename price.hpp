@@ -19,7 +19,4 @@ class price
 		std::string	getUnit(void);
 };
 
-// std::ostream	&operator<<(std::ostream& os, std::vector<price>& obj);
-
-
 #endif

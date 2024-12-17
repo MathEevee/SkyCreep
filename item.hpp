@@ -36,6 +36,4 @@ class Item
 
 };
 
-// std::ostream	&operator<<(std::ostream& os, std::vector<price>& obj);
-
 #endif

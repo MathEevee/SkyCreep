@@ -179,18 +179,3 @@ std::string	rank::getName(void)
 {
 	return (this->_name_rank);
 }
-
-// std::ostream	&operator<<(std::ostream& os, std::vector<rank>& obj)
-// {
-// 	for (std::vector<rank>::iterator it = obj.begin(); it != obj.end(); it++)
-// 	{
-// 		os << "----------------------------------" << std::endl;
-// 		os << "Rank : " << (*it).getName() << ":\n";
-// 		os << "ItemType :" << (*it).getType() << ":\n";
-// 		os << "----------------------------------" << std::endl;
-
-// 	}
-// 	return (os);
-// }
-
-
