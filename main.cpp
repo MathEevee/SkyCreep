@@ -390,7 +390,7 @@ std::string new_line(std::string line, int &nbr, Item item)
 	else if (line.find("- 'lore:&7&o  (DC : ") != std::string::npos)
 		line = LOREDC(item.getType()[5 - nbr].getPrice());
 
-	else if (line.find("Reward:") != std::string::npos)
+	else if (line.find("Reward:") != std::string::npos && nbr != -1 && nbr != 3)
 		line = REWARD(price_unit_no_virg);
 
 	else if (line.find("    Reward_right: ") != std::string::npos)
@@ -428,8 +428,8 @@ std::string new_line_laine(std::string line, int &nbr, Item item, int &nbr_rewar
 
 	else if (line.find("    Reward_middle:") != std::string::npos)
 	{
-		line = REWARDMIDDLE(price_unit_no_virg);
 		nbr++;
+		line = REWARDMIDDLE(price_unit_no_virg);
 	}
 	return (line);
 }

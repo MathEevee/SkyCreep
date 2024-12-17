@@ -28,12 +28,13 @@ std::vector<std::string>&	File::getAllLine(void)
 void	File::setAllLine(std::string file)
 {
 	std::string line;
-	while (file.find('\n') != std::string::npos)
+	do 
 	{
 		line = file.substr(0, file.find('\n'));
 		file = file.substr(file.find('\n') + 1);
 		this->getAllLine().push_back(line);
-	}
+	}while (file.find('\n') != std::string::npos);
 	line = file.substr(0, file.find("\n"));
 	file = file.substr(file.find('\n') + 1);
+	this->getAllLine().push_back(line);
 }
