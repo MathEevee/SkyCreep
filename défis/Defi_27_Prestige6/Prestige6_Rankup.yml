@@ -1,0 +1,59 @@
+ShopName: Prestige6Rankup
+DisplayName: '&7Défi &8- &aAccès au rang supérieur'
+FillerItem:
+- type:STAINED_GLASS_PANE
+- durability:7
+- name:&8
+shop:
+  Valider Rankup Prestige6 Prestige2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:5
+    - 'name:&7Défi &8- &aAccès au rang supérieur &7(&e&l✩1&7)'
+    - 'lore:'
+    - 'lore:&eDescription :'
+    - 'lore:&7 Passez au rang supérieur et débloquez'
+    - 'lore:&7 de nouveaux défis et une rentabilité plus'
+    - 'lore:&7 intéressante &8(&a2%&8) &7ainsi que quelques'
+    - 'lore:&7 récompenses pour vous aider.'
+    - 'lore:'
+    - 'lore:&eCoût du rang : &b&l&n10 000 000 000 SKYPOINTS'
+    - 'lore:&eNiveau île requis : &b&l&n1 000 000'
+    - 'lore:'
+    - 'lore:&eRécompense :'
+    - 'lore:&e ▪ &aBackpack de 36 emplacements'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour passer au rang supérieur.'
+    Condition:
+    - type:money
+    - over:9999999999
+    - type:placeholdernumber
+    - '%askyblock_level%:over:999999'
+    RewardType: COMMAND
+    Reward:
+    - lp user %player% promote skycreep skycreep
+    - bc &6%player% &adébloque le niveau &f&l[&e&l✩2&f&l] &a!
+    - tab player %player% tabsuffix &e ✩2
+    - bs open Prestige2 %player%
+    - mail send achent %player% a rankup Prestige6 %server_time_dd.MM.yyyy-HH.mm.ss%
+    PriceType: MONEY
+    Price: 10000000000
+    InventoryLocation: 12
+  Annuler Rankup Prestige2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:14
+    - 'name:&7Défi &8- &cAnnuler le passage de grade'
+    - 'lore:&e'
+    - 'lore:&eDescription:'
+    - 'lore:&7  Annulez le passage au grade suivant.'
+    - 'lore:&7'
+    - 'lore:&7&oCliquez ici pour annuler le passage de grade.'
+    RewardType: close
+    InventoryLocation: 16
+  Rien_27:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - 'name:&7'
+    InventoryLocation: 27

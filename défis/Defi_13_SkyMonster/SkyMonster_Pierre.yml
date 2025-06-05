@@ -1,0 +1,977 @@
+ShopName: SkyMonster_Pierre
+DisplayName: '&8➣ Pierre du SkyMonster'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Cobblex3 SkyMonster:
+    MenuItem:
+    - type:COBBLESTONE
+    - name:&7Défi &8- &aBloc de pierres
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de pierres'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m34,6&a 103,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 358 732,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COBBLESTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 34.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de pierres)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COBBLESTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 34.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de pierres)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COBBLESTONE
+    RewardType_middle: MONEY
+    Reward_middle: 34.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de pierres)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Cobblex2 SkyMonster:
+    MenuItem:
+    - type:COBBLESTONE
+    - name:&7Défi &8- &aBloc de pierres
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de pierres'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m34,6&a 69,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 239 155,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COBBLESTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 34.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de pierres)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COBBLESTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 34.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de pierres)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COBBLESTONE
+    RewardType_middle: MONEY
+    Reward_middle: 34.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de pierres)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Cobble SkyMonster:
+    MenuItem:
+    - type:COBBLESTONE
+    - name:&7Défi &8- &aBloc de pierres
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de pierres'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a34,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 119 577,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COBBLESTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 34.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de pierres)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COBBLESTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 34.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de pierres)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COBBLESTONE
+    RewardType_middle: MONEY
+    Reward_middle: 34.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de pierres)'
+    InventoryLocation: 1
+  CobbleMoussuex3 SkyMonster:
+    MenuItem:
+    - type:MOSSY_COBBLESTONE
+    - name:&7Défi &8- &aBloc de pierres moussues
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de pierre moussues'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m136,5&a 409,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 415 232,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:MOSSY_COBBLESTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 136.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de pierre moussues)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:MOSSY_COBBLESTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 136.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de pierres moussues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:MOSSY_COBBLESTONE
+    RewardType_middle: MONEY
+    Reward_middle: 136.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de pierres moussues)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  CobbleMoussuex2 SkyMonster:
+    MenuItem:
+    - type:MOSSY_COBBLESTONE
+    - name:&7Défi &8- &aBloc de pierres moussues
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de pierre moussues'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m136,5&a 273,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 943 488,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:MOSSY_COBBLESTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 136.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de pierre moussues)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:MOSSY_COBBLESTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 136.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de pierres moussues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:MOSSY_COBBLESTONE
+    RewardType_middle: MONEY
+    Reward_middle: 136.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de pierres moussues)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  CobbleMoussue SkyMonster:
+    MenuItem:
+    - type:MOSSY_COBBLESTONE
+    - name:&7Défi &8- &aBloc de pierres moussues
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de pierres moussues'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a136,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 471 744,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:MOSSY_COBBLESTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 136.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de pierres moussues)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:MOSSY_COBBLESTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 136.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de pierres moussues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:MOSSY_COBBLESTONE
+    RewardType_middle: MONEY
+    Reward_middle: 136.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de pierres moussues)'
+    InventoryLocation: 2
+  Stonex3 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:0
+    - name:&7Défi &8- &aBloc de roche
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de roche'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m40,8&a 122,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 423 014,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 40.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de roche)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 40.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de roche)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 40.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de roche)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  Stonex2 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:0
+    - name:&7Défi &8- &aBloc de roche
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de roche'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m40,8&a 81,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 282 009,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 40.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de roche)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 40.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de roche)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 40.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de roche)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  Stone SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:0
+    - name:&7Défi &8- &aBloc de roche
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de roche'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a40,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 141 004,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 40.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de roche)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 40.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de roche)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 40.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de roche)'
+    InventoryLocation: 3
+  Granitex3 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:1
+    - name:&7Défi &8- &aBloc de granite
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de granite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m54,8&a 164,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 568 166,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de granite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de granite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de granite)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 4
+  Granitex2 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:1
+    - name:&7Défi &8- &aBloc de granite
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de granite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m54,8&a 109,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 378 777,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de granite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de granite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de granite)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 4
+  Granite SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:1
+    - name:&7Défi &8- &aBloc de granite
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de granite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a54,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 189 388,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de granite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de granite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de granite)'
+    InventoryLocation: 4
+  Dioritex3 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:3
+    - name:&7Défi &8- &aBloc de diorite
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de diorite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m54,8&a 164,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 568 166,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de diorite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de diorite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de diorite)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 5
+  Dioritex2 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:3
+    - name:&7Défi &8- &aBloc de diorite
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de diorite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m54,8&a 109,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 378 777,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de diorite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de diorite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de diorite)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 5
+  Diorite SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:3
+    - name:&7Défi &8- &aBloc de diorite
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de diorite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a54,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 189 388,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de diorite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de diorite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de diorite)'
+    InventoryLocation: 5
+  Andesitex3 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:5
+    - 'name:&7Défi &8- &aBloc d''andésite'
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc d''andésite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m54,8&a 164,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 568 166,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:5
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc d''andésite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:5
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs d''andésite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:5
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs d''andésite)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 6
+  Andesitex2 SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:5
+    - 'name:&7Défi &8- &aBloc d''andésite'
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc d''andésite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m54,8&a 109,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 378 777,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE   
+      - durability:5
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc d''andésite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:5
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs d''andésite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:5
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs d''andésite)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 6
+  Andesite SkyMonster:
+    MenuItem:
+    - type:STONE
+    - durability:5
+    - 'name:&7Défi &8- &aBloc d''andésite'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc d''andésite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a54,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 189 388,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:STONE
+      - durability:5
+      - amount:1
+    RewardType: MONEY
+    Reward: 54.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc d''andésite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:STONE
+      - durability:5
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 54.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs d''andésite)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:STONE
+      - durability:5
+    RewardType_middle: MONEY
+    Reward_middle: 54.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs d''andésite)'
+    InventoryLocation: 6
+  Gravierx3 SkyMonster:
+    MenuItem:
+    - type:GRAVEL
+    - 'name:&7Défi &8- &aBloc de gravier'
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de gravier'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m85,5&a 256,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 886 464,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GRAVEL
+      - amount:1
+    RewardType: MONEY
+    Reward: 85.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de gravier)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GRAVEL
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 85.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de gravier)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GRAVEL
+    RewardType_middle: MONEY
+    Reward_middle: 85.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de gravier)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 7
+  Gravierx2 SkyMonster:
+    MenuItem:
+    - type:GRAVEL
+    - 'name:&7Défi &8- &aBloc de gravier'
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de gravier'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m85,5&a 171,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 590 976,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GRAVEL
+      - amount:1
+    RewardType: MONEY
+    Reward: 85.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de gravier)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GRAVEL
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 85.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de gravier)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GRAVEL
+    RewardType_middle: MONEY
+    Reward_middle: 85.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de gravier)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 7
+  Gravier SkyMonster:
+    MenuItem:
+    - type:GRAVEL
+    - 'name:&7Défi &8- &aBloc de gravier'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de gravier'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a85,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 295 488,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GRAVEL
+      - amount:1
+    RewardType: MONEY
+    Reward: 85.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de gravier)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GRAVEL
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 85.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de gravier)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GRAVEL
+    RewardType_middle: MONEY
+    Reward_middle: 85.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de gravier)'
+    InventoryLocation: 7
+   
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyMonster
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

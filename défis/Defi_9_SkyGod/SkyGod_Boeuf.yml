@@ -1,0 +1,325 @@
+ShopName: SkyGod_Boeuf
+DisplayName: '&8» Boeuf du SkyGod'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  BoeufCrux3 SkyGod:
+    MenuItem:
+    - type:RAW_BEEF
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBoeuf cru
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoeuf cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m25,9&a 77,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 268 531,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_BEEF
+      - amount:1
+    RewardType: MONEY
+    Reward: 25.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de boeuf crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_BEEF
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 25.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de boeuf crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_BEEF
+    RewardType_middle: MONEY
+    Reward_middle: 25.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de boeuf crues)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  BoeufCrux2 SkyGod:
+    MenuItem:
+    - type:RAW_BEEF
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBoeuf cru
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoeuf cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m25,9&a 51,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 179 020,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_BEEF
+      - amount:1
+    RewardType: MONEY
+    Reward: 25.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de boeuf crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_BEEF
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 25.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de boeuf crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_BEEF
+    RewardType_middle: MONEY
+    Reward_middle: 25.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de boeuf crues)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  BoeufCru SkyGod:
+    MenuItem:
+    - type:RAW_BEEF
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBoeuf cru
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoeuf cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a25,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 89 510,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_BEEF
+      - amount:1
+    RewardType: MONEY
+    Reward: 25.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de boeuf crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_BEEF
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 25.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de boeuf crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_BEEF
+    RewardType_middle: MONEY
+    Reward_middle: 25.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de boeuf crues)'
+    InventoryLocation: 1
+  BoeufCuitx3 SkyGod:
+    MenuItem:
+    - type:COOKED_BEEF
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBoeuf cuit
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoeuf cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m39,5&a 118,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 409 536,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_BEEF
+      - amount:1
+    RewardType: MONEY
+    Reward: 39.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de boeuf cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_BEEF
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 39.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de boeuf cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_BEEF
+    RewardType_middle: MONEY
+    Reward_middle: 39.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de boeuf cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  BoeufCuitx2 SkyGod:
+    MenuItem:
+    - type:COOKED_BEEF
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBoeuf cuit
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoeuf cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m39,5&a 79,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 273 024,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_BEEF
+      - amount:1
+    RewardType: MONEY
+    Reward: 39.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de boeuf cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_BEEF
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 39.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de boeuf cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_BEEF
+    RewardType_middle: MONEY
+    Reward_middle: 39.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de boeuf cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  BoeufCuit SkyGod:
+    MenuItem:
+    - type:COOKED_BEEF
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBoeuf cuit
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoeuf cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a39,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 136 512,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_BEEF
+      - amount:1
+    RewardType: MONEY
+    Reward: 39.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de boeuf cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_BEEF
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 39.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de boeuf cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_BEEF
+    RewardType_middle: MONEY
+    Reward_middle: 39.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de boeuf cuites)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyGod
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

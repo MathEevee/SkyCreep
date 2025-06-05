@@ -1,0 +1,516 @@
+ShopName: Prestige3_Citrouille
+DisplayName: '&8» Citrouilles du Prestige3'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Citrouillex3 Prestige3:
+    MenuItem:
+    - type:PUMPKIN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCitrouille
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCitrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m264,5&a 793,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 742 336,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    RewardType: MONEY
+    Reward: 264.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 264.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN
+    RewardType_middle: MONEY
+    Reward_middle: 264.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Citrouillex2 Prestige3:
+    MenuItem:
+    - type:PUMPKIN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCitrouille
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCitrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m264,5&a 529,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 828 224,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    RewardType: MONEY
+    Reward: 264.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 264.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN
+    RewardType_middle: MONEY
+    Reward_middle: 264.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Citrouille Prestige3:
+    MenuItem:
+    - type:PUMPKIN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCitrouille
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCitrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a264,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 914 112,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    RewardType: MONEY
+    Reward: 264.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 264.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN
+    RewardType_middle: MONEY
+    Reward_middle: 264.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
+    InventoryLocation: 1
+  TarteCitrouillex3 Prestige3:
+    MenuItem:
+    - type:PUMPKIN_PIE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aTarte à la citrouille
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aTarte à la citrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 437,4&a 4 312,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 14 902 963,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN_PIE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1437.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 tarte à la citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN_PIE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1437.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 tartes à la citrouille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN_PIE
+    RewardType_middle: MONEY
+    Reward_middle: 1437.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% tartes à la citrouille)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  TarteCitrouillex2 Prestige3:
+    MenuItem:
+    - type:PUMPKIN_PIE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aTarte à la citrouille
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aTarte à la citrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 437,4&a 2 874,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 9 935 308,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN_PIE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1437.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 tarte à la citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN_PIE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1437.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 tartes à la citrouille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN_PIE
+    RewardType_middle: MONEY
+    Reward_middle: 1437.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% tartes à la citrouille)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  TarteCitrouille Prestige3:
+    MenuItem:
+    - type:PUMPKIN_PIE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aTarte à la citrouille
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aTarte à la citrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 437,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 967 654,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN_PIE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1437.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 tarte à la citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN_PIE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1437.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 tartes à la citrouille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN_PIE
+    RewardType_middle: MONEY
+    Reward_middle: 1437.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% tartes à la citrouille)'
+    InventoryLocation: 2
+  MonolitheCitrouillex3 Prestige3:
+    MenuItem:
+    - hdb:2728
+    - name:&7Défi &8- &aMonolithes de citrouilles
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithes de citrouilles'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 560,9&a 4 682,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 16 183 411,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de citrouilles)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de citrouilles)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  MonolitheCitrouillex2 Prestige3:
+    MenuItem:
+    - hdb:2728
+    - name:&7Défi &8- &aMonolithes de citrouilles
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithes de citrouilles'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 560,9&a 3 121,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 10 788 940,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de citrouilles)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de citrouilles)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  MonolitheCitrouille Prestige3:
+    MenuItem:
+    - hdb:2728
+    - name:&7Défi &8- &aMonolithes de citrouilles
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithes de citrouilles'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 560,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 394 470,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de citrouilles)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&6Monolithe de citrouilles
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE2MmQ3MmQ4ZDU3NmQ5YmJiODFjOWFlZGM2OTA2MTc0MTZkZWRjOTVjY2YxN2Y3OTQ1ODBjYTY3NDk0MmE2NSJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de citrouilles)'
+    InventoryLocation: 3
+
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: Prestige3
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

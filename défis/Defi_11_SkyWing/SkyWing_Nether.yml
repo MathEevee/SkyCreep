@@ -1,0 +1,559 @@
+ShopName: SkyWing_Nether
+DisplayName: '&8» Nether du SkyWing'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Netherrackx3 SkyWing:
+    MenuItem:
+    - type:NETHERRACK
+    - name:&7Défi &8- &aNetherrack
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aNetherrack'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m103,4&a 310,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 072 051,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHERRACK
+      - amount:1
+    RewardType: MONEY
+    Reward: 103.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 netherrack)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHERRACK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 103.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 netherrack)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHERRACK
+    RewardType_middle: MONEY
+    Reward_middle: 103.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% netherrack)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Netherrackx2 SkyWing:
+    MenuItem:
+    - type:NETHERRACK
+    - name:&7Défi &8- &aNetherrack
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aNetherrack'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m103,4&a 206,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 714 700,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHERRACK
+      - amount:1
+    RewardType: MONEY
+    Reward: 103.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 netherrack)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHERRACK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 103.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 netherrack)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHERRACK
+    RewardType_middle: MONEY
+    Reward_middle: 103.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% netherrack)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Netherrack SkyWing:
+    MenuItem:
+    - type:NETHERRACK
+    - name:&7Défi &8- &aNetherrack
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aNetherrack'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a103,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 357 350,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHERRACK
+      - amount:1
+    RewardType: MONEY
+    Reward: 103.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 netherrack)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHERRACK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 103.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 netherrack)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHERRACK
+    RewardType_middle: MONEY
+    Reward_middle: 103.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% netherrack)'
+    InventoryLocation: 1
+  Glowstonex3 SkyWing:
+    MenuItem:
+    - type:GLOWSTONE
+    - name:&7Défi &8- &aGlowstone
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlowstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m219,4&a 658,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 274 739,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GLOWSTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 219.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glowstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GLOWSTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 219.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glowstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GLOWSTONE
+    RewardType_middle: MONEY
+    Reward_middle: 219.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glowstone)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  Glowstonex2 SkyWing:
+    MenuItem:
+    - type:GLOWSTONE
+    - name:&7Défi &8- &aGlowstone
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlowstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m219,4&a 438,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 516 492,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GLOWSTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 219.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glowstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GLOWSTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 219.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glowstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GLOWSTONE
+    RewardType_middle: MONEY
+    Reward_middle: 219.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glowstone)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  Glowstone SkyWing:
+    MenuItem:
+    - type:GLOWSTONE
+    - name:&7Défi &8- &aGlowstone
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlowstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a219,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 758 246,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GLOWSTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 219.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glowstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GLOWSTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 219.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glowstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GLOWSTONE
+    RewardType_middle: MONEY
+    Reward_middle: 219.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glowstone)'
+    InventoryLocation: 2
+  NetherBrickx3 SkyWing:
+    MenuItem:
+    - type:NETHER_BRICK
+    - name:&7Défi &8- &aBrique du nether
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique du nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m112,3&a 336,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 164 326,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_BRICK
+      - amount:1
+    RewardType: MONEY
+    Reward: 112.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique du nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_BRICK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 112.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques du nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_BRICK
+    RewardType_middle: MONEY
+    Reward_middle: 112.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques du nether)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  NetherBrickx2 SkyWing:
+    MenuItem:
+    - type:NETHER_BRICK
+    - name:&7Défi &8- &aBrique du nether
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique du nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m112,3&a 224,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 776 217,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_BRICK
+      - amount:1
+    RewardType: MONEY
+    Reward: 112.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique du nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_BRICK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 112.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques du nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_BRICK
+    RewardType_middle: MONEY
+    Reward_middle: 112.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques du nether)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  NetherBrick SkyWing:
+    MenuItem:
+    - type:NETHER_BRICK
+    - name:&7Défi &8- &aBrique du nether
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique du nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a112,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 388 108,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_BRICK
+      - amount:1
+    RewardType: MONEY
+    Reward: 112.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique du nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_BRICK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 112.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques du nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_BRICK
+    RewardType_middle: MONEY
+    Reward_middle: 112.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques du nether)'
+    InventoryLocation: 3
+  RedNetherBrickx3 SkyWing:
+    MenuItem:
+    - type:RED_NETHER_BRICK
+    - name:&7Défi &8- &aBrique rouge du nether
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique rouge du nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m174,9&a 524,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 813 363,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RED_NETHER_BRICK
+      - amount:1
+    RewardType: MONEY
+    Reward: 174.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique rouge du nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RED_NETHER_BRICK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 174.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques rouges du nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RED_NETHER_BRICK
+    RewardType_middle: MONEY
+    Reward_middle: 174.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques rouges du nether)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 4
+  RedNetherBrickx2 SkyWing:
+    MenuItem:
+    - type:RED_NETHER_BRICK
+    - name:&7Défi &8- &aBrique rouge du nether
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique rouge du nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m174,9&a 349,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 208 908,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RED_NETHER_BRICK
+      - amount:1
+    RewardType: MONEY
+    Reward: 174.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique rouge du nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RED_NETHER_BRICK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 174.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques rouges du nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RED_NETHER_BRICK
+    RewardType_middle: MONEY
+    Reward_middle: 174.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques rouges du nether)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 4
+  RedNetherBrick SkyWing:
+    MenuItem:
+    - type:RED_NETHER_BRICK
+    - name:&7Défi &8- &aBrique rouge du nether
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique rouge du nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a174,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 604 454,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RED_NETHER_BRICK
+      - amount:1
+    RewardType: MONEY
+    Reward: 174.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique rouge du nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RED_NETHER_BRICK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 174.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques rouges du nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RED_NETHER_BRICK
+    RewardType_middle: MONEY
+    Reward_middle: 174.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques rouges du nether)'
+    InventoryLocation: 4
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyWing
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

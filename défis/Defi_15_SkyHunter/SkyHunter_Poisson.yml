@@ -1,0 +1,913 @@
+ShopName: SkyHunter_Poisson
+DisplayName: '&8» Poissons du SkyHunter'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Poissonx3 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aMorue
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMorue'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m155,2&a 465,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 609 113,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 155.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 morue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 155.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 155.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% morues)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Poissonx2 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aMorue
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMorue'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m155,2&a 310,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 072 742,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 155.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 morue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 155.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 155.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% morues)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Poisson SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aMorue
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMorue'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a155,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 536 371,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 155.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 morue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 155.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 155.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% morues)'
+    InventoryLocation: 1
+  PoissonCuitx3 SkyHunter:
+    MenuItem:
+    - type:COOKED_FISH
+    - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aMorue cuite
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMorue cuite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m194,2&a 582,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 013 465,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_FISH
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 194.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 morue cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_FISH
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 194.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_FISH
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 194.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% morues cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  PoissonCuitx2 SkyHunter:
+    MenuItem:
+    - type:COOKED_FISH
+    - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aMorue cuite
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMorue cuite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m194,2&a 388,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 342 310,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_FISH
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 194.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 morue cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_FISH
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 194.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_FISH
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 194.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% morues cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  PoissonCuit SkyHunter:
+    MenuItem:
+    - type:COOKED_FISH
+    - durability:0
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aMorue cuite
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMorue cuite'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a194,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 671 155,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_FISH
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 194.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 morue cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_FISH
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 194.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 morues cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_FISH
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 194.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% morues cuites)'
+    InventoryLocation: 2
+  Saumonx3 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aSaumon
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aSaumon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m572,6&a 1 717,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 936 716,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 572.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 saumon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 572.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 572.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% saumons)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  Saumonx2 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aSaumon
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aSaumon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m572,6&a 1 145,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 957 811,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 572.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 saumon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 572.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 572.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% saumons)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  Saumon SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aSaumon
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aSaumon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a572,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 978 905,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 572.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 saumon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 572.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 572.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% saumons)'
+    InventoryLocation: 3
+  SaumonCuitx3 SkyHunter:
+    MenuItem:
+    - type:COOKED_FISH
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aSaumon cuit
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aSaumon cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m715,8&a 2 147,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 7 421 414,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_FISH
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 715.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 saumon cuit)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_FISH
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 715.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons cuits)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_FISH
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 715.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% saumons cuits)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 4
+  SaumonCuitx2 SkyHunter:
+    MenuItem:
+    - type:COOKED_FISH
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aSaumon cuit
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aSaumon cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m715,8&a 1 431,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 947 609,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_FISH
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 715.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 saumon cuit)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_FISH
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 715.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons cuits)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_FISH
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 715.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% saumons cuits)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 4
+  SaumonCuit SkyHunter:
+    MenuItem:
+    - type:COOKED_FISH
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aSaumon cuit
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aSaumon cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a715,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 473 804,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_FISH
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 715.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 saumon cuit)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_FISH
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 715.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 saumons cuits)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_FISH
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 715.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% saumons cuits)'
+    InventoryLocation: 4
+  Pufferfishx3 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:3
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoisson globe
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoisson globe'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 841,1&a 5 523,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 19 088 524,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 1841.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 poisson globe)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1841.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons globe)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 1841.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% poissons globe)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 5
+  Pufferfishx2 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:3
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoisson globe
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoisson globe'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 841,1&a 3 682,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 12 725 683,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 1841.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 poisson globe)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1841.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons globe)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 1841.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% poissons globe)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 5
+  Pufferfish SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:3
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoisson globe
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoisson globe'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 841,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 6 362 841,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 1841.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 poisson globe)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1841.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons globe)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 1841.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% poissons globe)'
+    InventoryLocation: 5
+  PoissonTropicalx3 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoisson tropical
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoisson tropical'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m8 724,1&a 26 172,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 90 451 468,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 8724.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 poisson tropical)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 8724.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons tropicaux)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 8724.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% poissons tropicaux)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 6
+  PoissonTropicalx2 SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoisson tropical
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoisson tropical'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m8 724,1&a 17 448,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 60 300 979,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 8724.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 poisson tropical)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 8724.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons tropicaux)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 8724.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% poissons tropicaux)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 6
+  PoissonTropical SkyHunter:
+    MenuItem:
+    - type:RAW_FISH
+    - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoisson tropical
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoisson tropical'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a8 724,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 30 150 489,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_FISH
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 8724.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 poisson tropical)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_FISH
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 8724.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 poissons tropicaux)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_FISH
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 8724.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% poissons tropicaux)'
+    InventoryLocation: 6
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyHunter
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

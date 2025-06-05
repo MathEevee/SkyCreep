@@ -1,0 +1,314 @@
+ShopName: SkyGuardian_Canne
+DisplayName: '&8» Papier du SkyGuardian'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  CanneASucrex3 SkyGuardian:
+    MenuItem:
+    - type:SUGAR_CANE
+    - name:&7Défi &8- &aCanne à sucre
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCanne à sucre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m26,0&a 78,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 269 568,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SUGAR_CANE
+      - amount:1
+    RewardType: MONEY
+    Reward: 26.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 canne à sucre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SUGAR_CANE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 26.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 cannes à sucre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SUGAR_CANE
+    RewardType_middle: MONEY
+    Reward_middle: 26.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% cannes à sucre)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  CanneASucrex2 SkyGuardian:
+    MenuItem:
+    - type:SUGAR_CANE
+    - name:&7Défi &8- &aCanne à sucre
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCanne à sucre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m26,0&a 52,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 179 712,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SUGAR_CANE
+      - amount:1
+    RewardType: MONEY
+    Reward: 26.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 canne à sucre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SUGAR_CANE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 26.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 cannes à sucre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SUGAR_CANE
+    RewardType_middle: MONEY
+    Reward_middle: 26.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% cannes à sucre)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  CanneASucre SkyGuardian:
+    MenuItem:
+    - type:SUGAR_CANE
+    - name:&7Défi &8- &aCanne à sucre
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCanne à sucre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a26,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 89 856,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SUGAR_CANE
+      - amount:1
+    RewardType: MONEY
+    Reward: 26.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 canne à sucre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SUGAR_CANE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 26.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 cannes à sucre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SUGAR_CANE
+    RewardType_middle: MONEY
+    Reward_middle: 26.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% cannes à sucre)'
+    InventoryLocation: 1
+  Livrex3 SkyGuardian:
+    MenuItem:
+    - type:BOOK
+    - name:&7Défi &8- &aLivre
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLivre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m420,3&a 1 260,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 357 670,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BOOK
+      - amount:1
+    RewardType: MONEY
+    Reward: 420.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 livre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BOOK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 420.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 livres)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BOOK
+    RewardType_middle: MONEY
+    Reward_middle: 420.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% livres)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  Livrex2 SkyGuardian:
+    MenuItem:
+    - type:BOOK
+    - name:&7Défi &8- &aLivre
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLivre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m420,3&a 840,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 905 113,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BOOK
+      - amount:1
+    RewardType: MONEY
+    Reward: 420.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 livre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BOOK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 420.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 livres)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BOOK
+    RewardType_middle: MONEY
+    Reward_middle: 420.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% livres)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  Livre SkyGuardian:
+    MenuItem:
+    - type:BOOK
+    - name:&7Défi &8- &aLivre
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLivre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a420,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 452 556,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BOOK
+      - amount:1
+    RewardType: MONEY
+    Reward: 420.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 livre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BOOK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 420.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 livres)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BOOK
+    RewardType_middle: MONEY
+    Reward_middle: 420.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% livres)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyGuardian
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,466 @@
+ShopName: Prestige3_NW
+DisplayName: '&8» Verrues du Prestige 1'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Verruesx3 Prestige3:
+    MenuItem:
+    - type:NETHER_STALK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aVerrue du Nether
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aVerrue du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m67,6&a 202,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 700 876,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    RewardType: MONEY
+    Reward: 67.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 verrue du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_STALK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 67.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_STALK
+    RewardType_middle: MONEY
+    Reward_middle: 67.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Verruesx2 Prestige3:
+    MenuItem:
+    - type:NETHER_STALK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aVerrue du Nether
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aVerrue du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m67,6&a 135,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 467 251,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    RewardType: MONEY
+    Reward: 67.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 verrue du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_STALK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 67.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_STALK
+    RewardType_middle: MONEY
+    Reward_middle: 67.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Verrues Prestige3:
+    MenuItem:
+    - type:NETHER_STALK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aVerrue du Nether 
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aVerrue du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a67,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 233 625,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    RewardType: MONEY
+    Reward: 67.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 verrue du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_STALK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 67.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_STALK
+    RewardType_middle: MONEY
+    Reward_middle: 67.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% verrues du Nether)'
+    InventoryLocation: 1
+  BlocVerruesx3 Prestige3:
+    MenuItem:
+    - type:NETHER_WART_BLOCK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBloc de verrues du Nether
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de verrues du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m809,1&a 2 427,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 8 388 748,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_WART_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 809.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de verrues du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_WART_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 809.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_WART_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 809.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  BlocVerruesx2 Prestige3:
+    MenuItem:
+    - type:NETHER_WART_BLOCK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBloc de verrues du Nether
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de verrues du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m809,1&a 1 618,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 592 499,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_WART_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 809.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de verrues du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_WART_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 809.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_WART_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 809.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  BlocVerrues Prestige3:
+    MenuItem:
+    - type:NETHER_WART_BLOCK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBloc de verrues du Nether
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de verrues du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a809,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 796 249,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_WART_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 809.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Bloc de verrues du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_WART_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 809.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_WART_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 809.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de verrues du Nether)'
+    InventoryLocation: 2
+  MonolitheVerruesx3 Prestige3:
+    MenuItem:
+    - hdb:14313
+    - name:&7Défi &8- &aMonolithe de verrues
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de verrues'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 560,9&a 4 682,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 16 183 411,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de verrues)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de verrues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de verrues)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  MonolitheVerruesx2 Prestige3:
+    MenuItem:
+    - hdb:14313
+    - name:&7Défi &8- &aMonolithe de verrues
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de verrues'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 560,9&a 3 121,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 10 788 940,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de verrues)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de verrues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de verrues)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  MonolitheVerrues Prestige3:
+    MenuItem:
+    - hdb:14313
+    - name:&7Défi &8- &aMonolithe de verrues
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de verrues'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 560,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 394 470,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de verrues)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de verrues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&cMonolithe de verrues
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de verrues)'
+    InventoryLocation: 3
+    
+###############
+#   FILTRES   #
+###############
+
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: Prestige3
+    InventoryLocation: 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,314 @@
+ShopName: SkyDrop_Neige
+DisplayName: '&8»  Neige du SkyDrop'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Boulex3 SkyDrop:
+    MenuItem:
+    - type:SNOW_BALL
+    - name:&7Défi &8- &aBoule de neige
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoule de neige'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m12,1&a 36,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 31 363,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SNOW_BALL
+      - amount:1
+    RewardType: MONEY
+    Reward: 12.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 boule de neige)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SNOW_BALL
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 12.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 boules de neige)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SNOW_BALL
+    RewardType_middle: MONEY
+    Reward_middle: 12.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% boules de neige)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Boulex2 SkyDrop:
+    MenuItem:
+    - type:SNOW_BALL
+    - name:&7Défi &8- &aBoule de neige
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoule de neige'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m12,1&a 24,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 20 908,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SNOW_BALL
+      - amount:1
+    RewardType: MONEY
+    Reward: 12.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 boule de neige)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SNOW_BALL
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 12.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 boules de neige)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SNOW_BALL
+    RewardType_middle: MONEY
+    Reward_middle: 12.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% boules de neige)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Boule SkyDrop:
+    MenuItem:
+    - type:SNOW_BALL
+    - name:&7Défi &8- &aBoule de neige
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBoule de neige'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a12,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 10 454,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SNOW_BALL
+      - amount:1
+    RewardType: MONEY
+    Reward: 12.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 boule de neige)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SNOW_BALL
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 12.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 boules de neige)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SNOW_BALL
+    RewardType_middle: MONEY
+    Reward_middle: 12.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% boules de neige)'
+    InventoryLocation: 1
+  Blocx3 SkyDrop:
+    MenuItem:
+    - type:SNOW_BLOCK
+    - name:&7Défi &8- &aBloc de neige
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de neige'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m63,4&a 190,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 657 331,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SNOW_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 63.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de neige)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SNOW_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 63.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de neige)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SNOW_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 63.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de neige)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  Blocx2 SkyDrop:
+    MenuItem:
+    - type:SNOW_BLOCK
+    - name:&7Défi &8- &aBloc de neige
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de neige'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m63,4&a 126,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 438 220,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SNOW_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 63.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de neige)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SNOW_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 63.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de neige)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SNOW_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 63.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de neige)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  Bloc SkyDrop:
+    MenuItem:
+    - type:SNOW_BLOCK
+    - name:&7Défi &8- &aBloc de neige
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBlocs de neige'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a63,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 219 110,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SNOW_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 63.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de neige)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SNOW_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 63.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de neige)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SNOW_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 63.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de neige)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyDrop
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

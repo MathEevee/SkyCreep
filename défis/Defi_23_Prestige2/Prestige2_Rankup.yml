@@ -1,0 +1,97 @@
+ShopName: Prestige2Rankup
+DisplayName: '&7Défi &8- &aAccès au rang supérieur'
+FillerItem:
+- type:STAINED_GLASS_PANE
+- durability:7
+- name:&8
+shop:
+  Valider Rankup Prestige2 Prestige3 Modo:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:5
+    - 'name:&7Défi &8- &aAccès au rang supérieur &7(&e&l✩3&7)'
+    - 'lore:'
+    - 'lore:&eDescription :'
+    - 'lore:&7 Passez au rang supérieur et débloquez'
+    - 'lore:&7 de nouveaux défis et une rentabilité plus'
+    - 'lore:&7 intéressante &8(&a2%&8) &7ainsi que quelques'
+    - 'lore:&7 récompenses pour vous aider.'
+    - 'lore:'
+    - 'lore:&eCoût du rang : &b&l&n20 000 000 000 SKYPOINTS'
+    - 'lore:&eCoût EXP du rang : &b&l&n200 000 POINTS EXP'
+    - 'lore:'
+    - 'lore:&eRécompense :'
+    - 'lore:&e ▪ &eAutocondense de l''inventaire'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour passer au rang supérieur.'
+    Condition:
+    - type:permission
+    - match:group.moderateur
+    - type:money
+    - over:19999999999
+    - type:placeholdernumber
+    - '%cmi_user_totalexp%:over:199999'
+    RewardType: COMMAND
+    Reward:
+    - cmi exp take 200000 %player%
+    - lp user %player% promote skycreep skycreep
+    - bc &6%player% &adébloque le niveau &f&l[&e&l✩3&f&l] &a!
+    - tab player %player% tabsuffix &e ✩3%cmi_user_afk_symbol% %premiumvanish_isvanished%
+    - bs open Prestige3 %player%
+    - mail send achent %player% a rankup Prestige3 %server_time_dd.MM.yyyy-HH.mm.ss%
+    PriceType: MONEY
+    Price: 20000000000
+    InventoryLocation: 12
+  Valider Rankup Prestige2 Prestige3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:5
+    - 'name:&7Défi &8- &aAccès au rang supérieur &7(&e&l✩3&7)'
+    - 'lore:'
+    - 'lore:&eDescription :'
+    - 'lore:&7 Passez au rang supérieur et débloquez'
+    - 'lore:&7 de nouveaux défis et une rentabilité plus'
+    - 'lore:&7 intéressante &8(&a2%&8) &7ainsi que quelques'
+    - 'lore:&7 récompenses pour vous aider.'
+    - 'lore:'
+    - 'lore:&eCoût du rang : &b&l&n20 000 000 000 SKYPOINTS'
+    - 'lore:&eCoût EXP du rang : &b&l&n200 000 POINTS EXP'
+    - 'lore:'
+    - 'lore:&eRécompense :'
+    - 'lore:&e ▪ &eAutocondense de l''inventaire'
+    - 'lore:'
+    - 'lore:&e&oCliquez ici pour passer au rang supérieur.'
+    Condition:
+    - type:money
+    - over:19999999999
+    - type:placeholdernumber
+    - '%cmi_user_totalexp%:over:199999'
+    RewardType: COMMAND
+    Reward:
+    - cmi exp take 200000 %player%
+    - lp user %player% promote skycreep skycreep
+    - bc &6%player% &adébloque le niveau &f&l[&e&l✩3&f&l] &a!
+    - tab player %player% tabsuffix &e ✩3
+    - bs open Prestige3 %player%
+    - mail send achent %player% a rankup Prestige3 %server_time_dd.MM.yyyy-HH.mm.ss%
+    PriceType: MONEY
+    Price: 20000000000
+    InventoryLocation: 12
+  Annuler Rankup Prestige3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:14
+    - 'name:&7Défi &8- &cAnnuler le passage de grade'
+    - 'lore:&e'
+    - 'lore:&eDescription:'
+    - 'lore:&7  Annulez le passage au grade suivant.'
+    - 'lore:&7'
+    - 'lore:&7&oCliquez ici pour annuler le passage de grade.'
+    RewardType: close
+    InventoryLocation: 16
+  Rien_27:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - 'name:&7'
+    InventoryLocation: 27

@@ -1,0 +1,1688 @@
+ShopName: Extreme_Bois
+DisplayName: '&8➣ Bois de l''Extrême'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Chenex3 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:0
+    - name:&7Défi &8- &aBois de chêne
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de chêne'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m95,8&a 287,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 993 254,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 95.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de chêne)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 95.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de chêne)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 95.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de chêne)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Chenex2 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:0
+    - name:&7Défi &8- &aBois de chêne
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de chêne'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m95,8&a 191,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 662 169,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 95.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de chêne)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 95.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de chêne)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 95.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de chêne)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Chene Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:0
+    - name:&7Défi &8- &aBois de chêne
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de chêne'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a95,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 331 084,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 95.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de chêne)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 95.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de chêne)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 95.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de chêne)'
+    InventoryLocation: 1
+  Bouleaux3 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:2
+    - name:&7Défi &8- &aBois de bouleau
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de bouleau'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m92,3&a 276,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 956 966,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 92.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de bouleau)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 92.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de bouleau)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 92.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de bouleau)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  Bouleaux2 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:2
+    - name:&7Défi &8- &aBois de bouleau
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de bouleau'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m92,3&a 184,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 637 977,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 92.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de bouleau)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 92.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de bouleau)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 92.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de bouleau)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  Bouleau Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:2
+    - name:&7Défi &8- &aBois de bouleau
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de bouleau'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a92,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 318 988,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 92.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de bouleau)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 92.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de bouleau)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 92.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de bouleau)'
+    InventoryLocation: 2
+  Sapinx3 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:1
+    - name:&7Défi &8- &aBois de sapin
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de sapin'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m97,1&a 291,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 006 732,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 97.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de sapin)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 97.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de sapin)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 97.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de sapin)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  Sapinx2 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:1
+    - name:&7Défi &8- &aBois de sapin
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de sapin'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m97,1&a 194,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 671 155,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 97.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de sapin)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 97.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de sapin)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 97.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de sapin)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  Sapin Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:1
+    - name:&7Défi &8- &aBois de sapin
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de sapin'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a97,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 335 577,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 97.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de sapin)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 97.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de sapin)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 97.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de sapin)'
+    InventoryLocation: 3
+  Junglex3 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:3
+    - name:&7Défi &8- &aBois de jungle
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de jungle'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m99,6&a 298,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 032 652,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 99.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de jungle)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 99.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de jungle)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 99.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de jungle)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 4
+  Junglex2 Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:3
+    - name:&7Défi &8- &aBois de jungle
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de jungle'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m99,6&a 199,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 688 435,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 99.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de jungle)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 99.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de jungle)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 99.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de jungle)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 4
+  Jungle Extrême:
+    MenuItem:
+    - type:LOG
+    - durability:3
+    - name:&7Défi &8- &aBois de jungle
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de jungle'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a99,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 344 217,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 99.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de jungle)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 99.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de jungle)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 99.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de jungle)'
+    InventoryLocation: 4
+  CheneNoirx3 Extrême:
+    MenuItem:
+    - type:LOG_2
+    - durability:1
+    - name:&7Défi &8- &aBois de chêne noir
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de chêne noir'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m105,3&a 315,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 091 750,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG_2
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 105.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de chêne noir)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG_2
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 105.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de chêne noir)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG_2
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 105.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de chêne noir)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 5
+  CheneNoirx2 Extrême:
+    MenuItem:
+    - type:LOG_2
+    - durability:1
+    - name:&7Défi &8- &aBois de chêne noir
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de chêne noir'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m105,3&a 210,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 727 833,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG_2
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 105.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de chêne noir)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG_2
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 105.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de chêne noir)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG_2
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 105.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de chêne noir)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 5
+  CheneNoir Extrême:
+    MenuItem:
+    - type:LOG_2
+    - durability:1
+    - name:&7Défi &8- &aBois de chêne noir
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois de chene noir'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a105,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 363 916,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG_2
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 105.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois de chêne noir)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG_2
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 105.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois de chêne noir)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG_2
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 105.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois de chêne noir)'
+    InventoryLocation: 5
+  Acaciax3 Extrême:
+    MenuItem:
+    - type:LOG_2
+    - durability:0
+    - name:&7Défi &8- &aBois d'acacia
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois d''acacia'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m171,6&a 514,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 779 148,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG_2
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 171.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois d''acacia)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG_2
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 171.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois d''acacia)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG_2
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 171.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois d''acacia)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 6
+  Acaciax2 Extrême:
+    MenuItem:
+    - type:LOG_2
+    - durability:0
+    - name:&7Défi &8- &aBois d'acacia
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois d''acacia'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m171,6&a 343,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 186 099,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG_2
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 171.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois d''acacia)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG_2
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 171.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois d''acacia)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG_2
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 171.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois d''acacia)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 6
+  Acacia Extrême:
+    MenuItem:
+    - type:LOG_2
+    - durability:0
+    - name:&7Défi &8- &aBois de d'acacia
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBois d''acacia'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a171,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 593 049,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LOG_2
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 171.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bois d''acacia)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LOG_2
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 171.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bois d''acacia)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LOG_2
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 171.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bois d''acacia)'
+    InventoryLocation: 6
+  FeuillageChenex3 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:0
+    - name:&7Défi &8- &aFeuillage de chêne
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de chêne'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 148,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 512 179,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de chêne)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de chêne)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de chêne)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 10
+  FeuillageChenex2 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:0
+    - name:&7Défi &8- &aFeuillage de chêne
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de chêne'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 98,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 341 452,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de chêne)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de chêne)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de chêne)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 10
+  FeuillageChene Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:0
+    - name:&7Défi &8- &aFeuillage de chêne
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de chêne'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a49,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 170 726,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuillage de chêne)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de chêne)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de chêne)'
+    InventoryLocation: 10
+  FeuillageBouleaux3 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:2
+    - name:&7Défi &8- &aFeuillage de bouleau
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de bouleau'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 148,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 512 179,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de bouleau)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de bouleau)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de bouleau)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 11
+  FeuillageBouleaux2 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:2
+    - name:&7Défi &8- &aFeuillage de bouleau
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de bouleau'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 98,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 341 452,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de bouleau)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de bouleau)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de bouleau)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 11
+  FeuillageBouleau Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:2
+    - name:&7Défi &8- &aFeuillage de bouleau
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de bouleau'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a49,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 170 726,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuillage de bouleau)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de bouleau)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de bouleau)'
+    InventoryLocation: 11
+  FeuillageSapinx3 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:1
+    - name:&7Défi &8- &aFeuillage de sapin
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de sapin'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 148,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 512 179,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de sapin)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de sapin)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de sapin)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 12
+  FeuillageSapinx2 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:1
+    - name:&7Défi &8- &aFeuillage de sapin
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de sapin'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 98,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 341 452,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de sapin)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de sapin)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de sapin)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 12
+  FeuillageSapin Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:1
+    - name:&7Défi &8- &aFeuillage de sapin
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de sapin'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a49,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 170 726,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuillage de sapin)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de sapin)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de sapin)'
+    InventoryLocation: 12
+  FeuillageJunglex3 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:3
+    - name:&7Défi &8- &aFeuillage de jungle
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de jungle'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 148,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 512 179,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de jungle)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de jungle)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de jungle)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 13
+  FeuillageJunglex2 Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:3
+    - name:&7Défi &8- &aFeuillage de jungle
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de jungle'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,4&a 98,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 341 452,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de jungle)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de jungle)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de jungle)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 13
+  FeuillageJungle Extrême:
+    MenuItem:
+    - type:LEAVES
+    - durability:3
+    - name:&7Défi &8- &aFeuillage de jungle
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de jungle'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a49,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 170 726,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES
+      - durability:3
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuillage de jungle)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES
+      - durability:3
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de jungle)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES
+      - durability:3
+    RewardType_middle: MONEY
+    Reward_middle: 49.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de jungle)'
+    InventoryLocation: 13
+  FeuillageCheneNoirx3 Extrême:
+    MenuItem:
+    - type:LEAVES_2
+    - durability:1
+    - name:&7Défi &8- &aFeuillage de chêne noir
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de chêne noir'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m55,0&a 165,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 570 240,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES_2
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 55.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de chêne noir)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES_2
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 55.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de chêne noir)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES_2
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 55.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de chêne noir)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 14
+  FeuillageCheneNoirx2 Extrême:
+    MenuItem:
+    - type:LEAVES_2
+    - durability:1
+    - name:&7Défi &8- &aFeuillage de chêne noir
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de chêne noir'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m55,0&a 110,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 380 160,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES_2
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 55.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille de chêne noir)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES_2
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 55.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de chêne noir)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES_2
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 55.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de chêne noir)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 14
+  FeuillageCheneNoir Extrême:
+    MenuItem:
+    - type:LEAVES_2
+    - durability:1
+    - name:&7Défi &8- &aFeuillage de chêne noir
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage de chêne noir'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a55,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 190 080,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES_2
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 55.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuillage de chêne noir)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES_2
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 55.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage de chêne noir)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES_2
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 55.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage de chêne noir)'
+    InventoryLocation: 14
+  FeuillageAcaciax3 Extrême:
+    MenuItem:
+    - type:LEAVES_2
+    - durability:0
+    - name:&7Défi &8- &aFeuillage d'acacia
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage d''acacia'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m52,0&a 156,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 539 136,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES_2
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 52.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille d''acacia)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES_2
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 52.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage d''acacia)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES_2
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 52.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage d''acacia)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 15
+  FeuillageAcaciax2 Extrême:
+    MenuItem:
+    - type:LEAVES_2
+    - durability:0
+    - name:&7Défi &8- &aFeuillage d'acacia
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage d''acacia'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m52,0&a 104,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 359 424,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES_2
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 52.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuille d''acacia)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES_2
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 52.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage d''acacia)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES_2
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 52.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage d''acacia)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 15
+  FeuillageAcacia Extrême:
+    MenuItem:
+    - type:LEAVES_2
+    - durability:0
+    - name:&7Défi &8- &aFeuillage d'acacia
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aFeuillage d''acacia'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a52,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 179 712,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LEAVES_2
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 52.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 feuillage d''acacia)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LEAVES_2
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 52.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 feuillage d''acacia)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LEAVES_2
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 52.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% feuillage d''acacia)'
+    InventoryLocation: 15
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 19
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 20
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 21
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 22
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: shop
+    Reward: Extreme
+    InventoryLocation: 23
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 24
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 25
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 26
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

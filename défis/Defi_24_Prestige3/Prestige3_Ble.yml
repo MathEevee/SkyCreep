@@ -1,0 +1,751 @@
+ShopName: Prestige3_Ble
+DisplayName: '&8» Blé du Prestige3'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  GraineBlex3 Prestige3:
+    MenuItem:
+    - type:SEEDS
+    - name:&7Défi &8- &aGraine de blé
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGraine de blé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m2,3&a 6,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 23 846,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SEEDS
+      - amount:1
+    RewardType: MONEY
+    Reward: 2.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 graine de blé)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SEEDS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 2.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 graines de blé)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SEEDS
+    RewardType_middle: MONEY
+    Reward_middle: 2.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% graines de blé)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  GraineBlex2 Prestige3:
+    MenuItem:
+    - type:SEEDS
+    - name:&7Défi &8- &aGraine de blé
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGraine de blé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m2,3&a 4,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 15 897,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SEEDS
+      - amount:1
+    RewardType: MONEY
+    Reward: 2.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 graine de blé)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SEEDS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 2.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 graines de blé)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SEEDS
+    RewardType_middle: MONEY
+    Reward_middle: 2.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% graines de blé)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  GraineBle Prestige3:
+    MenuItem:
+    - type:SEEDS
+    - name:&7Défi &8- &aGraine de blé
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGraine de blé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a2,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 7 948,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SEEDS
+      - amount:1
+    RewardType: MONEY
+    Reward: 2.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 graine de blé)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SEEDS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 2.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 graines de blé)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SEEDS
+    RewardType_middle: MONEY
+    Reward_middle: 2.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% graines de blé)'
+    InventoryLocation: 1
+  Epix3 Prestige3:
+    MenuItem:
+    - type:WHEAT
+    - name:&7Défi &8- &aBlé
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBlé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m23,9&a 71,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 247 795,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:WHEAT
+      - amount:1
+    RewardType: MONEY
+    Reward: 23.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 blé)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:WHEAT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 23.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:WHEAT
+    RewardType_middle: MONEY
+    Reward_middle: 23.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blés)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  Epix2 Prestige3:
+    MenuItem:
+    - type:WHEAT
+    - name:&7Défi &8- &aBlé
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBlé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m23,9&a 47,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 165 196,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:WHEAT
+      - amount:1
+    RewardType: MONEY
+    Reward: 23.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 blé)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:WHEAT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 23.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:WHEAT
+    RewardType_middle: MONEY
+    Reward_middle: 23.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blés)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  Epi Prestige3:
+    MenuItem:
+    - type:WHEAT
+    - name:&7Défi &8- &aBlé
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBlé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a23,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 82 598,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:WHEAT
+      - amount:1
+    RewardType: MONEY
+    Reward: 23.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 blé)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:WHEAT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 23.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:WHEAT
+    RewardType_middle: MONEY
+    Reward_middle: 23.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blés)'
+    InventoryLocation: 2
+  Painx3 Prestige3:
+    MenuItem:
+    - type:BREAD
+    - name:&7Défi &8- &aPain
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPain'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m95,4&a 286,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 989 107,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BREAD
+      - amount:1
+    RewardType: MONEY
+    Reward: 95.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pain)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BREAD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 95.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pains)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BREAD
+    RewardType_middle: MONEY
+    Reward_middle: 95.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pains)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  Painx2 Prestige3:
+    MenuItem:
+    - type:BREAD
+    - name:&7Défi &8- &aPain
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPain'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m95,4&a 190,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 659 404,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BREAD
+      - amount:1
+    RewardType: MONEY
+    Reward: 95.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pain)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BREAD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 95.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pains)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BREAD
+    RewardType_middle: MONEY
+    Reward_middle: 95.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pains)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  Pain Prestige3:
+    MenuItem:
+    - type:BREAD
+    - name:&7Défi &8- &aPain
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPain'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a95,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 329 702,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BREAD
+      - amount:1
+    RewardType: MONEY
+    Reward: 95.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pain)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BREAD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 95.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pains)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BREAD
+    RewardType_middle: MONEY
+    Reward_middle: 95.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pains)'
+    InventoryLocation: 3
+  Paillex3 Prestige3:
+    MenuItem:
+    - type:HAY_BLOCK
+    - name:&7Défi &8- &aBloc de paille
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de paille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m351,6&a 1 054,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 645 388,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:HAY_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 351.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de paille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:HAY_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 351.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de paille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:HAY_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 351.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de paille)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 4
+  Paillex2 Prestige3:
+    MenuItem:
+    - type:HAY_BLOCK
+    - name:&7Défi &8- &aBloc de paille
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de paille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m351,6&a 703,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 430 259,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:HAY_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 351.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de paille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:HAY_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 351.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de paille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:HAY_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 351.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de paille)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 4
+  Paille Prestige3:
+    MenuItem:
+    - type:HAY_BLOCK
+    - name:&7Défi &8- &aBloc de paille
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de paille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a351,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 215 129,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:HAY_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 351.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de paille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:HAY_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 351.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de paille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:HAY_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 351.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de paille)'
+    InventoryLocation: 4
+  MonolitheBlex3 Prestige3:
+    MenuItem:
+    - hdb:52937
+    - name:&7Défi &8- &aMonolithe de blé
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de blé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 560,9&a 4 682,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 16 183 411,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de blés)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de blés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de blés)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 5
+  MonolitheBlex2 Prestige3:
+    MenuItem:
+    - hdb:52937
+    - name:&7Défi &8- &aMonolithe de blé
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de blé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 560,9&a 3 121,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 10 788 940,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de blés)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de blés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de blés)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 5
+  MonolitheBle Prestige3:
+    MenuItem:
+    - hdb:52937
+    - name:&7Défi &8- &aMonolithe de blé
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de blé'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 560,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 394 470,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType: MONEY
+    Reward: 1560.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de blés)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1560.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de blés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&eMonolithe de blés
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFmODAyNTFiZGNiZTE0YmYzNjFkNGY2M2UwZmYzOTE2ZWZjNzNmZGIzYjI3MTRkNzcyODdiNTU1MmYwNTE0YiJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1560.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de blés)'
+    InventoryLocation: 5
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: Prestige3
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,325 @@
+ShopName: SkyDrop_Cochon
+DisplayName: '&8» Cochon du SkyDrop'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  CochonCrux3 SkyDrop:
+    MenuItem:
+    - type:PORK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCochon cru
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCochon cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m28,3&a 84,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 293 414,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PORK
+      - amount:1
+    RewardType: MONEY
+    Reward: 28.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de cochon crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PORK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 28.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de cochon crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PORK
+    RewardType_middle: MONEY
+    Reward_middle: 28.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de cochon crues)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  CochonCrux2 SkyDrop:
+    MenuItem:
+    - type:PORK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCochon cru
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCochon cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m28,3&a 56,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 195 609,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PORK
+      - amount:1
+    RewardType: MONEY
+    Reward: 28.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de cochon crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PORK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 28.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de cochon crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PORK
+    RewardType_middle: MONEY
+    Reward_middle: 28.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de cochon crues)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  CochonCru SkyDrop:
+    MenuItem:
+    - type:PORK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCochon cru
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCochon cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a28,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 97 804,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PORK
+      - amount:1
+    RewardType: MONEY
+    Reward: 28.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de cochon crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PORK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 28.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de cochon crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PORK
+    RewardType_middle: MONEY
+    Reward_middle: 28.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de cochon crues)'
+    InventoryLocation: 1
+  CochonCuitx3 SkyDrop:
+    MenuItem:
+    - type:GRILLED_PORK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCochon cuit
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCochon cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m43,2&a 129,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 447 897,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GRILLED_PORK
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de cochon cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GRILLED_PORK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de cochon cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GRILLED_PORK
+    RewardType_middle: MONEY
+    Reward_middle: 43.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de cochon cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  CochonCuitx2 SkyDrop:
+    MenuItem:
+    - type:GRILLED_PORK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCochon cuit
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCochon cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m43,2&a 86,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 298 598,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GRILLED_PORK
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de cochon cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GRILLED_PORK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de cochon cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GRILLED_PORK
+    RewardType_middle: MONEY
+    Reward_middle: 43.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de cochon cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  CochonCuit SkyDrop:
+    MenuItem:
+    - type:GRILLED_PORK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCochon cuit
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCochon cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a43,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 149 299,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GRILLED_PORK
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de cochon cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GRILLED_PORK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de cochon cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GRILLED_PORK
+    RewardType_middle: MONEY
+    Reward_middle: 43.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de cochon cuites)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyDrop
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

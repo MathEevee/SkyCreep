@@ -1,0 +1,314 @@
+ShopName: SkyLord_Rod
+DisplayName: '&8» Rod du SkyLord'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  BlazeRodx3 SkyLord:
+    MenuItem:
+    - type:BLAZE_ROD
+    - name:&7Défi &8- &aBâton de blaze
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBâton de blaze'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m308,0&a 924,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 193 344,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BLAZE_ROD
+      - amount:1
+    RewardType: MONEY
+    Reward: 308.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bâton de blaze)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BLAZE_ROD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 308.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bâtons de blaze)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BLAZE_ROD
+    RewardType_middle: MONEY
+    Reward_middle: 308.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bâtons de blaze)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  BlazeRodx2 SkyLord:
+    MenuItem:
+    - type:BLAZE_ROD
+    - name:&7Défi &8- &aBâton de blaze
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBâton de blaze'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m308,0&a 616,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 128 896,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BLAZE_ROD
+      - amount:1
+    RewardType: MONEY
+    Reward: 308.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bâton de blaze)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BLAZE_ROD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 308.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bâtons de blaze)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BLAZE_ROD
+    RewardType_middle: MONEY
+    Reward_middle: 308.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bâtons de blaze)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  BlazeRod SkyLord:
+    MenuItem:
+    - type:BLAZE_ROD
+    - name:&7Défi &8- &aBâton de blaze
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBâton de blaze'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a308,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 064 448,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BLAZE_ROD
+      - amount:1
+    RewardType: MONEY
+    Reward: 308.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bâton de blaze)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BLAZE_ROD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 308.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bâtons de blaze)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BLAZE_ROD
+    RewardType_middle: MONEY
+    Reward_middle: 308.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bâtons de blaze)'
+    InventoryLocation: 1
+  EndRodx3 SkyLord:
+    MenuItem:
+    - type:END_ROD
+    - name:&7Défi &8- &aBâton de l'end 
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBâton de l''end'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m118,1&a 354,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 224 460,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:END_ROD
+      - amount:1
+    RewardType: MONEY
+    Reward: 118.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bâton de l''end)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:END_ROD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 118.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bâtons de l''end)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:END_ROD
+    RewardType_middle: MONEY
+    Reward_middle: 118.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bâtons de l''end)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  EndRodx2 SkyLord:
+    MenuItem:
+    - type:END_ROD
+    - name:&7Défi &8- &aBâton de l'end 
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBâton de l''end'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m118,1&a 236,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 816 307,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:END_ROD
+      - amount:1
+    RewardType: MONEY
+    Reward: 118.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bâton de l''end)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:END_ROD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 118.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bâtons de l''end)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:END_ROD
+    RewardType_middle: MONEY
+    Reward_middle: 118.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bâtons de l''end)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  EndRod SkyLord:
+    MenuItem:
+    - type:END_ROD
+    - name:&7Défi &8- &aBâton de l'end
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBâton de l''end'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a118,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 408 153,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:END_ROD
+      - amount:1
+    RewardType: MONEY
+    Reward: 118.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bâton de l''end)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:END_ROD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 118.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 bâtons de l''end)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:END_ROD
+    RewardType_middle: MONEY
+    Reward_middle: 118.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% bâtons de l''end)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyLord
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+

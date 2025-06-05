@@ -1,0 +1,326 @@
+ShopName: SkyLord_Glace
+DisplayName: '&8» Glace du SkyLord'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Icex3 SkyLord:
+    MenuItem:
+    - type:ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m150,2&a 450,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 557 273,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 150.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 150.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:ICE
+    RewardType_middle: MONEY
+    Reward_middle: 150.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Icex2 SkyLord:
+    MenuItem:
+    - type:ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m150,2&a 300,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 038 182,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 150.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 150.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:ICE
+    RewardType_middle: MONEY
+    Reward_middle: 150.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Ice SkyLord:
+    MenuItem:
+    - type:ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a150,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 519 091,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 150.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 150.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:ICE
+    RewardType_middle: MONEY
+    Reward_middle: 150.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace)'
+    InventoryLocation: 1
+  PackedIcex3 SkyLord:
+    MenuItem:
+    - type:PACKED_ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace compactée 
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace Compactée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m268,2&a 804,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 780 697,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PACKED_ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 268.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace compactée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PACKED_ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 268.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace compactée)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PACKED_ICE
+    RewardType_middle: MONEY
+    Reward_middle: 268.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace compactée)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  PackedIcex2 SkyLord:
+    MenuItem:
+    - type:PACKED_ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace compactée 
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace Compactée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m268,2&a 536,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 853 798,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PACKED_ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 268.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace compactée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PACKED_ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 268.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace compactée)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PACKED_ICE
+    RewardType_middle: MONEY
+    Reward_middle: 268.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace compactée)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  PackedIce SkyLord:
+    MenuItem:
+    - type:PACKED_ICE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aGlace compactée
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGlace compactée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a268,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 926 899,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PACKED_ICE
+      - amount:1
+    RewardType: MONEY
+    Reward: 268.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de glace compactée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PACKED_ICE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 268.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de glace compactée)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PACKED_ICE
+    RewardType_middle: MONEY
+    Reward_middle: 268.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de glace compactée)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyLord
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+

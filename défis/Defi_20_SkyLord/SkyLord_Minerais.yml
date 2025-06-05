@@ -1,0 +1,2195 @@
+ShopName: SkyLord_Minerais
+DisplayName: '&8» Minerais du SkyLord'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Charbonx3 SkyLord:
+    MenuItem:
+    - type:COAL
+    - durability:0
+    - name:&7Défi &8- &aCharbon
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCharbon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m58,8&a 176,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 609 638,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 58.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 charbon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 58.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 charbons)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 58.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% charbons)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Charbonx2 SkyLord:
+    MenuItem:
+    - type:COAL
+    - durability:0
+    - name:&7Défi &8- &aCharbon
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCharbon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m58,8&a 117,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 406 425,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 58.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 charbon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 58.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 charbons)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 58.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% charbons)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Charbon SkyLord:
+    MenuItem:
+    - type:COAL
+    - durability:0
+    - name:&7Défi &8- &aCharbon
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCharbon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a58,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 203 212,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL
+      - durability:0
+      - amount:1
+    RewardType: MONEY
+    Reward: 58.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 charbon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL
+      - durability:0
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 58.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 charbons)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL
+      - durability:0
+    RewardType_middle: MONEY
+    Reward_middle: 58.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% charbons)'
+    InventoryLocation: 1
+  LingotFerx3 SkyLord:
+    MenuItem:
+    - type:IRON_INGOT
+    - name:&7Défi &8- &aLingot de fer
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLingot de fer'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m399,8&a 1 199,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 145 126,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:IRON_INGOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 399.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lingot de fer)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:IRON_INGOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 399.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lingots de fer)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:IRON_INGOT
+    RewardType_middle: MONEY
+    Reward_middle: 399.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lingots de fer)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  LingotFerx2 SkyLord:
+    MenuItem:
+    - type:IRON_INGOT
+    - name:&7Défi &8- &aLingot de fer
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLingot de fer'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m399,8&a 799,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 763 417,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:IRON_INGOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 399.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lingot de fer)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:IRON_INGOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 399.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lingots de fer)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:IRON_INGOT
+    RewardType_middle: MONEY
+    Reward_middle: 399.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lingots de fer)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  LingotFer SkyLord:
+    MenuItem:
+    - type:IRON_INGOT
+    - name:&7Défi &8- &aLingot de fer
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLingot de fer'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a399,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 381 708,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:IRON_INGOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 399.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lingot de fer)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:IRON_INGOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 399.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lingots de fer)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:IRON_INGOT
+    RewardType_middle: MONEY
+    Reward_middle: 399.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lingots de fer)'
+    InventoryLocation: 2
+  LingotOrx3 SkyLord:
+    MenuItem:
+    - type:GOLD_INGOT
+    - name:&7Défi &8- &aLingot d'or
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLingot d''or'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m524,3&a 1 572,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 435 942,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLD_INGOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 524.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lingot d''or)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLD_INGOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 524.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lingots d''or)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLD_INGOT
+    RewardType_middle: MONEY
+    Reward_middle: 524.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lingots d''or)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  LingotOrx2 SkyLord:
+    MenuItem:
+    - type:GOLD_INGOT
+    - name:&7Défi &8- &aLingot d'or
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLingot d''or'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m524,3&a 1 048,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 623 961,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLD_INGOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 524.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lingot d''or)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLD_INGOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 524.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lingots d''or)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLD_INGOT
+    RewardType_middle: MONEY
+    Reward_middle: 524.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lingots d''or)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  LingotOr SkyLord:
+    MenuItem:
+    - type:GOLD_INGOT
+    - name:&7Défi &8- &aLingot d'or
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLingot d''or'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a524,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 811 980,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLD_INGOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 524.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lingot d''or)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLD_INGOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 524.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lingots d''or)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLD_INGOT
+    RewardType_middle: MONEY
+    Reward_middle: 524.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lingots d''or)'
+    InventoryLocation: 3
+  Diamantx3 SkyLord:
+    MenuItem:
+    - type:DIAMOND
+    - name:&7Défi &8- &aDiamant
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aDiamant'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m472,4&a 1 417,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 897 843,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:DIAMOND
+      - amount:1
+    RewardType: MONEY
+    Reward: 472.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 diamant)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:DIAMOND
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 472.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 diamants)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:DIAMOND
+    RewardType_middle: MONEY
+    Reward_middle: 472.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% diamants)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 4
+  Diamantx2 SkyLord:
+    MenuItem:
+    - type:DIAMOND
+    - name:&7Défi &8- &aDiamant
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aDiamant'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m472,4&a 944,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 265 228,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:DIAMOND
+      - amount:1
+    RewardType: MONEY
+    Reward: 472.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 diamant)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:DIAMOND
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 472.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 diamants)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:DIAMOND
+    RewardType_middle: MONEY
+    Reward_middle: 472.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% diamants)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 4
+  Diamant SkyLord:
+    MenuItem:
+    - type:DIAMOND
+    - name:&7Défi &8- &aDiamant
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aDiamant'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a472,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 632 614,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:DIAMOND
+      - amount:1
+    RewardType: MONEY
+    Reward: 472.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 diamant)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:DIAMOND
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 472.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 diamants)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:DIAMOND
+    RewardType_middle: MONEY
+    Reward_middle: 472.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% diamants)'
+    InventoryLocation: 4
+  Quartzx3 SkyLord:
+    MenuItem:
+    - type:QUARTZ
+    - name:&7Défi &8- &aQuartz
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aQuartz'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m155,3&a 465,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 610 150,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:QUARTZ
+      - amount:1
+    RewardType: MONEY
+    Reward: 155.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 quartz)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:QUARTZ
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 155.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 quartz)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:QUARTZ
+    RewardType_middle: MONEY
+    Reward_middle: 155.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% quartz)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 5
+  Quartzx2 SkyLord:
+    MenuItem:
+    - type:QUARTZ
+    - name:&7Défi &8- &aQuartz
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aQuartz'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m155,3&a 310,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 073 433,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:QUARTZ
+      - amount:1
+    RewardType: MONEY
+    Reward: 155.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 quartz)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:QUARTZ
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 155.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 quartz)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:QUARTZ
+    RewardType_middle: MONEY
+    Reward_middle: 155.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% quartz)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 5
+  Quartz SkyLord:
+    MenuItem:
+    - type:QUARTZ
+    - name:&7Défi &8- &aQuartz
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aQuartz'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a155,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 536 716,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:QUARTZ
+      - amount:1
+    RewardType: MONEY
+    Reward: 155.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 quartz)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:QUARTZ
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 155.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 quartz)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:QUARTZ
+    RewardType_middle: MONEY
+    Reward_middle: 155.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% quartz)'
+    InventoryLocation: 5
+  LapisLazulix3 SkyLord:
+    MenuItem:
+    - type:INK_SACK
+    - durability:4
+    - name:&7Défi &8- &aLapis lazuli
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapis lazuli'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m64,2&a 192,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 665 625,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:INK_SACK
+      - durability:4
+      - amount:1
+    RewardType: MONEY
+    Reward: 64.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lapis lazuli)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:INK_SACK
+      - durability:4
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 64.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lapis lazuli)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:INK_SACK
+      - durability:4
+    RewardType_middle: MONEY
+    Reward_middle: 64.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lapis lazuli)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 6
+  LapisLazulix2 SkyLord:
+    MenuItem:
+    - type:INK_SACK
+    - durability:4
+    - name:&7Défi &8- &aLapis lazuli
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapis lazuli'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m64,2&a 128,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 443 750,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:INK_SACK
+      - durability:4
+      - amount:1
+    RewardType: MONEY
+    Reward: 64.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lapis lazuli)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:INK_SACK
+      - durability:4
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 64.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lapis lazuli)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:INK_SACK
+      - durability:4
+    RewardType_middle: MONEY
+    Reward_middle: 64.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lapis lazuli)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 6
+  LapisLazuli SkyLord:
+    MenuItem:
+    - type:INK_SACK
+    - durability:4
+    - name:&7Défi &8- &aLapis lazuli
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapis lazuli'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a64,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 221 875,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:INK_SACK
+      - durability:4
+      - amount:1
+    RewardType: MONEY
+    Reward: 64.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lapis lazuli)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:INK_SACK
+      - durability:4
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 64.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lapis lazuli)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:INK_SACK
+      - durability:4
+    RewardType_middle: MONEY
+    Reward_middle: 64.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lapis lazuli)'
+    InventoryLocation: 6
+  Redstonex3 SkyLord:
+    MenuItem:
+    - type:REDSTONE
+    - name:&7Défi &8- &aRedstone
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aRedstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m99,7&a 299,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 033 689,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:REDSTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 99.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 redstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:REDSTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 99.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 redstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:REDSTONE
+    RewardType_middle: MONEY
+    Reward_middle: 99.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% redstone)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 7
+  Redstonex2 SkyLord:
+    MenuItem:
+    - type:REDSTONE
+    - name:&7Défi &8- &aRedstone
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aRedstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m99,7&a 199,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 689 126,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:REDSTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 99.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 redstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:REDSTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 99.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 redstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:REDSTONE
+    RewardType_middle: MONEY
+    Reward_middle: 99.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% redstone)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 7
+  Redstone SkyLord:
+    MenuItem:
+    - type:REDSTONE
+    - name:&7Défi &8- &aRedstone
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aRedstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a99,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 344 563,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:REDSTONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 99.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 redstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:REDSTONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 99.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 redstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:REDSTONE
+    RewardType_middle: MONEY
+    Reward_middle: 99.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% redstone)'
+    InventoryLocation: 7
+  Emeraudex3 SkyLord:
+    MenuItem:
+    - type:EMERALD
+    - name:&7Défi &8- &aÉmeraude
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aÉmeraude'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m124,0&a 372,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 285 632,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:EMERALD
+      - amount:1
+    RewardType: MONEY
+    Reward: 124.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 émeraude)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:EMERALD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 124.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 émeraudes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:EMERALD
+    RewardType_middle: MONEY
+    Reward_middle: 124.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% émeraudes)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 8
+  Emeraudex2 SkyLord:
+    MenuItem:
+    - type:EMERALD
+    - name:&7Défi &8- &aÉmeraude
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aÉmeraude'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m124,0&a 248,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 857 088,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:EMERALD
+      - amount:1
+    RewardType: MONEY
+    Reward: 124.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 émeraude)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:EMERALD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 124.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 émeraudes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:EMERALD
+    RewardType_middle: MONEY
+    Reward_middle: 124.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% émeraudes)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 8
+  Emeraude SkyLord:
+    MenuItem:
+    - type:EMERALD
+    - name:&7Défi &8- &aÉmeraude
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aÉmeraude'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a124,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 428 544,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:EMERALD
+      - amount:1
+    RewardType: MONEY
+    Reward: 124.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 émeraude)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:EMERALD
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 124.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 émeraudes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:EMERALD
+    RewardType_middle: MONEY
+    Reward_middle: 124.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% émeraudes)'
+    InventoryLocation: 8
+  Charcoalx3 SkyLord:
+    MenuItem:
+    - type:COAL
+    - durability:1
+    - name:&7Défi &8- &aCharbon de bois
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCharbon de bois'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m355,7&a 1 067,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 687 897,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 355.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 charbon de bois)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 355.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 charbons de bois)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 355.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% charbons de bois)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 9
+  Charcoalx2 SkyLord:
+    MenuItem:
+    - type:COAL
+    - durability:1
+    - name:&7Défi &8- &aCharbon de bois
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCharbon de bois'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m355,7&a 711,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 458 598,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 355.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 charbon de bois)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 355.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 charbons de bois)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 355.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% charbons de bois)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 9
+  Charcoal SkyLord:
+    MenuItem:
+    - type:COAL
+    - durability:1
+    - name:&7Défi &8- &aCharbon de bois
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCharbon de bois'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a355,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 229 299,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 355.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 charbon de bois)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 355.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 charbons de bois)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 355.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% charbons de bois)'
+    InventoryLocation: 9
+  MineraisCharbonx3 SkyLord:
+    MenuItem:
+    - type:COAL_ORE
+    - name:&7Défi &8- &aMinerai de charbon
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de charbon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m230,2&a 690,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 386 713,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 230.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de charbon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 230.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de charbon)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 230.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de charbon)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 10
+  MineraisCharbonx2 SkyLord:
+    MenuItem:
+    - type:COAL_ORE
+    - name:&7Défi &8- &aMinerai de charbon
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de charbon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m230,2&a 460,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 591 142,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 230.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de charbon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 230.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de charbon)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 230.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de charbon)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 10
+  MineraisCharbon SkyLord:
+    MenuItem:
+    - type:COAL_ORE
+    - name:&7Défi &8- &aMinerai de charbon
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de charbon'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a230,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 795 571,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COAL_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 230.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de charbon)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COAL_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 230.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de charbon)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COAL_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 230.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de charbon)'
+    InventoryLocation: 10
+  MineraisFerx3 SkyLord:
+    MenuItem:
+    - type:IRON_ORE
+    - name:&7Défi &8- &aMinerai de fer
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de fer'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m315,1&a 945,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 266 956,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:IRON_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 315.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de fer)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:IRON_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 315.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de fer)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:IRON_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 315.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de fer)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 11
+  MineraisFerx2 SkyLord:
+    MenuItem:
+    - type:IRON_ORE
+    - name:&7Défi &8- &aMinerai de fer
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de fer'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m315,1&a 630,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 177 971,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:IRON_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 315.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de fer)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:IRON_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 315.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de fer)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:IRON_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 315.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de fer)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 11
+  MineraisFer SkyLord:
+    MenuItem:
+    - type:IRON_ORE
+    - name:&7Défi &8- &aMinerai de fer
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de fer'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a315,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 088 985,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:IRON_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 315.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de fer)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:IRON_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 315.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de fer)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:IRON_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 315.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de fer)'
+    InventoryLocation: 11
+  MineraisOrx3 SkyLord:
+    MenuItem:
+    - type:GOLD_ORE
+    - name:&7Défi &8- &aMinerai d'or
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai d''or'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m412,1&a 1 236,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 272 652,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLD_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 412.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai d''or)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLD_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 412.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais d''or)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLD_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 412.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais d''or)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 12
+  MineraisOrx2 SkyLord:
+    MenuItem:
+    - type:GOLD_ORE
+    - name:&7Défi &8- &aMinerai d'or
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai d''or'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m412,1&a 824,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 848 435,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLD_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 412.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai d''or)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLD_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 412.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais d''or)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLD_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 412.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais d''or)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 12
+  MineraisOr SkyLord:
+    MenuItem:
+    - type:GOLD_ORE
+    - name:&7Défi &8- &aMinerai d'or
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai d''or'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a412,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 424 217,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLD_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 412.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai d''or)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLD_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 412.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais d''or)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLD_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 412.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais d''or)'
+    InventoryLocation: 12
+  MineraisDiamantx3 SkyLord:
+    MenuItem:
+    - type:DIAMOND_ORE
+    - name:&7Défi &8- &aMinerai de diamant
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de diamant'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 845,3&a 5 535,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 19 132 070,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:DIAMOND_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1845.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de diamant)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:DIAMOND_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1845.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de diamant)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:DIAMOND_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 1845.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de diamant)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 13
+  MineraisDiamantx2 SkyLord:
+    MenuItem:
+    - type:DIAMOND_ORE
+    - name:&7Défi &8- &aMinerai de diamant
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de diamant'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 845,3&a 3 690,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 12 754 713,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:DIAMOND_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1845.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de diamant)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:DIAMOND_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1845.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de diamant)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:DIAMOND_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 1845.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de diamant)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 13
+  MineraisDiamant SkyLord:
+    MenuItem:
+    - type:DIAMOND_ORE
+    - name:&7Défi &8- &aMinerai de diamant
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de diamant'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 845,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 6 377 356,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:DIAMOND_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1845.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de diamant)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:DIAMOND_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1845.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de diamant)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:DIAMOND_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 1845.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de diamant)'
+    InventoryLocation: 13
+  MineraisQuartzx3 SkyLord:
+    MenuItem:
+    - type:QUARTZ_ORE
+    - name:&7Défi &8- &aMinerai de quartz
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de quartz'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m134,7&a 269,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 931 046,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:QUARTZ_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 134.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de quartz)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:QUARTZ_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 134.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de quartz)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:QUARTZ_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 134.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de quartz)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 14
+  MineraisQuartzx2 SkyLord:
+    MenuItem:
+    - type:QUARTZ_ORE
+    - name:&7Défi &8- &aMinerai de quartz
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de quartz'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m134,7&a 269,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 931 046,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:QUARTZ_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 134.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de quartz)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:QUARTZ_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 134.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de quartz)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:QUARTZ_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 134.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de quartz)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 14
+  MineraisQuartz SkyLord:
+    MenuItem:
+    - type:QUARTZ_ORE
+    - name:&7Défi &8- &aMinerai de quartz
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de quartz'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a134,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 465 523,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:QUARTZ_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 134.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 quartz)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:QUARTZ_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 134.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 quartz)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:QUARTZ_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 134.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% quartz)'
+    InventoryLocation: 14
+  MineraisLapisLazulix3 SkyLord:
+    MenuItem:
+    - type:LAPIS_ORE
+    - name:&7Défi &8- &aMinerai de lapis lazuli
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de lapis lazuli'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 020,7&a 3 062,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 10 582 617,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LAPIS_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1020.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de lapis lazuli)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LAPIS_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1020.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de lapis lazuli)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LAPIS_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 1020.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de lapis lazuli)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 15
+  MineraisLapisLazulix2 SkyLord:
+    MenuItem:
+    - type:LAPIS_ORE
+    - name:&7Défi &8- &aMinerai de lapis lazuli
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de lapis lazuli'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 020,7&a 2 041,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 7 055 078,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LAPIS_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1020.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de lapis lazuli)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LAPIS_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1020.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de lapis lazuli)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LAPIS_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 1020.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de lapis lazuli)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 15
+  MineraisLapisLazuli SkyLord:
+    MenuItem:
+    - type:LAPIS_ORE
+    - name:&7Défi &8- &aMinerai de lapis lazuli
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de lapis lazuli'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 020,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 527 539,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:LAPIS_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1020.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de lapis lazuli)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:LAPIS_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1020.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de lapis lazuli)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:LAPIS_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 1020.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de lapis lazuli)'
+    InventoryLocation: 15
+  MineraisRedstonex3 SkyLord:
+    MenuItem:
+    - type:REDSTONE_ORE
+    - name:&7Défi &8- &aMinerai de redstone
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de redstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m712,0&a 2 136,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 7 382 016,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:REDSTONE_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 712.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de redstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:REDSTONE_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 712.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de redstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:REDSTONE_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 712.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de redstone)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 16
+  MineraisRedstonex2 SkyLord:
+    MenuItem:
+    - type:REDSTONE_ORE
+    - name:&7Défi &8- &aMinerai de redstone
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de redstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m712,0&a 1 424,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 921 344,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:REDSTONE_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 712.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de redstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:REDSTONE_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 712.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de redstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:REDSTONE_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 712.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de redstone)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 16
+  MineraisRedstone SkyLord:
+    MenuItem:
+    - type:REDSTONE_ORE
+    - name:&7Défi &8- &aMinerai de redstone
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai de redstone'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a712,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 460 672,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:REDSTONE_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 712.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai de redstone)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:REDSTONE_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 712.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais de redstone)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:REDSTONE_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 712.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais de redstone)'
+    InventoryLocation: 16
+  MineraisEmeraudex3 SkyLord:
+    MenuItem:
+    - type:EMERALD_ORE
+    - name:&7Défi &8- &aMinerai d'émeraude
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai d''émeraude'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m382,7&a 1 148,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 967 833,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:EMERALD_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 382.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai d''émeraude)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:EMERALD_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 382.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais d''émeraude)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:EMERALD_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 382.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais d''émeraude)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 17
+  MineraisEmeraudex2 SkyLord:
+    MenuItem:
+    - type:EMERALD_ORE
+    - name:&7Défi &8- &aMinerai d'émeraude
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai d''émeraude'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m382,7&a 765,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 645 222,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:EMERALD_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 382.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai d''émeraude)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:EMERALD_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 382.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais d''émeraude)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:EMERALD_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 382.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais d''émeraude)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 17
+  MineraisEmeraude SkyLord:
+    MenuItem:
+    - type:EMERALD_ORE
+    - name:&7Défi &8- &aMinerai d'émeraude
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMinerai d''émeraude'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a382,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 322 611,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:EMERALD_ORE
+      - amount:1
+    RewardType: MONEY
+    Reward: 382.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 minerai d''émeraude)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:EMERALD_ORE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 382.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 minerais d''émeraude)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:EMERALD_ORE
+    RewardType_middle: MONEY
+    Reward_middle: 382.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% minerais d''émeraude)'
+    InventoryLocation: 17
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 19
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 20
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 21
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 22
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyLord
+    InventoryLocation: 23
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 24
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 25
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 26
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,325 @@
+ShopName: SkyGod_Citrouille
+DisplayName: '&8» Citrouilles du SkyGod'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Citrouillex3 SkyGod:
+    MenuItem:
+    - type:PUMPKIN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCitrouille
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCitrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m195,6&a 586,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 027 980,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    RewardType: MONEY
+    Reward: 195.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 195.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN
+    RewardType_middle: MONEY
+    Reward_middle: 195.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Citrouillex2 SkyGod:
+    MenuItem:
+    - type:PUMPKIN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCitrouille
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCitrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m195,6&a 391,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 351 987,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    RewardType: MONEY
+    Reward: 195.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 195.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN
+    RewardType_middle: MONEY
+    Reward_middle: 195.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Citrouille SkyGod:
+    MenuItem:
+    - type:PUMPKIN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aCitrouille
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCitrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a195,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 675 993,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    RewardType: MONEY
+    Reward: 195.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 195.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 citrouilles)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN
+    RewardType_middle: MONEY
+    Reward_middle: 195.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% citrouilles)'
+    InventoryLocation: 1
+  TarteCitrouillex3 SkyGod:
+    MenuItem:
+    - type:PUMPKIN_PIE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aTarte à la citrouille
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aTarte à la citrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 062,9&a 3 188,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 11 020 147,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN_PIE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1062.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 tarte à la citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN_PIE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1062.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 tartes à la citrouille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN_PIE
+    RewardType_middle: MONEY
+    Reward_middle: 1062.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% tartes à la citrouille)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  TarteCitrouillex2 SkyGod:
+    MenuItem:
+    - type:PUMPKIN_PIE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aTarte à la citrouille
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aTarte à la citrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 062,9&a 2 125,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 7 346 764,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN_PIE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1062.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 tarte à la citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN_PIE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1062.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 tartes à la citrouille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN_PIE
+    RewardType_middle: MONEY
+    Reward_middle: 1062.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% tartes à la citrouille)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  TarteCitrouille SkyGod:
+    MenuItem:
+    - type:PUMPKIN_PIE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aTarte à la citrouille
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aTarte à la citrouille'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 062,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 673 382,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PUMPKIN_PIE
+      - amount:1
+    RewardType: MONEY
+    Reward: 1062.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 tarte à la citrouille)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PUMPKIN_PIE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 1062.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 tartes à la citrouille)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PUMPKIN_PIE
+    RewardType_middle: MONEY
+    Reward_middle: 1062.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% tartes à la citrouille)'
+    InventoryLocation: 2
+
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyGod
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

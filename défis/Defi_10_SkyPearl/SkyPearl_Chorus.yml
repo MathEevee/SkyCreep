@@ -1,0 +1,314 @@
+ShopName: SkyPearl_Chorus
+DisplayName: '&8» Chorus du SkyPearl'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  ChorusFruitx3 SkyPearl:
+    MenuItem:
+    - type:CHORUS_FRUIT
+    - name:&7Défi &8- &aChorus
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aChorus'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m173,7&a 521,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 800 921,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CHORUS_FRUIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 173.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 chorus)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CHORUS_FRUIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 173.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 chorus)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CHORUS_FRUIT
+    RewardType_middle: MONEY
+    Reward_middle: 173.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% chorus)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  ChorusFruitx2 SkyPearl:
+    MenuItem:
+    - type:CHORUS_FRUIT
+    - name:&7Défi &8- &aChorus
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aChorus'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m173,7&a 347,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 200 614,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CHORUS_FRUIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 173.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 chorus)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CHORUS_FRUIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 173.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 chorus)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CHORUS_FRUIT
+    RewardType_middle: MONEY
+    Reward_middle: 173.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% chorus)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  ChorusFruit SkyPearl:
+    MenuItem:
+    - type:CHORUS_FRUIT
+    - name:&7Défi &8- &aChorus
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aChorus'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a173,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 600 307,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CHORUS_FRUIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 173.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 chorus)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CHORUS_FRUIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 173.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 chorus)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CHORUS_FRUIT
+    RewardType_middle: MONEY
+    Reward_middle: 173.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% chorus)'
+    InventoryLocation: 1
+  ChorusEclatex3 SkyPearl:
+    MenuItem:
+    - type:CHORUS_FRUIT_POPPED
+    - name:&7Défi &8- &aChorus éclaté
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aChorus éclaté'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m228,4&a 685,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 368 051,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CHORUS_FRUIT_POPPED
+      - amount:1
+    RewardType: MONEY
+    Reward: 228.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 chorus éclaté)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CHORUS_FRUIT_POPPED
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 228.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 chorus éclatés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CHORUS_FRUIT_POPPED
+    RewardType_middle: MONEY
+    Reward_middle: 228.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% chorus éclatés)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  ChorusEclatex2 SkyPearl:
+    MenuItem:
+    - type:CHORUS_FRUIT_POPPED
+    - name:&7Défi &8- &aChorus éclaté
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aChorus éclaté'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m228,4&a 456,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 578 700,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CHORUS_FRUIT_POPPED
+      - amount:1
+    RewardType: MONEY
+    Reward: 228.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 chorus éclaté)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CHORUS_FRUIT_POPPED
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 228.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 chorus éclatés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CHORUS_FRUIT_POPPED
+    RewardType_middle: MONEY
+    Reward_middle: 228.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% chorus éclatés)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  ChorusEclate SkyPearl:
+    MenuItem:
+    - type:CHORUS_FRUIT_POPPED
+    - name:&7Défi &8- &aChorus éclaté
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aChorus éclaté'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a228,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 789 350,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CHORUS_FRUIT_POPPED
+      - amount:1
+    RewardType: MONEY
+    Reward: 228.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 chorus éclaté)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CHORUS_FRUIT_POPPED
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 228.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 chorus éclatés)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CHORUS_FRUIT_POPPED
+    RewardType_middle: MONEY
+    Reward_middle: 228.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% chorus éclatés)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyPearl
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,607 @@
+ShopName: SkyMonster_Prismarine
+DisplayName: '&8» Prismarine du SkyMonster'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Prismarinex3 SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPrismarine
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPrismarine'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m160,8&a 482,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 667 174,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - amount:1
+    RewardType: MONEY
+    Reward: 160.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 prismarine)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 160.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 prismarines)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+    RewardType_middle: MONEY
+    Reward_middle: 160.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% prismarines)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Prismarinex2 SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPrismarine
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPrismarine'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m160,8&a 321,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 111 449,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - amount:1
+    RewardType: MONEY
+    Reward: 160.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 prismarine)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 160.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 prismarines)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+    RewardType_middle: MONEY
+    Reward_middle: 160.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% prismarines)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Prismarine SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPrismarine
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPrismarine'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a160,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 555 724,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - amount:1
+    RewardType: MONEY
+    Reward: 160.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 prismarine)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 160.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 prismarines)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+    RewardType_middle: MONEY
+    Reward_middle: 160.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% prismarines)'
+    InventoryLocation: 1
+  SeaLanternx3 SkyMonster:
+    MenuItem:
+    - type:SEA_LANTERN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLanterne aquatique
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLanterne aquatique'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m342,4&a 1 027,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 3 550 003,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SEA_LANTERN
+      - amount:1
+    RewardType: MONEY
+    Reward: 342.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lanterne aquatique)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SEA_LANTERN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 342.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lanternes aquatiques)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SEA_LANTERN
+    RewardType_middle: MONEY
+    Reward_middle: 342.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lanternes aquatiques)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  SeaLanternx2 SkyMonster:
+    MenuItem:
+    - type:SEA_LANTERN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLanterne aquatique
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLanterne aquatique'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m342,4&a 684,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 366 668,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SEA_LANTERN
+      - amount:1
+    RewardType: MONEY
+    Reward: 342.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lanterne aquatique)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SEA_LANTERN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 342.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lanternes aquatiques)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SEA_LANTERN
+    RewardType_middle: MONEY
+    Reward_middle: 342.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lanternes aquatiques)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  SeaLantern SkyMonster:
+    MenuItem:
+    - type:SEA_LANTERN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLanterne aquatique
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLanterne aquatique'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a342,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 183 334,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SEA_LANTERN
+      - amount:1
+    RewardType: MONEY
+    Reward: 342.4
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 lanterne aquatique)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SEA_LANTERN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 342.4*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 lanternes aquatiques)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SEA_LANTERN
+    RewardType_middle: MONEY
+    Reward_middle: 342.4
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% lanternes aquatiques)'
+    InventoryLocation: 2
+  DarkPrismarinex3 SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPrismarine sombre
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPrismarine sombre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m255,2&a 765,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 645 913,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 255.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de prismarine sombre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 255.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de prismarine sombre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 255.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de prismarine sombre)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  DarkPrismarinex2 SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPrismarine sombre
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPrismarine sombre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m255,2&a 510,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 763 942,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 255.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de prismarine sombre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 255.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de prismarine sombre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 255.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de prismarine sombre)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  DarkPrismarine SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - durability:2
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPrismarine sombre
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPrismarine sombre'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a255,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 881 971,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - durability:2
+      - amount:1
+    RewardType: MONEY
+    Reward: 255.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de prismarine sombre)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - durability:2
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 255.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de prismarine sombre)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+      - durability:2
+    RewardType_middle: MONEY
+    Reward_middle: 255.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de prismarine sombre)'
+    InventoryLocation: 3
+  PrismarineBrickx3 SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBrique de prismarine
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique de prismarine'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m255,2&a 765,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 645 913,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 255.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique de prismarine)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 255.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques de prismarine)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 255.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques de prismarine)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 4
+  PrismarineBrickx2 SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBrique de prismarine
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique de prismarine'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m255,2&a 510,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 1 763 942,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 255.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique de prismarine)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 255.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques de prismarine)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 255.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques de prismarine)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 4
+  PrismarineBrick SkyMonster:
+    MenuItem:
+    - type:PRISMARINE
+    - durability:1
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBrique de prismarine
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBrique de prismarine'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a255,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 881 971,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:PRISMARINE
+      - durability:1
+      - amount:1
+    RewardType: MONEY
+    Reward: 255.2
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 brique de prismarine)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:PRISMARINE
+      - durability:1
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 255.2*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 briques de prismarine)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:PRISMARINE
+      - durability:1
+    RewardType_middle: MONEY
+    Reward_middle: 255.2
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% briques de prismarine)'
+    InventoryLocation: 4
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyMonster
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

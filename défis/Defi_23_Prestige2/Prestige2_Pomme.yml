@@ -1,0 +1,316 @@
+ShopName: Prestige2_Pomme
+DisplayName: '&8» Pommes du Prestige2'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Pommex3 Prestige2:
+    MenuItem:
+    - type:APPLE
+    - name:&7Défi &8- &aPomme
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m48,9&a 146,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 506 995,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:APPLE
+      - amount:1
+    RewardType: MONEY
+    Reward: 48.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:APPLE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 48.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:APPLE
+    RewardType_middle: MONEY
+    Reward_middle: 48.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Pommex2 Prestige2:
+    MenuItem:
+    - type:APPLE
+    - name:&7Défi &8- &aPomme
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m48,9&a 97,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 337 996,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:APPLE
+      - amount:1
+    RewardType: MONEY
+    Reward: 48.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:APPLE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 48.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:APPLE
+    RewardType_middle: MONEY
+    Reward_middle: 48.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Pomme Prestige2:
+    MenuItem:
+    - type:APPLE
+    - name:&7Défi &8- &aPomme
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a48,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 168 998,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:APPLE
+      - amount:1
+    RewardType: MONEY
+    Reward: 48.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:APPLE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 48.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:APPLE
+    RewardType_middle: MONEY
+    Reward_middle: 48.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes)'
+    InventoryLocation: 1
+  PommeOrx3 Prestige2:
+    MenuItem:
+    - type:GOLDEN_APPLE
+    - name:&7Défi &8- &aPomme dorée
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme dorée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m5 215,0&a 15 645,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 54 069 120,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLDEN_APPLE
+      - amount:1
+    RewardType: MONEY
+    Reward: 5215.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme dorée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLDEN_APPLE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 5215.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes dorées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLDEN_APPLE
+    RewardType_middle: MONEY
+    Reward_middle: 5215.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes dorées)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  PommeOrx2 Prestige2:
+    MenuItem:
+    - type:GOLDEN_APPLE
+    - name:&7Défi &8- &aPomme dorée
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme dorée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m5 215,0&a 10 430,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 36 046 080,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLDEN_APPLE
+      - amount:1
+    RewardType: MONEY
+    Reward: 5215.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme dorée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLDEN_APPLE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 5215.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes dorées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLDEN_APPLE
+    RewardType_middle: MONEY
+    Reward_middle: 5215.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes dorées)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  PommeOr Prestige2:
+    MenuItem:
+    - type:GOLDEN_APPLE
+    - name:&7Défi &8- &aPomme dorée
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPomme dorée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a5 215,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 18 023 040,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLDEN_APPLE
+      - amount:1
+    RewardType: MONEY
+    Reward: 5215.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 pomme dorée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLDEN_APPLE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 5215.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 pommes dorées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLDEN_APPLE
+    RewardType_middle: MONEY
+    Reward_middle: 5215.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% pommes dorées)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: Prestige2
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

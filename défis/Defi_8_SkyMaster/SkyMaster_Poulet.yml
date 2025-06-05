@@ -1,0 +1,325 @@
+ShopName: SkyMaster_Poulet
+DisplayName: '&8» Poulet du SkyMaster'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  PouletCrux3 SkyMaster:
+    MenuItem:
+    - type:RAW_CHICKEN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoulet cru
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoulet cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m28,1&a 84,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 291 340,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_CHICKEN
+      - amount:1
+    RewardType: MONEY
+    Reward: 28.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de poulet crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_CHICKEN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 28.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de poulet crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_CHICKEN
+    RewardType_middle: MONEY
+    Reward_middle: 28.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de poulet crues)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  PouletCrux2 SkyMaster:
+    MenuItem:
+    - type:RAW_CHICKEN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoulet cru
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoulet cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m28,1&a 56,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 194 227,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_CHICKEN
+      - amount:1
+    RewardType: MONEY
+    Reward: 28.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de poulet crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_CHICKEN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 28.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de poulet crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_CHICKEN
+    RewardType_middle: MONEY
+    Reward_middle: 28.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de poulet crues)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  PouletCru SkyMaster:
+    MenuItem:
+    - type:RAW_CHICKEN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoulet cru
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoulet cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a28,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 97 113,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RAW_CHICKEN
+      - amount:1
+    RewardType: MONEY
+    Reward: 28.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de poulet crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RAW_CHICKEN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 28.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de poulet crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RAW_CHICKEN
+    RewardType_middle: MONEY
+    Reward_middle: 28.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de poulet crues)'
+    InventoryLocation: 1
+  PouletCuitx3 SkyMaster:
+    MenuItem:
+    - type:COOKED_CHICKEN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoulet cuit
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoulet cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m43,6&a 130,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 452 044,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_CHICKEN
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de poulet cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_CHICKEN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de poulet cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_CHICKEN
+    RewardType_middle: MONEY
+    Reward_middle: 43.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de poulet cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  PouletCuitx2 SkyMaster:
+    MenuItem:
+    - type:COOKED_CHICKEN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoulet cuit
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoulet cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m43,6&a 87,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 301 363,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_CHICKEN
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de poulet cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_CHICKEN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de poulet cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_CHICKEN
+    RewardType_middle: MONEY
+    Reward_middle: 43.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de poulet cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  PouletCuit SkyMaster:
+    MenuItem:
+    - type:COOKED_CHICKEN
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aPoulet cuit
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aPoulet cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a43,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 150 681,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_CHICKEN
+      - amount:1
+    RewardType: MONEY
+    Reward: 43.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de poulet cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_CHICKEN
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 43.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de poulet cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_CHICKEN
+    RewardType_middle: MONEY
+    Reward_middle: 43.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de poulet cuites)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyMaster
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

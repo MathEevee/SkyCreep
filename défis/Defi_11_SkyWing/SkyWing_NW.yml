@@ -1,0 +1,325 @@
+ShopName: SkyWing_NW
+DisplayName: '&8» Verrues du SkyWing'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Verruesx3 SkyWing:
+    MenuItem:
+    - type:NETHER_STALK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aVerrue du Nether
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aVerrue du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m52,0&a 156,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 539 136,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    RewardType: MONEY
+    Reward: 52.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 verrue du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_STALK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 52.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_STALK
+    RewardType_middle: MONEY
+    Reward_middle: 52.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Verruesx2 SkyWing:
+    MenuItem:
+    - type:NETHER_STALK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aVerrue du Nether
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aVerrue du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m52,0&a 104,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 359 424,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    RewardType: MONEY
+    Reward: 52.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 verrue du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_STALK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 52.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_STALK
+    RewardType_middle: MONEY
+    Reward_middle: 52.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Verrues SkyWing:
+    MenuItem:
+    - type:NETHER_STALK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aVerrue du Nether 
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aVerrue du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a52,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 179 712,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    RewardType: MONEY
+    Reward: 52.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 verrue du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_STALK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 52.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_STALK
+    RewardType_middle: MONEY
+    Reward_middle: 52.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% verrues du Nether)'
+    InventoryLocation: 1
+  BlocVerruesx3 SkyWing:
+    MenuItem:
+    - type:NETHER_WART_BLOCK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBloc de verrues du Nether
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de verrues du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m622,9&a 1 868,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 6 458 227,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_WART_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 622.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de verrues du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_WART_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 622.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_WART_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 622.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  BlocVerruesx2 SkyWing:
+    MenuItem:
+    - type:NETHER_WART_BLOCK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBloc de verrues du Nether
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de verrues du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m622,9&a 1 245,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 4 305 484,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_WART_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 622.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc de verrues du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_WART_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 622.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_WART_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 622.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de verrues du Nether)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  BlocVerrues SkyWing:
+    MenuItem:
+    - type:NETHER_WART_BLOCK
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aBloc de verrues du Nether
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc de verrues du Nether'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a622,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 152 742,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:NETHER_WART_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 622.9
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Bloc de verrues du Nether)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:NETHER_WART_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 622.9*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs de verrues du Nether)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:NETHER_WART_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 622.9
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs de verrues du Nether)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyWing
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

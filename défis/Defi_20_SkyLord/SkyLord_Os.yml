@@ -1,0 +1,314 @@
+ShopName: SkyLord_Os
+DisplayName: '&8» Os du SkyLord'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Osx3 SkyLord:
+    MenuItem:
+    - type:BONE
+    - name:&7Défi &8- &aOs
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aOs'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m12,3&a 36,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 127 526,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 12.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 os)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 12.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 os)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BONE
+    RewardType_middle: MONEY
+    Reward_middle: 12.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% os)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Osx2 SkyLord:
+    MenuItem:
+    - type:BONE
+    - name:&7Défi &8- &aOs
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aOs'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m12,3&a 24,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 85 017,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 12.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 os)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 12.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 os)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BONE
+    RewardType_middle: MONEY
+    Reward_middle: 12.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% os)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Os SkyLord:
+    MenuItem:
+    - type:BONE
+    - name:&7Défi &8- &aOs
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aOs'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a12,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 42 508,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BONE
+      - amount:1
+    RewardType: MONEY
+    Reward: 12.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 os)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BONE
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 12.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 os)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BONE
+    RewardType_middle: MONEY
+    Reward_middle: 12.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% os)'
+    InventoryLocation: 1
+  BlocOsx3 SkyLord:
+    MenuItem:
+    - type:BONE_BLOCK
+    - name:&7Défi &8- &aBloc d'os
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc d''os'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,0&a 147,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 508 032,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BONE_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc d''os)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BONE_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs d''os)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BONE_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 49.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs d''os)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  BlocOsx2 SkyLord:
+    MenuItem:
+    - type:BONE_BLOCK
+    - name:&7Défi &8- &aBloc d'os
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc d''os'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m49,0&a 98,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 338 688,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BONE_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc d''os)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BONE_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs d''os)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BONE_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 49.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs d''os)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  BlocOs SkyLord:
+    MenuItem:
+    - type:BONE_BLOCK
+    - name:&7Défi &8- &aBloc d'os
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBloc d''os'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a49,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 169 344,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BONE_BLOCK
+      - amount:1
+    RewardType: MONEY
+    Reward: 49.0
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 bloc d''os)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BONE_BLOCK
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 49.0*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 blocs d''os)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BONE_BLOCK
+    RewardType_middle: MONEY
+    Reward_middle: 49.0
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% blocs d''os)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyLord
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

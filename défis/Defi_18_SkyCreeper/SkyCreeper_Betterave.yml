@@ -1,0 +1,314 @@
+ShopName: SkyCreeper_Betterave
+DisplayName: '&8» Betterave du SkyCreeper'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  GrainesBetteravex3 SkyCreeper:
+    MenuItem:
+    - type:BEETROOT_SEEDS
+    - name:&7Défi &8- &aGraine de betterave
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGraine de betterave'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m5,6&a 16,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 58 060,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BEETROOT_SEEDS
+      - amount:1
+    RewardType: MONEY
+    Reward: 5.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 graine de betterave)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BEETROOT_SEEDS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 5.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 graines de betterave)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BEETROOT_SEEDS
+    RewardType_middle: MONEY
+    Reward_middle: 5.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% graines de betterave)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  GrainesBetteravex2 SkyCreeper:
+    MenuItem:
+    - type:BEETROOT_SEEDS
+    - name:&7Défi &8- &aGraine de betterave
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGraine de betterave'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m5,6&a 11,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 38 707,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BEETROOT_SEEDS
+      - amount:1
+    RewardType: MONEY
+    Reward: 5.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 graine de betterave)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BEETROOT_SEEDS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 5.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 graines de betterave)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BEETROOT_SEEDS
+    RewardType_middle: MONEY
+    Reward_middle: 5.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% graines de betterave)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  GrainesBetterave SkyCreeper:
+    MenuItem:
+    - type:BEETROOT_SEEDS
+    - name:&7Défi &8- &aGraine de betterave
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aGraine de betterave'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a5,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 19 353,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BEETROOT_SEEDS
+      - amount:1
+    RewardType: MONEY
+    Reward: 5.6
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 graine de betterave)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BEETROOT_SEEDS
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 5.6*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 graines de betterave)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BEETROOT_SEEDS
+    RewardType_middle: MONEY
+    Reward_middle: 5.6
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% graines de betterave)'
+    InventoryLocation: 1
+  Betteravex3 SkyCreeper:
+    MenuItem:
+    - type:BEETROOT
+    - name:&7Défi &8- &aBetterave
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBetterave'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m47,5&a 142,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 492 480,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BEETROOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 47.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 betterave)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BEETROOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 47.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 betteraves)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BEETROOT
+    RewardType_middle: MONEY
+    Reward_middle: 47.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% betteraves)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  Betteravex2 SkyCreeper:
+    MenuItem:
+    - type:BEETROOT
+    - name:&7Défi &8- &aBetterave
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBetterave'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m47,5&a 95,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 328 320,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BEETROOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 47.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 betterave)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BEETROOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 47.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 betteraves)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BEETROOT
+    RewardType_middle: MONEY
+    Reward_middle: 47.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% betteraves)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  Betterave SkyCreeper:
+    MenuItem:
+    - type:BEETROOT
+    - name:&7Défi &8- &aBetterave
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aBetterave'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a47,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 164 160,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:BEETROOT
+      - amount:1
+    RewardType: MONEY
+    Reward: 47.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 betterave)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:BEETROOT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 47.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 betteraves)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:BEETROOT
+    RewardType_middle: MONEY
+    Reward_middle: 47.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% betteraves)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - amount:1
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: SkyCreeper
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

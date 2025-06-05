@@ -1,0 +1,503 @@
+ShopName: Prestige4_Carotte
+DisplayName: '&8» Carottes du Prestige4'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  Carottex3 Prestige4:
+    MenuItem:
+    - type:CARROT_ITEM
+    - name:&7Défi &8- &aCarotte
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m10,8&a 32,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 111 974,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CARROT_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 10.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CARROT_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 10.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CARROT_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 10.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  Carottex2 Prestige4:
+    MenuItem:
+    - type:CARROT_ITEM
+    - name:&7Défi &8- &aCarotte
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m10,8&a 21,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 74 649,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CARROT_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 10.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CARROT_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 10.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CARROT_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 10.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  Carotte Prestige4:
+    MenuItem:
+    - type:CARROT_ITEM
+    - name:&7Défi &8- &aCarotte
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a10,8 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 37 324,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:CARROT_ITEM
+      - amount:1
+    RewardType: MONEY
+    Reward: 10.8
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:CARROT_ITEM
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 10.8*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:CARROT_ITEM
+    RewardType_middle: MONEY
+    Reward_middle: 10.8
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes)'
+    InventoryLocation: 1
+  CarotteOrx3 Prestige4:
+    MenuItem:
+    - type:GOLDEN_CARROT
+    - name:&7Défi &8- &aCarotte dorée
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte dorée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m792,3&a 2 376,9 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 8 214 566,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLDEN_CARROT
+      - amount:1
+    RewardType: MONEY
+    Reward: 792.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte dorée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLDEN_CARROT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 792.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes dorées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLDEN_CARROT
+    RewardType_middle: MONEY
+    Reward_middle: 792.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes dorées)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  CarotteOrx2 Prestige4:
+    MenuItem:
+    - type:GOLDEN_CARROT
+    - name:&7Défi &8- &aCarotte dorée
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte dorée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m792,3&a 1 584,6 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 476 377,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLDEN_CARROT
+      - amount:1
+    RewardType: MONEY
+    Reward: 792.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte dorée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLDEN_CARROT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 792.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes dorées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLDEN_CARROT
+    RewardType_middle: MONEY
+    Reward_middle: 792.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes dorées)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  CarotteOr Prestige4:
+    MenuItem:
+    - type:GOLDEN_CARROT
+    - name:&7Défi &8- &aCarotte dorée
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aCarotte dorée'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a792,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 2 738 188,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:GOLDEN_CARROT
+      - amount:1
+    RewardType: MONEY
+    Reward: 792.3
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 carotte dorée)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:GOLDEN_CARROT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 792.3*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 carottes dorées)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:GOLDEN_CARROT
+    RewardType_middle: MONEY
+    Reward_middle: 792.3
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% carottes dorées)'
+    InventoryLocation: 2
+  MonolitheCarottex3 Prestige4:
+    MenuItem:
+    - hdb:54438
+    - name:&7Défi &8- &aMonolithe de carottes
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de carottes'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 592,1&a 4 776,3 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 16 506 892,8 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType: MONEY
+    Reward: 1592.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de carottes)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1592.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1592.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de carottes)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 3
+  MonolitheCarottex2 Prestige4:
+    MenuItem:
+    - hdb:54438
+    - name:&7Défi &8- &aMonolithe de carottes
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de carottes'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m1 592,1&a 3 184,2 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 11 004 595,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType: MONEY
+    Reward: 1592.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de carottes)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1592.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1592.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de carottes)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 3
+  MonolitheCarotte Prestige4:
+    MenuItem:
+    - hdb:54438
+    - name:&7Défi &8- &aMonolithe de carottes
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aMonolithe de carottes'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a1 592,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 5 502 297,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:SKULL_ITEM
+      - amount:1
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType: MONEY
+    Reward: 1592.1
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 Monolithe de carottes)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:SKULL_ITEM
+      - amount:64
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType_right: MONEY
+    Reward_right: 1592.1*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 Monolithes de carottes)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:SKULL_ITEM
+      - durability:3
+      - name:&6Monolithe de carottes
+      - lore1:&8&m----------------------
+      - lore2:&f Butin rare issu du farm.
+      - lore3:&f Vendez le dans vos défis.
+      - lore4:&8&m----------------------
+      - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZlMDc4MzYzYWI5ZWM4NTBmNWE5YTNiNjE5MWEyNDBhNmUzYmUzNjk1YWEwOGY4Zjg5YzI0NTg2MTg3Njg0MCJ9fX0=
+    RewardType_middle: MONEY
+    Reward_middle: 1592.1
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% Monolithes de carottes)'
+    InventoryLocation: 3
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: Prestige4
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

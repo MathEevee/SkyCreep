@@ -521,7 +521,9 @@ void	parse_link_file(std::vector<Item> all_item, std::string class_name, std::st
 	else
 	{
 		if (infile.is_open() == false)
+		{
 			link = select_defis_link(rank_name) + LINK_BIS(rank_name);
+		}
 	}
 	infile.close();
 	change_file(all_item, link);

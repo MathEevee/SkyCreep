@@ -1,0 +1,325 @@
+ShopName: Facile_Lapin
+DisplayName: '&8» Lapin du Facile'
+shop:
+
+###############
+#    ITEMS    #
+###############
+
+  LapinCrux3 Facile:
+    MenuItem:
+    - type:RABBIT
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLapin cru
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapin cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m24,7&a 74,1 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 256 089,6 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RABBIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 24.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de lapin crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RABBIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 24.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de lapin crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RABBIT
+    RewardType_middle: MONEY
+    Reward_middle: 24.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de lapin crues)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 1
+  LapinCrux2 Facile:
+    MenuItem:
+    - type:RABBIT
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLapin cru
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapin cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m24,7&a 49,4 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 170 726,4 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RABBIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 24.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de lapin crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RABBIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 24.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de lapin crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RABBIT
+    RewardType_middle: MONEY
+    Reward_middle: 24.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de lapin crues)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 1
+  LapinCru Facile:
+    MenuItem:
+    - type:RABBIT
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLapin cru
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapin cru'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a24,7 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 85 363,2 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:RABBIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 24.7
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de lapin crue)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:RABBIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 24.7*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de lapin crues)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:RABBIT
+    RewardType_middle: MONEY
+    Reward_middle: 24.7
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de lapin crues)'
+    InventoryLocation: 1
+  LapinCuitx3 Facile:
+    MenuItem:
+    - type:COOKED_RABBIT
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLapin cuit
+    - 'lore:&bBonus x3 actif &7(%luckperms_inherited_expiry_time_vente.triple.skypoints%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapin cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m37,5&a 112,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 388 800,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_RABBIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 37.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de lapin cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_RABBIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 37.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de lapin cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_RABBIT
+    RewardType_middle: MONEY
+    Reward_middle: 37.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de lapin cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:vente.triple.skypoints
+    InventoryLocation: 2
+  LapinCuitx2 Facile:
+    MenuItem:
+    - type:COOKED_RABBIT
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLapin cuit
+    - 'lore:&bBonus x2 actif &7(%luckperms_inherited_expiry_time_bossshop.rewardmultiplier.money%)'
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapin cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &8&m37,5&a 75,0 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 259 200,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_RABBIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 37.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de lapin cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_RABBIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 37.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de lapin cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_RABBIT
+    RewardType_middle: MONEY
+    Reward_middle: 37.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de lapin cuites)'
+    Condition:
+    - type:PERMISSION
+    - match:BossShop.RewardMultiplier.Money
+    InventoryLocation: 2
+  LapinCuit Facile:
+    MenuItem:
+    - type:COOKED_RABBIT
+    - enchantment:DAMAGE_ALL#1
+    - itemflag:HIDE_ENCHANTS
+    - name:&7Défi &8- &aLapin cuit
+    - 'lore:'
+    - 'lore:&eRessource requise :'
+    - 'lore:&e ▪ &aLapin cuit'
+    - 'lore:'
+    - 'lore:&eRécompenses :'
+    - 'lore:&e ▪ &a37,5 SkyPoints &8| &7x1'
+    - 'lore:&7&o  (DC : 129 600,0 SP)'
+    - 'lore:'
+    - 'lore:&a » Clic gauche &8| &7x1'
+    - 'lore:&e » Clic droit &8| &7x64'
+    - 'lore:&7 » Clic molette &8| &7tout'
+    PriceType: ITEM
+    Price:
+    - - type:COOKED_RABBIT
+      - amount:1
+    RewardType: MONEY
+    Reward: 37.5
+    Message: '&a&l +%reward% SkyPoints &7&o(x1 viande de lapin cuite)'
+    PriceType_right: ITEM
+    Price_right:
+    - - type:COOKED_RABBIT
+      - amount:64
+    RewardType_right: MONEY
+    Reward_right: 37.5*64
+    Message_right: '&a&l +%reward_right% SkyPoints &7&o(x64 viandes de lapin cuites)'
+    PriceType_middle: ITEMALL
+    Price_middle:
+    - - type:COOKED_RABBIT
+    RewardType_middle: MONEY
+    Reward_middle: 37.5
+    Message_middle: '&a&l +%reward_middle% SkyPoints &7&o(x%itemall_quantity% viandes de lapin cuites)'
+    InventoryLocation: 2
+    
+###############
+#   FILTRES   #
+###############
+
+  vitre1:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 10
+  vitre2:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 11
+  vitre3:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 12
+  vitre4:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 13
+  Retour:
+    MenuItem:
+    - type:SPRUCE_DOOR_ITEM
+    - name:&cRetour au menu précédent
+    RewardType: SHOP
+    Reward: Facile
+    InventoryLocation: 14
+  vitre5:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 15
+  vitre6:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 16
+  vitre7:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+    InventoryLocation: 17
+  vitre8:
+    MenuItem:
+    - type:STAINED_GLASS_PANE
+    - durability:7
+    - name:&8
+
+
+
+
+
+
+
+
+
+
+
+
+
+

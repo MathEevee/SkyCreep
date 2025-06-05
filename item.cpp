@@ -112,6 +112,8 @@ std::string select_pars_item(std::string old_name)
 		return ("MonolitheCitrouille");
 	if (old_name == "Monolithe de Verrues")
 		return ("MonolitheVerrues");
+	if (old_name == "Bloc de melon")
+		return ("BlocMelon");
 	return (old_name);
 }
 
