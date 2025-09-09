@@ -1,0 +1,135 @@
+GrainesBetterave | Graine
+Betterave | Betterave
+MonolitheBetterave | Monolithe de Betterave
+GraineBle | Graine
+Epi | Epi 
+Pain | Pain
+Paille | Block de Paille
+MonolitheBle | Monolithe de blé
+BoeufCru | Boeuf Cru
+BoeufCuit | Boeuf Cuit
+Chene | Chêne
+Bouleau | Bouleau
+Sapin | Sapin
+Jungle | Jungle
+CheneNoir | Chêne Noir
+Acacia | Acacia
+FeuillageChene | Feuillage Chene
+FeuillageBouleau | Feuillage Bouleau
+FeuillageSapin | Feuillage Sapin
+FeuillageJungle | Feuillage Jungle
+FeuillageCheneNoir | Feuillage Chene noir
+FeuillageAcacia | Feuillage Acacia
+CanneASucre | Canne à sucre
+Livre | Livre
+Carotte | Carotte
+CarotteOr | Carotte dorée
+MonolitheCarotte | Monolithe de carotte
+ChorusFruit | fruit
+ChorusEclate | éclaté
+PurpurBlock | Bloc purpur
+ChampignonRouge | Rouge
+ChampignonBrun | Brun
+Citrouille | Citrouille
+TarteCitrouille | Tarte Citrouille
+MonolitheCitrouille | Monolithe de Citrouille
+CochonCru | Cochon cru
+CochonCuit | Cochon cuit
+Endstone | Bloc
+EndstoneBrick | Brique
+Ice | Normale
+PackedIce | Compactée
+LaineJaune | Laine
+LaineOrange | Laine
+LaineRouge | Laine
+LaineRose | Laine
+LaineMagenta | Laine
+LaineViolet | Laine
+LaineCyan | Laine
+LaineBleuClair | Laine
+LaineBleue | Laine
+LaineVerte | Laine
+LaineVertClair | Laine
+LaineBlanche | Laine
+LaineGrisClair | Laine
+LaineGrise | Laine
+LaineNoire | Laine
+LaineMarron | Laine
+LapinCru | Lapin cru
+LapinCuit | Lapin cuit
+MagmaCream | Magma Cream
+MagmaBloc | Block Magma
+BlocMelon | Bloc de melon
+MonolitheMelon | Monolithe de Pastèque
+Charbon | Charbon
+LingotFer | Lingot Fer
+LingotOr | Lingot Or
+Diamant | Diamant
+Quartz | Quartz
+LapisLazuli | Lapis Lazuli
+Redstone | Redstone
+Emeraude | Emeraude
+Charcoal | Charcoal
+MineraisCharbon | Minerais Charbon
+MineraisFer | Minerais Fer
+MineraisOr | Minerais Or
+MineraisDiamant | Minerais Diamant
+MineraisQuartz | Minerais Quartz
+MineraisLapisLazuli | Minerais Lapis Lazuli
+MineraisRedstone | Minerais Redstone
+MineraisEmeraude | Minerais Emeraude
+MoutonCru | Mouton cru
+MoutonCuit | Mouton cuit
+Boule | Boule de neige
+Bloc | Bloc de neige
+Netherrack | Netherrack
+Glowstone | Glowstone
+NetherBrick | Brique du Nether
+RedNetherBrick | Brique rouge du Nether
+Os | Os
+BlocOs | Bloc d'Os
+Patate | Patate
+PatateEmpoisonee | Patate empoisonnée
+MonolithePatate | Monolithe de Patate
+Cobble | CobbleStone
+CobbleMoussue | Mossy Cobble
+Stone | Stone
+Granite | Granite
+Diorite | Diorite
+Andesite | Andésite
+Gravier | Gravier
+Verrues | Verrue nether
+BlocVerrues | Block Verrue Nether
+MonolitheVerrues | Monolithe de Verrues
+Poisson | Poisson
+PoissonCuit | Poisson cuit
+Saumon | Saumon
+SaumonCuit | Saumon Cuit
+Pufferfish | Poisson globe
+PoissonTropical | Poisson Clown
+Pomme | Pomme
+PommeOr | Pomme dorée
+PouletCru | Poulet cru
+PouletCuit | Poulet cuit
+Prismarine | Prismarine
+SeaLantern | Sea Lantern
+DarkPrismarine | Dark Prismarine
+PrismarineBrick | Prismarine Brick
+BlazeRod | Blazerod
+EndRod | Endrod
+Plume | Plume
+Cuir | Cuir
+Cactus | Cactus
+OeilAraignee | Oeil Araignée
+Oeuf | Oeufs
+Cacao | Cacao
+Lianes | Liane
+Encre | Encre
+Mycelium | Mycelium
+Slime | SlimeBall
+Ficelle | Ficelle
+Beacon | Beacon
+Obsidienne | Obsidienne
+PatteLapin | Patte Lapin
+EnderPearl | Enderpearl
+LarmeGhast | Larme Ghast
