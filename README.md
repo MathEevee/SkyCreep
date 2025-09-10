@@ -24,7 +24,7 @@ Ce programme permet de modifier un grand nombre d'informations précise dans des
 ## 🌳 Arborescence
 
 Les fichiers à changer doivent être sous cette forme :
-
+```
 défis/
 ├── Defi_1_Debutant/
 │   ├── Debutant_Bois.yml
@@ -40,13 +40,13 @@ défis/
 ...
 ├── Defi_28_Prestige7/
 │   └── ...
-
+```
 ---
 
----
+
 
 ## 🗒️ Nouveaux prix du .CSV
-
+```
 Pomme
 ├── pomme
 │   ├── Unité
@@ -78,4 +78,4 @@ Carotte
     ├── DC x2
     └── DC x3
 
----
+```
