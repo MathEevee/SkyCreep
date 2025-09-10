@@ -4,6 +4,7 @@
 #include "price.hpp"
 #include "define.hpp"
 #include "file.hpp"
+#include "parsDictionary.hpp"
 
 #include <iostream>
 #include <string>
@@ -157,7 +158,7 @@ void	create_price(std::vector<rank> &all_rank, std::vector<std::string> all_data
 	}
 }
 
-void	create_item(std::vector<rank> &all_rank, std::vector<std::string> all_data)
+void	create_item(std::vector<rank> &all_rank, std::vector<std::string> all_data, std::map<std::string, std::string> dictionary)
 {
 	all_data.erase(all_data.begin());
 
@@ -171,7 +172,7 @@ void	create_item(std::vector<rank> &all_rank, std::vector<std::string> all_data)
 	{
 		if (((*it).size()) > 1)
 		{
-			(*it_rank).addOtherItem(new_item);
+			(*it_rank).addOtherItem(new_item, dictionary);
 			(*it_rank).addOtherUnit(*it, unit);
 			it++;
 		}
@@ -179,7 +180,7 @@ void	create_item(std::vector<rank> &all_rank, std::vector<std::string> all_data)
 	}
 }
 
-void	create_item_type(std::vector<rank> &all_rank, std::vector<std::string> &all_data)
+void	create_item_type(std::vector<rank> &all_rank, std::vector<std::string> &all_data, std::map<std::string, std::string> dictionary)
 {
 	std::string new_type_item = all_data[0];
 	std::string new_item = all_data[1];
@@ -195,7 +196,7 @@ void	create_item_type(std::vector<rank> &all_rank, std::vector<std::string> &all
 		if (((*it).size()) > 1)
 		{
 			(*it_rank).addClassItem(new_type_item);
-			(*it_rank).addItem(new_type_item, new_item);
+			(*it_rank).addItem(new_type_item, new_item, dictionary);
 			(*it_rank).addOtherUnit(*it, unit);
 			it++;
 		}
@@ -223,7 +224,7 @@ void	otherPrice(std::vector<rank> &all_rank, std::vector<std::string> all_data)
 }
 
 
-void	parsing_file(std::vector<rank> &all_rank, std::vector<std::string> &all_data)
+void	parsing_file(std::vector<rank> &all_rank, std::vector<std::string> &all_data, std::map<std::string, std::string> dictionary)
 {
 	std::vector<std::string> tmp;
 
@@ -233,9 +234,9 @@ void	parsing_file(std::vector<rank> &all_rank, std::vector<std::string> &all_dat
 		if (!((*it)[0] >= 44 && (*it)[0] <= 57) && tmp.size() > 2)
 		{
 			if (is_type_item(tmp) == true)
-				create_item_type(all_rank, tmp);
+				create_item_type(all_rank, tmp, dictionary);
 			else if (is_item(tmp) == true)
-				create_item(all_rank, tmp);
+				create_item(all_rank, tmp, dictionary);
 			else
 				create_price(all_rank, tmp);
 			tmp.clear();
@@ -560,10 +561,12 @@ int main(int ac, char **av)
 	std::string tmp;
 	getline(input, tmp, '\0');
 
+	std::map<std::string, std::string> dictionary = set_dictionary();
+
 	std::vector<rank> all_rank;
 	std::vector<std::string> all_data = parsing_items(tmp);
 	all_data = create_rank(all_rank, all_data);
-	parsing_file(all_rank, all_data);
+	parsing_file(all_rank, all_data, dictionary);
 	// print_all(all_rank);
 	apply_new_data(all_rank);
 }

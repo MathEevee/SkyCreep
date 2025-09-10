@@ -1,7 +1,7 @@
-GrainesBetterave | Graine
+GrainesBetterave | Graine de Betterave
 Betterave | Betterave
 MonolitheBetterave | Monolithe de Betterave
-GraineBle | Graine
+GraineBle | Graine de Blé
 Epi | Epi 
 Pain | Pain
 Paille | Block de Paille
@@ -70,14 +70,14 @@ LapisLazuli | Lapis Lazuli
 Redstone | Redstone
 Emeraude | Emeraude
 Charcoal | Charcoal
-MineraisCharbon | Minerais Charbon
-MineraisFer | Minerais Fer
-MineraisOr | Minerais Or
-MineraisDiamant | Minerais Diamant
-MineraisQuartz | Minerais Quartz
-MineraisLapisLazuli | Minerais Lapis Lazuli
-MineraisRedstone | Minerais Redstone
-MineraisEmeraude | Minerais Emeraude
+MineraisCharbon | Minerai Charbon
+MineraisFer | Minerai Fer
+MineraisOr | Minerai Or
+MineraisDiamant | Minerai Diamant
+MineraisQuartz | Minerai Quartz
+MineraisLapisLazuli | Minerai Lapis Lazuli
+MineraisRedstone | Minerai Redstone
+MineraisEmeraude | Minerai Emeraude
 MoutonCru | Mouton cru
 MoutonCuit | Mouton cuit
 Boule | Boule de neige

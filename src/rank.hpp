@@ -10,6 +10,7 @@
 # include <fstream>
 
 # include "itemType.hpp"
+# include "parsDictionary.hpp"
 
 class ItemType;
 
@@ -26,8 +27,8 @@ class rank
 		void			setName(std::string name_rank);
 
 		void			addClassItem(std::string name_class);
-		void			addItem(std::string name_class, std::string name_item);
-		void			addOtherItem(std::string name_item);
+		void			addItem(std::string name_class, std::string name_item, std::map<std::string, std::string> dictonary);
+		void			addOtherItem(std::string name_item, std::map<std::string, std::string> dictionary);
 		void			addOtherPrice(std::string name_item, std::string prix, std::string unit);
 
 

@@ -3,7 +3,7 @@ OBJDIR		:= ./obj
 
 NAME	:= change_data
 CC		:= c++
-SRCS 	:= file.cpp item.cpp itemType.cpp price.cpp rank.cpp main.cpp
+SRCS 	:= file.cpp item.cpp itemType.cpp price.cpp rank.cpp parsDictionary.cpp main.cpp
 OBJS	:= $(addprefix $(OBJDIR)/, $(SRCS:.cpp=.o))
 
 all: $(NAME)

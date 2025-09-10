@@ -94,21 +94,17 @@ void	rank::addOtherPrice(std::string name_item, std::string prix, std::string un
 }
 
 
-void	rank::addOtherItem(std::string name_item)
+void	rank::addOtherItem(std::string name_item, std::map<std::string, std::string> dictionary)
 {
 	std::vector<ItemType>::iterator type_item = this->getType().end();
 	type_item--;
-	Item newItem(name_item.substr(1));
+	Item newItem(name_item.substr(1), dictionary);
 	type_item->getItemType().push_back(newItem);
 }
 
 
-void	rank::addItem(std::string name_class, std::string name_item)
+void	rank::addItem(std::string name_class, std::string name_item, std::map<std::string, std::string> dictonary)
 {
-	if (name_class == "Betterave" && name_item == ",Graine")
-		name_item = ",Graines Betterave";
-	else if (name_class == "Blé" && name_item == ",Graine")
-		name_item = ",Graine Ble";
 	for (std::vector<ItemType>::iterator it = this->getType().begin(); it != this->getType().end(); it++)
 	{
 		if ((*it).getName() == name_class)
@@ -122,7 +118,7 @@ void	rank::addItem(std::string name_class, std::string name_item)
 				name_item = name_class;
 			else
 				name_item = name_item.substr(1);
-			Item	new_item(name_item);
+			Item	new_item(name_item, dictonary);
 			(*it).getItemType().push_back(new_item);
 		}
 	}
