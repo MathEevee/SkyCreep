@@ -24,6 +24,7 @@ Ce programme permet de modifier un grand nombre d'informations précise dans des
 ## 🌳 Arborescence
 
 Les fichiers à changer doivent être sous cette forme :
+
 ```
 défis/
 ├── Defi_1_Debutant/
@@ -46,6 +47,9 @@ défis/
 
 
 ## 🗒️ Nouveaux prix du .CSV
+
+Le .CSV forme cette arborescence.
+
 ```
 Pomme
 ├── pomme
@@ -77,5 +81,33 @@ Carotte
     ├── DC
     ├── DC x2
     └── DC x3
+
+```
+
+Dans le code :
+
+```
+Débutant
+├── pomme
+│   ├── pomme ├── ...
+│   └── pomme dorée ├── ...
+├── Carotte
+│   ├── Carotte ├── ...
+│   └── Carotte dorée ├── ...
+└── Boeuf
+│   ├── Boeuf cru ├── ...
+│   └── Boeuf cuit ├── ...
+└── ...
+Novice
+├── pomme
+│   ├── pomme ├── ...
+│   └── pomme dorée ├── ...
+├── Carotte
+│   ├── Carotte ├── ...
+│   └── Carotte dorée ├── ...
+└── Boeuf
+│   ├── Boeuf cru ├── ...
+│   └── Boeuf cuit ├── ...
+└── ...
 
 ```
