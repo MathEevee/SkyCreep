@@ -6,8 +6,8 @@
 class price
 {
 	private:
-		std::string 		_prix;
-		std::string 		_unit;
+		std::string _prix;
+		std::string _unit;
 
 	public:
 		price(std::string unit, std::string prix);

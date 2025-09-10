@@ -38,8 +38,6 @@
 # define GOD "SkyGod"
 # define MASTER "SkyMaster"
 
-/*variante item*/
-
 /*variante classe*/
 
 # define NETHER "Nether"

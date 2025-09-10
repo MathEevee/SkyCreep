@@ -1,14 +1,6 @@
 #ifndef RANK_HPP
 # define RANK_HPP
 
-# include <iostream>
-# include <vector>
-# include <iostream>
-# include <string>
-# include <cstring>
-# include <cstdlib>
-# include <fstream>
-
 # include "itemType.hpp"
 # include "parsDictionary.hpp"
 
@@ -24,20 +16,19 @@ class rank
 		rank(std::string name);
 		~rank();
 
-		void			setName(std::string name_rank);
+		void					setName(std::string name_rank);
 
-		void			addClassItem(std::string name_class);
-		void			addItem(std::string name_class, std::string name_item, std::map<std::string, std::string> dictonary);
-		void			addOtherItem(std::string name_item, std::map<std::string, std::string> dictionary);
-		void			addOtherPrice(std::string name_item, std::string prix, std::string unit);
+		void					addClassItem(std::string name_class);
+		void					addItem(std::string name_class, std::string name_item, std::map<std::string, std::string> dictonary);
+		void					addOtherItem(std::string name_item, std::map<std::string, std::string> dictionary);
+		void					addOtherPrice(std::string name_item, std::string prix, std::string unit);
+
+		void					addOtherUnit(std::string prix, std::string unit);
+
+		void					addPrice(std::string name_class, std::string name_item, std::string prix, std::string unit);
 
 
-		void			addOtherUnit(std::string prix, std::string unit);
-
-		void			addPrice(std::string name_class, std::string name_item, std::string prix, std::string unit);
-
-
-		std::string		getName(void);
+		std::string				getName(void);
 		std::vector<ItemType>&	getType(void);
 };
 

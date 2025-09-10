@@ -4,10 +4,6 @@
 # include "item.hpp"
 
 #include <iostream>
-#include <string>
-#include <cstring>
-#include <cstdlib>
-#include <fstream>
 
 
 class ItemType
