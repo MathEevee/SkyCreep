@@ -1,5 +1,4 @@
 #include "replaceYml.hpp"
-#include "utils.hpp"
 
 
 void	overwrite(File file, std::string link)
@@ -183,4 +182,12 @@ void	parse_link_file(std::vector<Item> all_item, std::string class_name, std::st
 	}
 	infile.close();
 	change_file(all_item, link);
+}
+
+void	apply_new_data(std::vector<rank> &all_rank)
+{
+	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
+	{
+		create_all_link((*it_rank).getType(), (*it_rank).getName());
+	}
 }

@@ -7,16 +7,6 @@
 #include "parsDictionary.hpp"
 #include "utils.hpp"
 
-#include <iostream>
-#include <string>
-#include <cstring>
-#include <cstdlib>
-#include <fstream>
-#include <ostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <algorithm>
-
 std::vector<std::string>	parsing_items(std::string line)
 {
 	std::vector<std::string> all_data;
@@ -227,17 +217,6 @@ void	parsing_file(std::vector<rank> &all_rank, std::vector<std::string> &all_dat
 	}
 	create_price(all_rank, tmp);
 }
-
-
-
-void	apply_new_data(std::vector<rank> &all_rank)
-{
-	for (std::vector<rank>::iterator it_rank = all_rank.begin(); it_rank != all_rank.end(); it_rank++)
-	{
-		create_all_link((*it_rank).getType(), (*it_rank).getName());
-	}
-}
-
 
 int main(int ac, char **av)
 {

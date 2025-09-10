@@ -4,6 +4,9 @@
 # include "itemType.hpp"
 # include "file.hpp"
 # include "parsDictionary.hpp"
+# include "utils.hpp"
+# include "rank.hpp"
+
 
 std::string	select_defis_link(std::string name_rank);
 void	    create_all_link(std::vector<ItemType> all_class, std::string rank_name);
@@ -15,6 +18,6 @@ void	    file_laine(std::vector<Item> all_item, std::string link);
 void	    file_overwrite(std::vector<Item> all_item, std::string link);
 void	    change_file(std::vector<Item> all_item, std::string link);
 void	    parse_link_file(std::vector<Item> all_item, std::string class_name, std::string rank_name);
-
+void    	apply_new_data(std::vector<rank> &all_rank);
 
 #endif
