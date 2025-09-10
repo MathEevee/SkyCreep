@@ -1,9 +1,6 @@
 # Actualisation des prix pour un plugin Minecraft
 
-Ce programme permet de modifier un grand nombre d'informations précise dans des .YML en prenant les informations d'un .CSV et en liant les noms dans le dictionnaire.
-
----
-
+Ce programme permet de modifier un grand nombre d'informations spécifiques dans des .YML en prenant les informations d'un .CSV et en liant les noms dans le dictionnaire.
 
 ---
 
@@ -15,7 +12,7 @@ Ce programme permet de modifier un grand nombre d'informations précise dans des
    ```
    (dans le dossier où se situe le `Makefile`)
 
-2. **Exécuter** le serveur :
+2. **Exécuter** le programme :
    ```bash
    ./change_data <data.csv>
    ```
@@ -23,7 +20,7 @@ Ce programme permet de modifier un grand nombre d'informations précise dans des
 
 ## 🌳 Arborescence
 
-Les fichiers à changer doivent être sous cette forme :
+Le fichier .csv forme cette arborescence :
 
 ```
 défis/
@@ -48,7 +45,7 @@ défis/
 
 ## 🗒️ Nouveaux prix du .CSV
 
-Le .CSV forme cette arborescence.
+Dans la logique du code, cela correspond à :
 
 ```
 Pomme
@@ -97,7 +94,8 @@ Débutant
 └── Boeuf
 │   ├── Boeuf cru ├── ...
 │   └── Boeuf cuit ├── ...
-└── ...
+│
+...
 Novice
 ├── pomme
 │   ├── pomme ├── ...
@@ -108,13 +106,16 @@ Novice
 └── Boeuf
 │   ├── Boeuf cru ├── ...
 │   └── Boeuf cuit ├── ...
-└── ...
+│
+...
 
 ```
 
-On génère ou cherche les données comme les noms des chemins pour trouver les bons fichiers, on cherche les noms des objets et on remplace les lignes prédéfinies avec les macros.
+Le programme génère ou recherche les données (par exemple les noms des chemins) pour identifier les bons fichiers.
 
-Pour éviter les problèmes avec les noms des objets dans le .csv et dans les .yml, on complète le dictionnaire :
+Les noms des objets sont identifiés et les lignes prédéfinies sont remplacées à l’aide de macros.
+
+Pour éviter les incohérences entre les noms utilisés dans le fichier .csv et ceux présents dans les fichiers .yml, un dictionnaire de correspondance est défini. Il associe chaque identifiant du .yml à son équivalent dans le .csv, par exemple :
 
 ```
 Objet dans le .yml | Objet dans le .csv
