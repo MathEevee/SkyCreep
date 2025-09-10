@@ -111,3 +111,16 @@ Novice
 └── ...
 
 ```
+
+On génère ou cherche les données comme les noms des chemins pour trouver les bons fichiers, on cherche les noms des objets et on remplace les lignes prédéfinies avec les macros.
+
+Pour éviter les problèmes avec les noms des objets dans le .csv et dans les .yml, on complète le dictionnaire :
+
+```
+Objet dans le .yml | Objet dans le .csv
+GrainesBetterave | Graine de Betterave
+Betterave | Betterave
+MonolitheBetterave | Monolithe de Betterave
+GraineBle | Graine de Blé
+Epi | Epi 
+```
